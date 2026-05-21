@@ -51,6 +51,9 @@
     $("#stat-missing").textContent    = meta.missing.toLocaleString("pt-BR");
     $("#stat-percent").textContent    = meta.percent.toFixed(1) + "%";
     $("#stat-complete").textContent   = meta.completeTeams;
+    if (typeof meta.packsBought !== "undefined" && $("#stat-packs")) {
+      $("#stat-packs").textContent = meta.packsBought !== null ? meta.packsBought : "—";
+    }
   }
 
   /* ── HIGHLIGHTS ──────────────────────────────────────────────── */

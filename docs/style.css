@@ -1,3 +1,7 @@
+/* Pacotinhos card */
+.stat-card.purple {
+  border-top-color: #7b2ff2;
+}
 /* ===================================================================
    Figurinhas da Prof Giu — Copa do Mundo 2026
    style.css  ·  Mobile-first responsive design
@@ -126,11 +130,10 @@ h3 { font-size: 1.1rem; }
    ======================================================== */
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: .875rem;
   margin-top: -1.5rem;
 }
-@media (min-width: 640px) { .stats-grid { grid-template-columns: repeat(4, 1fr); } }
 
 .stat-card {
   background: var(--card);

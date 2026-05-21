@@ -8,7 +8,8 @@ const ALBUM_DATA = {
     "missing": 647,
     "percent": 34.9,
     "completeTeams": 0,
-    "updated": "2026-05-20"
+    "updated": "2026-05-20",
+    "packsBought": 55 // Preencha manualmente com o número de pacotinhos de valor 55
   },
   "teams": [
     {
