@@ -176,7 +176,7 @@ def generate(results_path: str = "results.json", out_path: str = "docs/data.js")
 
     data = {
         "meta": {
-            "title":   "Figurinhas da Prof Giu",
+            "title":   "🧡 Figurinhas da Prof Giu",
             "album":   "Copa do Mundo 2026",
             "total":     total,
             "collected": collected,
