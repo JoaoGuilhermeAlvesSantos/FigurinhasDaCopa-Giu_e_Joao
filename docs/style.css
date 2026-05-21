@@ -1,0 +1,465 @@
+/* ===================================================================
+   Figurinhas da Prof Giu — Copa do Mundo 2026
+   style.css  ·  Mobile-first responsive design
+   =================================================================== */
+
+/* ── Fonts ── */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+/* ── Design tokens ── */
+:root {
+  --blue-dark:    #002868;
+  --blue-mid:     #003f9e;
+  --blue-light:   #e8f0fe;
+  --red:          #bf0000;
+  --red-light:    #fdecea;
+  --gold:         #E8B84B;
+  --gold-light:   #fffbea;
+  --green:        #1a7a3c;
+  --green-light:  #eaf7ee;
+  --bg:           #f0f4f8;
+  --card:         #ffffff;
+  --border:       #dde4ee;
+  --text:         #1a1a2e;
+  --text-muted:   #6b7897;
+  --shadow:       0 2px 12px rgba(0,40,104,.10);
+  --shadow-hover: 0 6px 24px rgba(0,40,104,.18);
+  --radius:       12px;
+  --radius-sm:    8px;
+  --transition:   .2s ease;
+}
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; scroll-behavior: smooth; }
+body {
+  font-family: 'Roboto', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+button { cursor: pointer; border: none; background: none; font: inherit; }
+
+/* ── Typography ── */
+h1, h2, h3 { font-family: 'Oswald', sans-serif; font-weight: 700; line-height: 1.2; }
+h1 { font-size: clamp(1.8rem, 5vw, 3rem); }
+h2 { font-size: clamp(1.3rem, 3vw, 1.75rem); }
+h3 { font-size: 1.1rem; }
+
+/* ── Layout helpers ── */
+.container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+.section { padding: 2.5rem 0; }
+.section-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--blue-dark);
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.section-title::after {
+  content: '';
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(to right, var(--gold), transparent);
+  margin-left: .75rem;
+}
+
+/* ========================================================
+   HERO
+   ======================================================== */
+.hero {
+  background: linear-gradient(135deg, var(--blue-dark) 0%, #00164d 40%, #8b0000 100%);
+  color: #fff;
+  padding: 3rem 0 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.hero .container { position: relative; z-index: 1; }
+.hero-eyebrow {
+  font-family: 'Oswald', sans-serif;
+  font-size: .85rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: .5rem;
+}
+.hero h1 { margin-bottom: .35rem; text-shadow: 0 2px 8px rgba(0,0,0,.3); }
+.hero-subtitle {
+  font-size: 1rem;
+  opacity: .8;
+  margin-bottom: 2rem;
+}
+.hero-progress {
+  background: rgba(255,255,255,.15);
+  border-radius: 100px;
+  height: 14px;
+  overflow: hidden;
+  margin-bottom: .6rem;
+  max-width: 600px;
+}
+.hero-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold), #f5d57a);
+  border-radius: 100px;
+  transition: width 1s cubic-bezier(.4,0,.2,1);
+}
+.hero-counter {
+  font-size: .9rem;
+  opacity: .85;
+}
+.hero-counter strong { font-size: 1.15rem; color: var(--gold); }
+
+/* ========================================================
+   STAT CARDS
+   ======================================================== */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: .875rem;
+  margin-top: -1.5rem;
+}
+@media (min-width: 640px) { .stats-grid { grid-template-columns: repeat(4, 1fr); } }
+
+.stat-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 1.25rem 1rem;
+  box-shadow: var(--shadow);
+  text-align: center;
+  border-top: 4px solid transparent;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.stat-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-hover); }
+.stat-card.blue  { border-top-color: var(--blue-mid); }
+.stat-card.red   { border-top-color: var(--red); }
+.stat-card.gold  { border-top-color: var(--gold); }
+.stat-card.green { border-top-color: var(--green); }
+
+.stat-card .value {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--blue-dark);
+}
+.stat-card .label {
+  font-size: .78rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin-top: .3rem;
+}
+
+/* ========================================================
+   HIGHLIGHTS (most critical / most complete)
+   ======================================================== */
+.highlights-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 700px) { .highlights-grid { grid-template-columns: 1fr 1fr; } }
+
+.highlight-block { background: var(--card); border-radius: var(--radius); padding: 1.25rem; box-shadow: var(--shadow); }
+.highlight-block h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: .875rem;
+  padding-bottom: .5rem;
+  border-bottom: 2px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+}
+.highlight-block.critical h3 { color: var(--red); border-bottom-color: var(--red-light); }
+.highlight-block.complete h3 { color: var(--green); border-bottom-color: var(--green-light); }
+
+.mini-team {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  padding: .45rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.mini-team:last-child { border-bottom: none; }
+.mini-team .flag-em { font-size: 1.3rem; line-height: 1; }
+.mini-team .info { flex: 1; min-width: 0; }
+.mini-team .info .tname { font-size: .85rem; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mini-team .info .sub   { font-size: .72rem; color: var(--text-muted); }
+.mini-team .pct-badge {
+  font-family: 'Oswald', sans-serif;
+  font-size: .95rem;
+  font-weight: 700;
+  min-width: 3.2rem;
+  text-align: right;
+}
+.mini-progress {
+  width: 100%;
+  height: 4px;
+  background: var(--border);
+  border-radius: 100px;
+  overflow: hidden;
+  margin-top: .25rem;
+}
+.mini-progress-bar { height: 100%; border-radius: 100px; }
+
+/* ========================================================
+   FILTER BAR
+   ======================================================== */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+  margin-bottom: 1.25rem;
+  align-items: center;
+}
+.filter-bar .label {
+  font-size: .78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin-right: .25rem;
+}
+.group-pill {
+  font-family: 'Oswald', sans-serif;
+  font-size: .8rem;
+  font-weight: 600;
+  padding: .3rem .7rem;
+  border-radius: 100px;
+  border: 1.5px solid var(--border);
+  background: var(--card);
+  color: var(--text-muted);
+  transition: all var(--transition);
+}
+.group-pill:hover { border-color: var(--blue-mid); color: var(--blue-mid); background: var(--blue-light); }
+.group-pill.active { background: var(--blue-dark); color: #fff; border-color: var(--blue-dark); }
+
+.sort-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.sort-btn {
+  font-size: .75rem;
+  font-weight: 500;
+  padding: .25rem .65rem;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--border);
+  background: var(--card);
+  color: var(--text-muted);
+  transition: all var(--transition);
+}
+.sort-btn:hover { border-color: var(--gold); color: var(--text); }
+.sort-btn.active { background: var(--gold); border-color: var(--gold); color: #fff; font-weight: 700; }
+
+/* ========================================================
+   TEAM CARDS GRID
+   ======================================================== */
+.teams-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .875rem;
+}
+@media (min-width: 480px) { .teams-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 768px) { .teams-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 1100px){ .teams-grid { grid-template-columns: repeat(4, 1fr); } }
+
+/* ── Team Card ── */
+.team-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform var(--transition), box-shadow var(--transition);
+  border: 1.5px solid var(--border);
+}
+.team-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); border-color: var(--blue-mid); }
+.team-card.open   { border-color: var(--gold); }
+
+.team-card-header {
+  padding: 1rem 1rem .75rem;
+  display: flex;
+  align-items: flex-start;
+  gap: .75rem;
+}
+.team-flag { font-size: 2.2rem; line-height: 1; flex-shrink: 0; }
+.team-info { flex: 1; min-width: 0; }
+.team-name {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--blue-dark);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.team-badges {
+  display: flex;
+  gap: .3rem;
+  margin-top: .25rem;
+  flex-wrap: wrap;
+}
+.badge {
+  font-size: .65rem;
+  font-weight: 700;
+  padding: .1rem .4rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  line-height: 1.6;
+}
+.badge-group  { background: var(--blue-dark); color: #fff; }
+.badge-host   { background: var(--gold); color: #fff; }
+.badge-done   { background: var(--green); color: #fff; }
+
+.team-count {
+  font-family: 'Oswald', sans-serif;
+  font-size: .95rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-align: right;
+  white-space: nowrap;
+}
+.team-count strong { font-size: 1.3rem; color: var(--text); }
+
+/* Progress bar */
+.team-progress-wrap { padding: 0 1rem .5rem; }
+.progress-bar-bg {
+  height: 8px;
+  background: var(--border);
+  border-radius: 100px;
+  overflow: hidden;
+}
+.progress-bar-fill {
+  height: 100%;
+  border-radius: 100px;
+  transition: width .6s cubic-bezier(.4,0,.2,1);
+}
+/* Color-coded by completion */
+.fill-red    { background: linear-gradient(90deg, #e53e3e, #fc8181); }
+.fill-orange { background: linear-gradient(90deg, #dd6b20, #f6ad55); }
+.fill-yellow { background: linear-gradient(90deg, #d69e2e, #ecc94b); }
+.fill-green  { background: linear-gradient(90deg, #276749, #48bb78); }
+
+.progress-pct {
+  font-size: .72rem;
+  color: var(--text-muted);
+  text-align: right;
+  margin-top: .2rem;
+}
+
+/* Missing stickers panel */
+.missing-panel {
+  display: none;
+  background: #f8fafc;
+  border-top: 1px dashed var(--border);
+  padding: .75rem 1rem;
+}
+.missing-panel.open { display: block; }
+.missing-title {
+  font-size: .72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--text-muted);
+  margin-bottom: .5rem;
+}
+.missing-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .3rem;
+}
+.chip {
+  font-size: .7rem;
+  font-weight: 700;
+  font-family: 'Oswald', sans-serif;
+  padding: .15rem .45rem;
+  border-radius: 4px;
+  background: var(--red-light);
+  color: var(--red);
+  border: 1px solid #fca5a5;
+}
+.chip.all-collected {
+  background: var(--green-light);
+  color: var(--green);
+  border-color: #86efac;
+  font-size: .75rem;
+}
+
+/* ========================================================
+   SPECIAL SECTIONS
+   ======================================================== */
+.special-grid {
+  display: grid;
+  gap: .875rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 600px) { .special-grid { grid-template-columns: repeat(3, 1fr); } }
+
+.special-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.25rem;
+  border: 1.5px solid var(--border);
+  text-align: center;
+}
+.special-card .s-flag { font-size: 2.5rem; margin-bottom: .5rem; }
+.special-card .s-name { font-family: 'Oswald', sans-serif; font-size: 1rem; color: var(--blue-dark); margin-bottom: .75rem; }
+.special-card .s-count {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text);
+}
+.special-card .s-of { font-size: .8rem; color: var(--text-muted); }
+
+/* ========================================================
+   FOOTER
+   ======================================================== */
+footer {
+  background: var(--blue-dark);
+  color: rgba(255,255,255,.7);
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: .82rem;
+  margin-top: 3rem;
+}
+footer a { color: var(--gold); font-weight: 600; }
+footer a:hover { text-decoration: underline; }
+
+/* ========================================================
+   UTILITY
+   ======================================================== */
+.hidden { display: none !important; }
+.text-center { text-align: center; }
+.mt-sm { margin-top: .5rem; }
+.mt-md { margin-top: 1rem; }
+
+/* Updated badge */
+.updated-tag {
+  display: inline-block;
+  font-size: .72rem;
+  background: rgba(255,255,255,.15);
+  color: rgba(255,255,255,.8);
+  border-radius: 100px;
+  padding: .2rem .75rem;
+  margin-top: .75rem;
+}

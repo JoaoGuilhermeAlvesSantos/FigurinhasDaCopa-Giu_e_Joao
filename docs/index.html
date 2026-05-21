@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Controle de figurinhas da Copa do Mundo 2026 da Prof Giu — estatísticas, times mais críticos e lista de faltantes." />
+  <title>Figurinhas da Prof Giu · Copa 2026</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════════════
+       HERO
+       ════════════════════════════════════════════════ -->
+  <header class="hero">
+    <div class="container">
+      <p class="hero-eyebrow">🏆 Copa do Mundo FIFA 2026 — EUA · MEX · CAN</p>
+      <h1 id="hero-title">Figurinhas da Prof Giu</h1>
+      <p class="hero-subtitle" id="hero-subtitle"></p>
+
+      <div class="hero-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-label="Progresso geral do álbum">
+        <div class="hero-progress-bar" id="hero-bar" style="width:0%"></div>
+      </div>
+      <p class="hero-counter" id="hero-counter"></p>
+      <span class="updated-tag" id="hero-updated"></span>
+    </div>
+  </header>
+
+  <!-- ════════════════════════════════════════════════
+       GLOBAL STATS
+       ════════════════════════════════════════════════ -->
+  <main>
+    <div class="container">
+      <div class="stats-grid section">
+        <div class="stat-card blue">
+          <div class="value" id="stat-collected">—</div>
+          <div class="label">Coletadas</div>
+        </div>
+        <div class="stat-card red">
+          <div class="value" id="stat-missing">—</div>
+          <div class="label">Faltando</div>
+        </div>
+        <div class="stat-card gold">
+          <div class="value" id="stat-percent">—</div>
+          <div class="label">Progresso</div>
+        </div>
+        <div class="stat-card green">
+          <div class="value" id="stat-complete">—</div>
+          <div class="label">Times completos</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════
+         HIGHLIGHTS
+         ════════════════════════════════════════════════ -->
+    <section class="section" aria-label="Destaques">
+      <div class="container">
+        <h2 class="section-title">📊 Destaques</h2>
+        <div class="highlights-grid">
+          <div class="highlight-block critical">
+            <h3>🔴 Times mais críticos</h3>
+            <div id="critical-list"></div>
+          </div>
+          <div class="highlight-block complete">
+            <h3>🟢 Times mais completos</h3>
+            <div id="complete-list"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════
+         TEAMS GRID
+         ════════════════════════════════════════════════ -->
+    <section class="section" aria-label="Times">
+      <div class="container">
+        <h2 class="section-title">⚽ Times</h2>
+
+        <!-- Group filter -->
+        <div class="filter-bar" id="filter-bar" role="group" aria-label="Filtrar por grupo"></div>
+
+        <!-- Sort buttons -->
+        <div class="sort-bar" role="group" aria-label="Ordenar">
+          <span class="label">Ordenar:</span>
+          <button class="sort-btn active" data-sort="group">Por grupo</button>
+          <button class="sort-btn" data-sort="pct_asc">↑ Menos completo</button>
+          <button class="sort-btn" data-sort="pct_desc">↓ Mais completo</button>
+          <button class="sort-btn" data-sort="alpha">A–Z</button>
+        </div>
+
+        <!-- Cards -->
+        <div class="teams-grid" id="teams-grid"></div>
+
+        <p style="font-size:.78rem;color:var(--text-muted);margin-top:1rem;text-align:center">
+          Clique em um time para ver as figurinhas faltantes
+        </p>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════
+         SPECIAL SECTIONS
+         ════════════════════════════════════════════════ -->
+    <section class="section" aria-label="Seções especiais">
+      <div class="container">
+        <h2 class="section-title">✨ Seções especiais</h2>
+        <div class="special-grid" id="special-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ════════════════════════════════════════════════
+       FOOTER
+       ════════════════════════════════════════════════ -->
+  <footer>
+    <p>
+      Figurinhas da Prof Giu &nbsp;·&nbsp; Copa do Mundo 2026
+      &nbsp;·&nbsp; Última atualização: <span id="footer-updated"></span>
+    </p>
+    <p style="margin-top:.4rem">
+      Gerado com Python + PyMuPDF
+      &nbsp;·&nbsp;
+      <a href="https://github.com" target="_blank" rel="noopener">GitHub Pages</a>
+    </p>
+  </footer>
+
+  <!-- Data + App scripts -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
