@@ -1,8 +1,8 @@
 {
   "summary": {
     "total": 994,
-    "collected": 347,
-    "missing": 647,
+    "collected": 404,
+    "missing": 590,
     "expected": 994,
     "count_ok": true
   },
@@ -20,8 +20,6 @@
         "FWC6",
         "FWC7",
         "FWC11",
-        "FWC12",
-        "FWC13",
         "FWC15",
         "FWC19"
       ],
@@ -32,6 +30,8 @@
         "FWC8",
         "FWC9",
         "FWC10",
+        "FWC12",
+        "FWC13",
         "FWC14",
         "FWC16",
         "FWC17",
@@ -40,7 +40,13 @@
     },
     "MEX": {
       "collected": [
+        "MEX7",
         "MEX8",
+        "MEX9",
+        "MEX10",
+        "MEX12",
+        "MEX14",
+        "MEX15",
         "MEX16",
         "MEX18",
         "MEX19",
@@ -53,39 +59,33 @@
         "MEX4",
         "MEX5",
         "MEX6",
-        "MEX7",
-        "MEX9",
-        "MEX10",
         "MEX11",
-        "MEX12",
         "MEX13",
-        "MEX14",
-        "MEX15",
         "MEX17"
       ]
     },
     "RSA": {
       "collected": [
+        "RSA1",
         "RSA2",
         "RSA7",
+        "RSA10",
         "RSA11",
-        "RSA14",
+        "RSA12",
+        "RSA15",
         "RSA16",
         "RSA18",
         "RSA19"
       ],
       "missing": [
-        "RSA1",
         "RSA3",
         "RSA4",
         "RSA5",
         "RSA6",
         "RSA8",
         "RSA9",
-        "RSA10",
-        "RSA12",
         "RSA13",
-        "RSA15",
+        "RSA14",
         "RSA17",
         "RSA20"
       ]
@@ -93,7 +93,9 @@
     "KOR": {
       "collected": [
         "KOR5",
+        "KOR10",
         "KOR14",
+        "KOR15",
         "KOR16",
         "KOR18",
         "KOR19"
@@ -107,35 +109,33 @@
         "KOR7",
         "KOR8",
         "KOR9",
-        "KOR10",
         "KOR11",
         "KOR12",
         "KOR13",
-        "KOR15",
         "KOR17",
         "KOR20"
       ]
     },
     "CZE": {
       "collected": [
+        "CZE3",
         "CZE4",
         "CZE6",
         "CZE7",
         "CZE8",
+        "CZE9",
         "CZE10",
         "CZE11",
-        "CZE15",
         "CZE20"
       ],
       "missing": [
         "CZE1",
         "CZE2",
-        "CZE3",
         "CZE5",
-        "CZE9",
         "CZE12",
         "CZE13",
         "CZE14",
+        "CZE15",
         "CZE16",
         "CZE17",
         "CZE18",
@@ -171,7 +171,7 @@
     "BIH": {
       "collected": [
         "BIH8",
-        "BIH12"
+        "BIH16"
       ],
       "missing": [
         "BIH1",
@@ -184,10 +184,10 @@
         "BIH9",
         "BIH10",
         "BIH11",
+        "BIH12",
         "BIH13",
         "BIH14",
         "BIH15",
-        "BIH16",
         "BIH17",
         "BIH18",
         "BIH19",
@@ -196,14 +196,15 @@
     },
     "QAT": {
       "collected": [
+        "QAT2",
         "QAT3",
         "QAT5",
         "QAT7",
-        "QAT19"
+        "QAT19",
+        "QAT20"
       ],
       "missing": [
         "QAT1",
-        "QAT2",
         "QAT4",
         "QAT6",
         "QAT8",
@@ -216,8 +217,7 @@
         "QAT15",
         "QAT16",
         "QAT17",
-        "QAT18",
-        "QAT20"
+        "QAT18"
       ]
     },
     "SUI": {
@@ -226,7 +226,7 @@
         "SUI7",
         "SUI9",
         "SUI10",
-        "SUI12"
+        "SUI16"
       ],
       "missing": [
         "SUI1",
@@ -236,10 +236,10 @@
         "SUI6",
         "SUI8",
         "SUI11",
+        "SUI12",
         "SUI13",
         "SUI14",
         "SUI15",
-        "SUI16",
         "SUI17",
         "SUI18",
         "SUI19",
@@ -249,11 +249,9 @@
     "BRA": {
       "collected": [
         "BRA2",
+        "BRA7",
         "BRA8",
         "BRA9",
-        "BRA12",
-        "BRA15",
-        "BRA16",
         "BRA17",
         "BRA19",
         "BRA20"
@@ -264,11 +262,13 @@
         "BRA4",
         "BRA5",
         "BRA6",
-        "BRA7",
         "BRA10",
         "BRA11",
+        "BRA12",
         "BRA13",
         "BRA14",
+        "BRA15",
+        "BRA16",
         "BRA18"
       ]
     },
@@ -305,8 +305,6 @@
         "HAI6",
         "HAI7",
         "HAI10",
-        "HAI15",
-        "HAI16",
         "HAI20"
       ],
       "missing": [
@@ -319,6 +317,8 @@
         "HAI12",
         "HAI13",
         "HAI14",
+        "HAI15",
+        "HAI16",
         "HAI17",
         "HAI18",
         "HAI19"
@@ -328,25 +328,25 @@
       "collected": [
         "SCO1",
         "SCO2",
+        "SCO5",
+        "SCO6",
         "SCO7",
         "SCO8",
         "SCO10",
-        "SCO17"
+        "SCO16",
+        "SCO19"
       ],
       "missing": [
         "SCO3",
         "SCO4",
-        "SCO5",
-        "SCO6",
         "SCO9",
         "SCO11",
         "SCO12",
         "SCO13",
         "SCO14",
         "SCO15",
-        "SCO16",
+        "SCO17",
         "SCO18",
-        "SCO19",
         "SCO20"
       ]
     },
@@ -355,8 +355,6 @@
         "USA2",
         "USA6",
         "USA10",
-        "USA13",
-        "USA15",
         "USA19"
       ],
       "missing": [
@@ -369,7 +367,9 @@
         "USA9",
         "USA11",
         "USA12",
+        "USA13",
         "USA14",
+        "USA15",
         "USA16",
         "USA17",
         "USA18",
@@ -380,26 +380,26 @@
       "collected": [
         "PAR2",
         "PAR4",
+        "PAR6",
         "PAR8",
-        "PAR15"
+        "PAR10",
+        "PAR14",
+        "PAR18",
+        "PAR20"
       ],
       "missing": [
         "PAR1",
         "PAR3",
         "PAR5",
-        "PAR6",
         "PAR7",
         "PAR9",
-        "PAR10",
         "PAR11",
         "PAR12",
         "PAR13",
-        "PAR14",
+        "PAR15",
         "PAR16",
         "PAR17",
-        "PAR18",
-        "PAR19",
-        "PAR20"
+        "PAR19"
       ]
     },
     "AUS": {
@@ -430,8 +430,10 @@
     },
     "TUR": {
       "collected": [
+        "TUR10",
         "TUR14",
         "TUR15",
+        "TUR17",
         "TUR18",
         "TUR19"
       ],
@@ -445,39 +447,37 @@
         "TUR7",
         "TUR8",
         "TUR9",
-        "TUR10",
         "TUR11",
         "TUR12",
         "TUR13",
         "TUR16",
-        "TUR17",
         "TUR20"
       ]
     },
     "GER": {
       "collected": [
         "GER1",
+        "GER3",
+        "GER7",
+        "GER11",
         "GER14",
         "GER16",
-        "GER17"
+        "GER17",
+        "GER20"
       ],
       "missing": [
         "GER2",
-        "GER3",
         "GER4",
         "GER5",
         "GER6",
-        "GER7",
         "GER8",
         "GER9",
         "GER10",
-        "GER11",
         "GER12",
         "GER13",
         "GER15",
         "GER18",
-        "GER19",
-        "GER20"
+        "GER19"
       ]
     },
     "CUW": {
@@ -516,7 +516,9 @@
         "CIV9",
         "CIV10",
         "CIV11",
-        "CIV12"
+        "CIV12",
+        "CIV15",
+        "CIV18"
       ],
       "missing": [
         "CIV2",
@@ -524,10 +526,8 @@
         "CIV5",
         "CIV13",
         "CIV14",
-        "CIV15",
         "CIV16",
         "CIV17",
-        "CIV18",
         "CIV19",
         "CIV20"
       ]
@@ -535,12 +535,14 @@
     "ECU": {
       "collected": [
         "ECU1",
+        "ECU6",
         "ECU8",
         "ECU9",
         "ECU11",
         "ECU12",
         "ECU14",
         "ECU16",
+        "ECU17",
         "ECU20"
       ],
       "missing": [
@@ -548,12 +550,10 @@
         "ECU3",
         "ECU4",
         "ECU5",
-        "ECU6",
         "ECU7",
         "ECU10",
         "ECU13",
         "ECU15",
-        "ECU17",
         "ECU18",
         "ECU19"
       ]
@@ -590,19 +590,19 @@
         "JPN2",
         "JPN3",
         "JPN4",
+        "JPN7",
         "JPN8",
         "JPN11",
+        "JPN13",
         "JPN16",
         "JPN20"
       ],
       "missing": [
         "JPN5",
         "JPN6",
-        "JPN7",
         "JPN9",
         "JPN10",
         "JPN12",
-        "JPN13",
         "JPN14",
         "JPN15",
         "JPN17",
@@ -615,7 +615,9 @@
         "SWE1",
         "SWE3",
         "SWE7",
-        "SWE12"
+        "SWE12",
+        "SWE18",
+        "SWE20"
       ],
       "missing": [
         "SWE2",
@@ -631,13 +633,12 @@
         "SWE15",
         "SWE16",
         "SWE17",
-        "SWE18",
-        "SWE19",
-        "SWE20"
+        "SWE19"
       ]
     },
     "TUN": {
       "collected": [
+        "TUN1",
         "TUN6",
         "TUN9",
         "TUN12",
@@ -647,7 +648,6 @@
         "TUN20"
       ],
       "missing": [
-        "TUN1",
         "TUN2",
         "TUN3",
         "TUN4",
@@ -666,9 +666,12 @@
       "collected": [
         "BEL1",
         "BEL3",
+        "BEL5",
         "BEL6",
         "BEL7",
+        "BEL11",
         "BEL12",
+        "BEL14",
         "BEL15",
         "BEL17",
         "BEL19"
@@ -676,13 +679,10 @@
       "missing": [
         "BEL2",
         "BEL4",
-        "BEL5",
         "BEL8",
         "BEL9",
         "BEL10",
-        "BEL11",
         "BEL13",
-        "BEL14",
         "BEL16",
         "BEL18",
         "BEL20"
@@ -692,8 +692,10 @@
       "collected": [
         "EGY2",
         "EGY6",
+        "EGY7",
         "EGY8",
         "EGY10",
+        "EGY12",
         "EGY15",
         "EGY19",
         "EGY20"
@@ -703,10 +705,8 @@
         "EGY3",
         "EGY4",
         "EGY5",
-        "EGY7",
         "EGY9",
         "EGY11",
-        "EGY12",
         "EGY13",
         "EGY14",
         "EGY16",
@@ -742,6 +742,7 @@
     },
     "NZL": {
       "collected": [
+        "NZL1",
         "NZL3",
         "NZL4",
         "NZL5",
@@ -758,7 +759,6 @@
         "NZL20"
       ],
       "missing": [
-        "NZL1",
         "NZL2",
         "NZL6",
         "NZL10",
@@ -794,15 +794,17 @@
     },
     "CPV": {
       "collected": [
-        "CPV3",
         "CPV5",
         "CPV7",
         "CPV12",
-        "CPV14"
+        "CPV14",
+        "CPV17",
+        "CPV20"
       ],
       "missing": [
         "CPV1",
         "CPV2",
+        "CPV3",
         "CPV4",
         "CPV6",
         "CPV8",
@@ -812,10 +814,8 @@
         "CPV13",
         "CPV15",
         "CPV16",
-        "CPV17",
         "CPV18",
-        "CPV19",
-        "CPV20"
+        "CPV19"
       ]
     },
     "KSA": {
@@ -824,6 +824,7 @@
         "KSA6",
         "KSA7",
         "KSA9",
+        "KSA10",
         "KSA11",
         "KSA14",
         "KSA15",
@@ -839,7 +840,6 @@
         "KSA3",
         "KSA4",
         "KSA8",
-        "KSA10",
         "KSA12",
         "KSA13"
       ]
@@ -850,7 +850,8 @@
         "URU8",
         "URU9",
         "URU11",
-        "URU12"
+        "URU12",
+        "URU18"
       ],
       "missing": [
         "URU1",
@@ -865,7 +866,6 @@
         "URU15",
         "URU16",
         "URU17",
-        "URU18",
         "URU19",
         "URU20"
       ]
@@ -903,6 +903,8 @@
         "SEN6",
         "SEN9",
         "SEN10",
+        "SEN12",
+        "SEN15",
         "SEN19"
       ],
       "missing": [
@@ -912,10 +914,8 @@
         "SEN7",
         "SEN8",
         "SEN11",
-        "SEN12",
         "SEN13",
         "SEN14",
-        "SEN15",
         "SEN16",
         "SEN17",
         "SEN18",
@@ -950,20 +950,20 @@
     },
     "NOR": {
       "collected": [
+        "NOR1",
         "NOR2",
+        "NOR4",
         "NOR6",
+        "NOR8",
         "NOR10",
         "NOR15",
         "NOR16",
         "NOR19"
       ],
       "missing": [
-        "NOR1",
         "NOR3",
-        "NOR4",
         "NOR5",
         "NOR7",
-        "NOR8",
         "NOR9",
         "NOR11",
         "NOR12",
@@ -977,6 +977,7 @@
     "ARG": {
       "collected": [
         "ARG3",
+        "ARG5",
         "ARG7",
         "ARG8",
         "ARG12",
@@ -986,7 +987,6 @@
         "ARG1",
         "ARG2",
         "ARG4",
-        "ARG5",
         "ARG6",
         "ARG9",
         "ARG10",
@@ -1028,10 +1028,12 @@
     },
     "AUT": {
       "collected": [
+        "AUT2",
         "AUT5",
         "AUT8",
         "AUT9",
         "AUT10",
+        "AUT12",
         "AUT13",
         "AUT14",
         "AUT15",
@@ -1040,13 +1042,11 @@
       ],
       "missing": [
         "AUT1",
-        "AUT2",
         "AUT3",
         "AUT4",
         "AUT6",
         "AUT7",
         "AUT11",
-        "AUT12",
         "AUT16",
         "AUT17",
         "AUT20"
@@ -1081,33 +1081,35 @@
     "POR": {
       "collected": [
         "POR1",
+        "POR3",
         "POR4",
+        "POR5",
         "POR6",
         "POR7",
+        "POR8",
         "POR9",
         "POR10",
         "POR11",
+        "POR12",
         "POR14",
         "POR15",
         "POR16",
+        "POR17",
         "POR18",
         "POR19",
         "POR20"
       ],
       "missing": [
         "POR2",
-        "POR3",
-        "POR5",
-        "POR8",
-        "POR12",
-        "POR13",
-        "POR17"
+        "POR13"
       ]
     },
     "COD": {
       "collected": [
         "COD1",
         "COD2",
+        "COD6",
+        "COD7",
         "COD10",
         "COD13",
         "COD15",
@@ -1117,8 +1119,6 @@
         "COD3",
         "COD4",
         "COD5",
-        "COD6",
-        "COD7",
         "COD8",
         "COD9",
         "COD11",
@@ -1187,6 +1187,7 @@
         "ENG2",
         "ENG4",
         "ENG5",
+        "ENG6",
         "ENG8",
         "ENG9",
         "ENG11",
@@ -1196,7 +1197,6 @@
       "missing": [
         "ENG1",
         "ENG3",
-        "ENG6",
         "ENG7",
         "ENG10",
         "ENG12",
@@ -1236,16 +1236,18 @@
     },
     "GHA": {
       "collected": [
+        "GHA1",
         "GHA4",
         "GHA6",
+        "GHA11",
         "GHA12",
         "GHA13",
         "GHA16",
         "GHA18",
-        "GHA19"
+        "GHA19",
+        "GHA20"
       ],
       "missing": [
-        "GHA1",
         "GHA2",
         "GHA3",
         "GHA5",
@@ -1253,11 +1255,9 @@
         "GHA8",
         "GHA9",
         "GHA10",
-        "GHA11",
         "GHA14",
         "GHA15",
-        "GHA17",
-        "GHA20"
+        "GHA17"
       ]
     },
     "PAN": {
@@ -1265,6 +1265,7 @@
         "PAN1",
         "PAN3",
         "PAN4",
+        "PAN5",
         "PAN7",
         "PAN9",
         "PAN11",
@@ -1275,7 +1276,6 @@
       ],
       "missing": [
         "PAN2",
-        "PAN5",
         "PAN6",
         "PAN8",
         "PAN10",
@@ -1323,20 +1323,20 @@
       "code": "ALG1",
       "group": "ALG",
       "collected": false,
-      "white_fraction": 0.8923,
+      "white_fraction": 0.8977,
       "avg_rgb": [
-        244,
-        244,
-        244
+        245,
+        245,
+        245
       ]
     },
     {
       "code": "ALG2",
       "group": "ALG",
       "collected": true,
-      "white_fraction": 0.0,
+      "white_fraction": 0.0021,
       "avg_rgb": [
-        86,
+        84,
         207,
         240
       ]
@@ -1348,8 +1348,8 @@
       "white_fraction": 0.8953,
       "avg_rgb": [
         243,
-        244,
-        244
+        243,
+        243
       ]
     },
     {
@@ -1358,7 +1358,7 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        103,
+        104,
         211,
         240
       ]
@@ -1389,9 +1389,9 @@
       "code": "ALG7",
       "group": "ALG",
       "collected": true,
-      "white_fraction": 0.0069,
+      "white_fraction": 0.0057,
       "avg_rgb": [
-        66,
+        65,
         203,
         240
       ]
@@ -1422,9 +1422,9 @@
       "code": "ALG10",
       "group": "ALG",
       "collected": true,
-      "white_fraction": 0.001,
+      "white_fraction": 0.0014,
       "avg_rgb": [
-        91,
+        92,
         208,
         240
       ]
@@ -1444,9 +1444,9 @@
       "code": "ALG12",
       "group": "ALG",
       "collected": true,
-      "white_fraction": 0.0007,
+      "white_fraction": 0.0003,
       "avg_rgb": [
-        101,
+        100,
         211,
         242
       ]
@@ -1455,9 +1455,9 @@
       "code": "ALG13",
       "group": "ALG",
       "collected": true,
-      "white_fraction": 0.0085,
+      "white_fraction": 0.0081,
       "avg_rgb": [
-        99,
+        100,
         211,
         241
       ]
@@ -1468,7 +1468,7 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        100,
+        101,
         208,
         238
       ]
@@ -1488,7 +1488,7 @@
       "code": "ALG16",
       "group": "ALG",
       "collected": true,
-      "white_fraction": 0.0027,
+      "white_fraction": 0.0024,
       "avg_rgb": [
         103,
         211,
@@ -1512,7 +1512,7 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        82,
+        83,
         203,
         239
       ]
@@ -1534,9 +1534,9 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        97,
+        96,
         208,
-        239
+        240
       ]
     },
     {
@@ -1554,11 +1554,11 @@
       "code": "ARG2",
       "group": "ARG",
       "collected": false,
-      "white_fraction": 0.8435,
+      "white_fraction": 0.8581,
       "avg_rgb": [
-        238,
-        239,
-        239
+        240,
+        240,
+        240
       ]
     },
     {
@@ -1586,12 +1586,12 @@
     {
       "code": "ARG5",
       "group": "ARG",
-      "collected": false,
-      "white_fraction": 0.8473,
+      "collected": true,
+      "white_fraction": 0.0016,
       "avg_rgb": [
-        238,
-        238,
-        238
+        72,
+        200,
+        235
       ]
     },
     {
@@ -1611,7 +1611,7 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        95,
+        96,
         205,
         237
       ]
@@ -1620,21 +1620,21 @@
       "code": "ARG8",
       "group": "ARG",
       "collected": true,
-      "white_fraction": 0.0429,
+      "white_fraction": 0.0421,
       "avg_rgb": [
         106,
         207,
-        237
+        236
       ]
     },
     {
       "code": "ARG9",
       "group": "ARG",
       "collected": false,
-      "white_fraction": 0.8405,
+      "white_fraction": 0.8421,
       "avg_rgb": [
         238,
-        238,
+        239,
         239
       ]
     },
@@ -1642,11 +1642,11 @@
       "code": "ARG10",
       "group": "ARG",
       "collected": false,
-      "white_fraction": 0.7766,
+      "white_fraction": 0.7786,
       "avg_rgb": [
         230,
         237,
-        239
+        238
       ]
     },
     {
@@ -1664,7 +1664,7 @@
       "code": "ARG12",
       "group": "ARG",
       "collected": true,
-      "white_fraction": 0.0136,
+      "white_fraction": 0.014,
       "avg_rgb": [
         102,
         207,
@@ -1675,9 +1675,9 @@
       "code": "ARG13",
       "group": "ARG",
       "collected": false,
-      "white_fraction": 0.8274,
+      "white_fraction": 0.8281,
       "avg_rgb": [
-        237,
+        238,
         239,
         240
       ]
@@ -1697,7 +1697,7 @@
       "code": "ARG15",
       "group": "ARG",
       "collected": false,
-      "white_fraction": 0.818,
+      "white_fraction": 0.8234,
       "avg_rgb": [
         236,
         238,
@@ -1710,18 +1710,18 @@
       "collected": false,
       "white_fraction": 0.8504,
       "avg_rgb": [
-        239,
-        239,
-        239
+        240,
+        240,
+        240
       ]
     },
     {
       "code": "ARG17",
       "group": "ARG",
       "collected": true,
-      "white_fraction": 0.0412,
+      "white_fraction": 0.0436,
       "avg_rgb": [
-        102,
+        103,
         207,
         236
       ]
@@ -1730,10 +1730,10 @@
       "code": "ARG18",
       "group": "ARG",
       "collected": false,
-      "white_fraction": 0.8278,
+      "white_fraction": 0.8428,
       "avg_rgb": [
-        236,
         237,
+        238,
         238
       ]
     },
@@ -1752,7 +1752,7 @@
       "code": "ARG20",
       "group": "ARG",
       "collected": false,
-      "white_fraction": 0.847,
+      "white_fraction": 0.8474,
       "avg_rgb": [
         239,
         239,
@@ -1774,9 +1774,9 @@
       "code": "AUS2",
       "group": "AUS",
       "collected": true,
-      "white_fraction": 0.0102,
+      "white_fraction": 0.0086,
       "avg_rgb": [
-        73,
+        72,
         198,
         232
       ]
@@ -1796,9 +1796,9 @@
       "code": "AUS4",
       "group": "AUS",
       "collected": false,
-      "white_fraction": 0.78,
+      "white_fraction": 0.7697,
       "avg_rgb": [
-        227,
+        226,
         233,
         234
       ]
@@ -1818,7 +1818,7 @@
       "code": "AUS6",
       "group": "AUS",
       "collected": true,
-      "white_fraction": 0.013,
+      "white_fraction": 0.0118,
       "avg_rgb": [
         80,
         199,
@@ -1840,7 +1840,7 @@
       "code": "AUS8",
       "group": "AUS",
       "collected": false,
-      "white_fraction": 0.7742,
+      "white_fraction": 0.7722,
       "avg_rgb": [
         227,
         233,
@@ -1862,11 +1862,11 @@
       "code": "AUS10",
       "group": "AUS",
       "collected": false,
-      "white_fraction": 0.8594,
+      "white_fraction": 0.7472,
       "avg_rgb": [
-        236,
-        236,
-        236
+        223,
+        233,
+        235
       ]
     },
     {
@@ -1906,21 +1906,21 @@
       "code": "AUS14",
       "group": "AUS",
       "collected": false,
-      "white_fraction": 0.8611,
+      "white_fraction": 0.7534,
       "avg_rgb": [
-        235,
-        235,
-        235
+        223,
+        232,
+        234
       ]
     },
     {
       "code": "AUS15",
       "group": "AUS",
       "collected": false,
-      "white_fraction": 0.8258,
+      "white_fraction": 0.8572,
       "avg_rgb": [
-        231,
-        234,
+        235,
+        235,
         235
       ]
     },
@@ -1972,10 +1972,10 @@
       "code": "AUS20",
       "group": "AUS",
       "collected": false,
-      "white_fraction": 0.8591,
+      "white_fraction": 0.7797,
       "avg_rgb": [
-        236,
-        236,
+        228,
+        234,
         236
       ]
     },
@@ -1983,7 +1983,7 @@
       "code": "AUT1",
       "group": "AUT",
       "collected": false,
-      "white_fraction": 0.8644,
+      "white_fraction": 0.8656,
       "avg_rgb": [
         236,
         236,
@@ -1993,12 +1993,12 @@
     {
       "code": "AUT2",
       "group": "AUT",
-      "collected": false,
-      "white_fraction": 0.8457,
+      "collected": true,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        237,
-        238,
-        239
+        87,
+        204,
+        235
       ]
     },
     {
@@ -2038,9 +2038,9 @@
       "code": "AUT6",
       "group": "AUT",
       "collected": false,
-      "white_fraction": 0.8197,
+      "white_fraction": 0.8229,
       "avg_rgb": [
-        231,
+        232,
         234,
         234
       ]
@@ -2049,7 +2049,7 @@
       "code": "AUT7",
       "group": "AUT",
       "collected": false,
-      "white_fraction": 0.8372,
+      "white_fraction": 0.8344,
       "avg_rgb": [
         233,
         235,
@@ -2060,9 +2060,9 @@
       "code": "AUT8",
       "group": "AUT",
       "collected": true,
-      "white_fraction": 0.0,
+      "white_fraction": 0.0004,
       "avg_rgb": [
-        64,
+        65,
         197,
         233
       ]
@@ -2082,10 +2082,10 @@
       "code": "AUT10",
       "group": "AUT",
       "collected": true,
-      "white_fraction": 0.005,
+      "white_fraction": 0.0057,
       "avg_rgb": [
         96,
-        203,
+        204,
         233
       ]
     },
@@ -2093,9 +2093,9 @@
       "code": "AUT11",
       "group": "AUT",
       "collected": false,
-      "white_fraction": 0.8098,
+      "white_fraction": 0.8125,
       "avg_rgb": [
-        233,
+        234,
         238,
         239
       ]
@@ -2103,12 +2103,12 @@
     {
       "code": "AUT12",
       "group": "AUT",
-      "collected": false,
-      "white_fraction": 0.8642,
+      "collected": true,
+      "white_fraction": 0.009,
       "avg_rgb": [
-        235,
-        235,
-        235
+        93,
+        201,
+        232
       ]
     },
     {
@@ -2117,8 +2117,8 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        99,
-        204,
+        92,
+        202,
         233
       ]
     },
@@ -2128,7 +2128,7 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        102,
+        101,
         207,
         236
       ]
@@ -2148,10 +2148,10 @@
       "code": "AUT16",
       "group": "AUT",
       "collected": false,
-      "white_fraction": 0.833,
+      "white_fraction": 0.8327,
       "avg_rgb": [
         232,
-        235,
+        234,
         235
       ]
     },
@@ -2159,7 +2159,7 @@
       "code": "AUT17",
       "group": "AUT",
       "collected": false,
-      "white_fraction": 0.8179,
+      "white_fraction": 0.8219,
       "avg_rgb": [
         234,
         237,
@@ -2172,8 +2172,8 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        79,
-        197,
+        78,
+        196,
         231
       ]
     },
@@ -2205,7 +2205,7 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        86,
+        83,
         205,
         238
       ]
@@ -2246,12 +2246,12 @@
     {
       "code": "BEL5",
       "group": "BEL",
-      "collected": false,
-      "white_fraction": 0.8561,
+      "collected": true,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        240,
-        240,
-        240
+        101,
+        208,
+        237
       ]
     },
     {
@@ -2271,8 +2271,8 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        105,
-        210,
+        101,
+        208,
         238
       ]
     },
@@ -2280,9 +2280,9 @@
       "code": "BEL8",
       "group": "BEL",
       "collected": false,
-      "white_fraction": 0.718,
+      "white_fraction": 0.7202,
       "avg_rgb": [
-        222,
+        223,
         236,
         240
       ]
@@ -2312,23 +2312,23 @@
     {
       "code": "BEL11",
       "group": "BEL",
-      "collected": false,
-      "white_fraction": 0.8655,
+      "collected": true,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        241,
-        241,
-        241
+        100,
+        209,
+        238
       ]
     },
     {
       "code": "BEL12",
       "group": "BEL",
       "collected": true,
-      "white_fraction": 0.0004,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        99,
-        208,
-        237
+        83,
+        203,
+        238
       ]
     },
     {
@@ -2345,21 +2345,21 @@
     {
       "code": "BEL14",
       "group": "BEL",
-      "collected": false,
-      "white_fraction": 0.8612,
+      "collected": true,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        239,
-        239,
-        239
+        99,
+        207,
+        236
       ]
     },
     {
       "code": "BEL15",
       "group": "BEL",
       "collected": true,
-      "white_fraction": 0.0118,
+      "white_fraction": 0.0121,
       "avg_rgb": [
-        100,
+        98,
         207,
         237
       ]
@@ -2379,9 +2379,9 @@
       "code": "BEL17",
       "group": "BEL",
       "collected": true,
-      "white_fraction": 0.0047,
+      "white_fraction": 0.0044,
       "avg_rgb": [
-        106,
+        107,
         209,
         237
       ]
@@ -2403,7 +2403,7 @@
       "collected": true,
       "white_fraction": 0.0048,
       "avg_rgb": [
-        98,
+        99,
         208,
         238
       ]
@@ -2434,7 +2434,7 @@
       "code": "BIH2",
       "group": "BIH",
       "collected": false,
-      "white_fraction": 0.892,
+      "white_fraction": 0.8858,
       "avg_rgb": [
         242,
         242,
@@ -2445,7 +2445,7 @@
       "code": "BIH3",
       "group": "BIH",
       "collected": false,
-      "white_fraction": 0.8227,
+      "white_fraction": 0.838,
       "avg_rgb": [
         238,
         240,
@@ -2469,8 +2469,8 @@
       "collected": false,
       "white_fraction": 0.88,
       "avg_rgb": [
-        240,
-        240,
+        241,
+        241,
         241
       ]
     },
@@ -2500,7 +2500,7 @@
       "code": "BIH8",
       "group": "BIH",
       "collected": true,
-      "white_fraction": 0.0031,
+      "white_fraction": 0.0036,
       "avg_rgb": [
         103,
         209,
@@ -2543,12 +2543,12 @@
     {
       "code": "BIH12",
       "group": "BIH",
-      "collected": true,
-      "white_fraction": 0.0022,
+      "collected": false,
+      "white_fraction": 0.8895,
       "avg_rgb": [
-        95,
-        206,
-        238
+        241,
+        241,
+        241
       ]
     },
     {
@@ -2587,12 +2587,12 @@
     {
       "code": "BIH16",
       "group": "BIH",
-      "collected": false,
-      "white_fraction": 0.8809,
+      "collected": true,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        242,
-        242,
-        242
+        103,
+        210,
+        240
       ]
     },
     {
@@ -2676,9 +2676,9 @@
       "code": "BRA4",
       "group": "BRA",
       "collected": false,
-      "white_fraction": 0.8381,
+      "white_fraction": 0.8368,
       "avg_rgb": [
-        237,
+        236,
         238,
         239
       ]
@@ -2708,12 +2708,12 @@
     {
       "code": "BRA7",
       "group": "BRA",
-      "collected": false,
-      "white_fraction": 0.8512,
+      "collected": true,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        239,
-        239,
-        239
+        98,
+        207,
+        236
       ]
     },
     {
@@ -2731,11 +2731,11 @@
       "code": "BRA9",
       "group": "BRA",
       "collected": true,
-      "white_fraction": 0.0688,
+      "white_fraction": 0.0692,
       "avg_rgb": [
-        109,
+        110,
         207,
-        235
+        236
       ]
     },
     {
@@ -2753,22 +2753,22 @@
       "code": "BRA11",
       "group": "BRA",
       "collected": false,
-      "white_fraction": 0.8311,
+      "white_fraction": 0.8567,
       "avg_rgb": [
-        237,
-        239,
-        239
+        240,
+        240,
+        240
       ]
     },
     {
       "code": "BRA12",
       "group": "BRA",
-      "collected": true,
-      "white_fraction": 0.006,
+      "collected": false,
+      "white_fraction": 0.8553,
       "avg_rgb": [
-        79,
-        201,
-        236
+        239,
+        239,
+        239
       ]
     },
     {
@@ -2796,33 +2796,33 @@
     {
       "code": "BRA15",
       "group": "BRA",
-      "collected": true,
-      "white_fraction": 0.0053,
+      "collected": false,
+      "white_fraction": 0.8484,
       "avg_rgb": [
-        99,
-        206,
-        236
+        238,
+        238,
+        238
       ]
     },
     {
       "code": "BRA16",
       "group": "BRA",
-      "collected": true,
-      "white_fraction": 0.0046,
+      "collected": false,
+      "white_fraction": 0.8488,
       "avg_rgb": [
-        100,
-        206,
-        237
+        240,
+        240,
+        240
       ]
     },
     {
       "code": "BRA17",
       "group": "BRA",
       "collected": true,
-      "white_fraction": 0.0446,
+      "white_fraction": 0.0004,
       "avg_rgb": [
-        90,
-        205,
+        66,
+        198,
         236
       ]
     },
@@ -2843,7 +2843,7 @@
       "collected": true,
       "white_fraction": 0.0018,
       "avg_rgb": [
-        102,
+        101,
         208,
         237
       ]
@@ -2852,9 +2852,9 @@
       "code": "BRA20",
       "group": "BRA",
       "collected": true,
-      "white_fraction": 0.0029,
+      "white_fraction": 0.0033,
       "avg_rgb": [
-        98,
+        97,
         206,
         237
       ]
@@ -2874,7 +2874,7 @@
       "code": "CAN2",
       "group": "CAN",
       "collected": true,
-      "white_fraction": 0.035,
+      "white_fraction": 0.0279,
       "avg_rgb": [
         126,
         215,
@@ -2885,20 +2885,20 @@
       "code": "CAN3",
       "group": "CAN",
       "collected": false,
-      "white_fraction": 0.8518,
+      "white_fraction": 0.806,
       "avg_rgb": [
-        240,
-        240,
-        240
+        233,
+        238,
+        239
       ]
     },
     {
       "code": "CAN4",
       "group": "CAN",
       "collected": false,
-      "white_fraction": 0.8542,
+      "white_fraction": 0.8474,
       "avg_rgb": [
-        240,
+        239,
         240,
         240
       ]
@@ -2907,9 +2907,9 @@
       "code": "CAN5",
       "group": "CAN",
       "collected": true,
-      "white_fraction": 0.2248,
+      "white_fraction": 0.224,
       "avg_rgb": [
-        147,
+        146,
         219,
         239
       ]
@@ -2918,7 +2918,7 @@
       "code": "CAN6",
       "group": "CAN",
       "collected": false,
-      "white_fraction": 0.8451,
+      "white_fraction": 0.8443,
       "avg_rgb": [
         238,
         239,
@@ -2931,7 +2931,7 @@
       "collected": true,
       "white_fraction": 0.0016,
       "avg_rgb": [
-        87,
+        86,
         203,
         237
       ]
@@ -2951,7 +2951,7 @@
       "code": "CAN9",
       "group": "CAN",
       "collected": true,
-      "white_fraction": 0.015,
+      "white_fraction": 0.0146,
       "avg_rgb": [
         106,
         209,
@@ -2962,10 +2962,10 @@
       "code": "CAN10",
       "group": "CAN",
       "collected": false,
-      "white_fraction": 0.8551,
+      "white_fraction": 0.8353,
       "avg_rgb": [
-        241,
-        241,
+        238,
+        240,
         241
       ]
     },
@@ -2973,9 +2973,9 @@
       "code": "CAN11",
       "group": "CAN",
       "collected": false,
-      "white_fraction": 0.8601,
+      "white_fraction": 0.847,
       "avg_rgb": [
-        241,
+        239,
         241,
         241
       ]
@@ -3017,11 +3017,11 @@
       "code": "CAN15",
       "group": "CAN",
       "collected": false,
-      "white_fraction": 0.8188,
+      "white_fraction": 0.8499,
       "avg_rgb": [
-        236,
-        238,
-        239
+        240,
+        240,
+        240
       ]
     },
     {
@@ -3030,7 +3030,7 @@
       "collected": false,
       "white_fraction": 0.8553,
       "avg_rgb": [
-        240,
+        239,
         240,
         240
       ]
@@ -3050,11 +3050,11 @@
       "code": "CAN18",
       "group": "CAN",
       "collected": true,
-      "white_fraction": 0.0094,
+      "white_fraction": 0.0084,
       "avg_rgb": [
         95,
         205,
-        236
+        237
       ]
     },
     {
@@ -3083,10 +3083,10 @@
       "code": "CC1",
       "group": "CC",
       "collected": true,
-      "white_fraction": 0.0164,
+      "white_fraction": 0.0058,
       "avg_rgb": [
-        55,
-        197,
+        54,
+        196,
         241
       ]
     },
@@ -3094,7 +3094,7 @@
       "code": "CC2",
       "group": "CC",
       "collected": true,
-      "white_fraction": 0.145,
+      "white_fraction": 0.1485,
       "avg_rgb": [
         96,
         205,
@@ -3105,11 +3105,11 @@
       "code": "CC3",
       "group": "CC",
       "collected": true,
-      "white_fraction": 0.018,
+      "white_fraction": 0.0146,
       "avg_rgb": [
-        61,
-        195,
-        240
+        59,
+        194,
+        239
       ]
     },
     {
@@ -3119,7 +3119,7 @@
       "white_fraction": 0.0,
       "avg_rgb": [
         44,
-        190,
+        189,
         239
       ]
     },
@@ -3129,16 +3129,16 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        62,
-        199,
-        239
+        61,
+        198,
+        240
       ]
     },
     {
       "code": "CC6",
       "group": "CC",
       "collected": true,
-      "white_fraction": 0.0,
+      "white_fraction": 0.002,
       "avg_rgb": [
         80,
         205,
@@ -3149,9 +3149,9 @@
       "code": "CC7",
       "group": "CC",
       "collected": true,
-      "white_fraction": 0.0273,
+      "white_fraction": 0.0258,
       "avg_rgb": [
-        88,
+        87,
         207,
         240
       ]
@@ -3171,9 +3171,9 @@
       "code": "CC9",
       "group": "CC",
       "collected": false,
-      "white_fraction": 0.8791,
+      "white_fraction": 0.8859,
       "avg_rgb": [
-        242,
+        243,
         243,
         243
       ]
@@ -3196,7 +3196,7 @@
       "white_fraction": 0.8979,
       "avg_rgb": [
         242,
-        243,
+        242,
         243
       ]
     },
@@ -3237,11 +3237,11 @@
       "code": "CIV1",
       "group": "CIV",
       "collected": true,
-      "white_fraction": 0.0708,
+      "white_fraction": 0.0729,
       "avg_rgb": [
-        109,
+        110,
         209,
-        236
+        235
       ]
     },
     {
@@ -3259,7 +3259,7 @@
       "code": "CIV3",
       "group": "CIV",
       "collected": true,
-      "white_fraction": 0.0305,
+      "white_fraction": 0.0282,
       "avg_rgb": [
         75,
         198,
@@ -3292,10 +3292,10 @@
       "code": "CIV6",
       "group": "CIV",
       "collected": true,
-      "white_fraction": 0.0089,
+      "white_fraction": 0.0097,
       "avg_rgb": [
-        86,
-        201,
+        78,
+        198,
         233
       ]
     },
@@ -3336,9 +3336,9 @@
       "code": "CIV10",
       "group": "CIV",
       "collected": true,
-      "white_fraction": 0.0053,
+      "white_fraction": 0.0081,
       "avg_rgb": [
-        81,
+        82,
         199,
         234
       ]
@@ -3349,7 +3349,7 @@
       "collected": true,
       "white_fraction": 0.0532,
       "avg_rgb": [
-        90,
+        91,
         201,
         233
       ]
@@ -3361,7 +3361,7 @@
       "white_fraction": 0.0039,
       "avg_rgb": [
         65,
-        194,
+        193,
         233
       ]
     },
@@ -3390,45 +3390,45 @@
     {
       "code": "CIV15",
       "group": "CIV",
-      "collected": false,
-      "white_fraction": 0.868,
+      "collected": true,
+      "white_fraction": 0.0243,
       "avg_rgb": [
-        236,
-        236,
-        236
+        86,
+        201,
+        233
       ]
     },
     {
       "code": "CIV16",
       "group": "CIV",
       "collected": false,
-      "white_fraction": 0.7604,
+      "white_fraction": 0.7608,
       "avg_rgb": [
-        225,
+        226,
         234,
-        236
+        237
       ]
     },
     {
       "code": "CIV17",
       "group": "CIV",
       "collected": false,
-      "white_fraction": 0.8677,
+      "white_fraction": 0.7895,
       "avg_rgb": [
-        238,
-        238,
-        238
+        231,
+        236,
+        237
       ]
     },
     {
       "code": "CIV18",
       "group": "CIV",
-      "collected": false,
-      "white_fraction": 0.8633,
+      "collected": true,
+      "white_fraction": 0.0165,
       "avg_rgb": [
-        235,
-        235,
-        235
+        66,
+        192,
+        232
       ]
     },
     {
@@ -3490,7 +3490,7 @@
       "code": "COD4",
       "group": "COD",
       "collected": false,
-      "white_fraction": 0.8633,
+      "white_fraction": 0.8673,
       "avg_rgb": [
         241,
         243,
@@ -3501,29 +3501,7 @@
       "code": "COD5",
       "group": "COD",
       "collected": false,
-      "white_fraction": 0.89,
-      "avg_rgb": [
-        243,
-        243,
-        243
-      ]
-    },
-    {
-      "code": "COD6",
-      "group": "COD",
-      "collected": false,
-      "white_fraction": 0.8192,
-      "avg_rgb": [
-        234,
-        241,
-        243
-      ]
-    },
-    {
-      "code": "COD7",
-      "group": "COD",
-      "collected": false,
-      "white_fraction": 0.887,
+      "white_fraction": 0.8822,
       "avg_rgb": [
         242,
         243,
@@ -3531,13 +3509,35 @@
       ]
     },
     {
+      "code": "COD6",
+      "group": "COD",
+      "collected": true,
+      "white_fraction": 0.0,
+      "avg_rgb": [
+        96,
+        209,
+        240
+      ]
+    },
+    {
+      "code": "COD7",
+      "group": "COD",
+      "collected": true,
+      "white_fraction": 0.0199,
+      "avg_rgb": [
+        106,
+        212,
+        241
+      ]
+    },
+    {
       "code": "COD8",
       "group": "COD",
       "collected": false,
-      "white_fraction": 0.8847,
+      "white_fraction": 0.8762,
       "avg_rgb": [
-        243,
-        243,
+        242,
+        242,
         243
       ]
     },
@@ -3545,7 +3545,7 @@
       "code": "COD9",
       "group": "COD",
       "collected": false,
-      "white_fraction": 0.8881,
+      "white_fraction": 0.8874,
       "avg_rgb": [
         243,
         243,
@@ -3556,9 +3556,9 @@
       "code": "COD10",
       "group": "COD",
       "collected": true,
-      "white_fraction": 0.0124,
+      "white_fraction": 0.013,
       "avg_rgb": [
-        85,
+        84,
         204,
         240
       ]
@@ -3567,7 +3567,7 @@
       "code": "COD11",
       "group": "COD",
       "collected": false,
-      "white_fraction": 0.895,
+      "white_fraction": 0.8944,
       "avg_rgb": [
         241,
         242,
@@ -3578,9 +3578,9 @@
       "code": "COD12",
       "group": "COD",
       "collected": false,
-      "white_fraction": 0.8929,
+      "white_fraction": 0.8818,
       "avg_rgb": [
-        244,
+        243,
         244,
         244
       ]
@@ -3589,9 +3589,9 @@
       "code": "COD13",
       "group": "COD",
       "collected": true,
-      "white_fraction": 0.0612,
+      "white_fraction": 0.0618,
       "avg_rgb": [
-        111,
+        112,
         213,
         241
       ]
@@ -3600,9 +3600,9 @@
       "code": "COD14",
       "group": "COD",
       "collected": false,
-      "white_fraction": 0.8807,
+      "white_fraction": 0.8782,
       "avg_rgb": [
-        241,
+        240,
         242,
         242
       ]
@@ -3611,9 +3611,9 @@
       "code": "COD15",
       "group": "COD",
       "collected": true,
-      "white_fraction": 0.1079,
+      "white_fraction": 0.0977,
       "avg_rgb": [
-        112,
+        111,
         212,
         240
       ]
@@ -3624,7 +3624,7 @@
       "collected": false,
       "white_fraction": 0.8058,
       "avg_rgb": [
-        233,
+        232,
         241,
         243
       ]
@@ -3633,7 +3633,7 @@
       "code": "COD17",
       "group": "COD",
       "collected": false,
-      "white_fraction": 0.8921,
+      "white_fraction": 0.8865,
       "avg_rgb": [
         243,
         243,
@@ -3644,10 +3644,10 @@
       "code": "COD18",
       "group": "COD",
       "collected": false,
-      "white_fraction": 0.7947,
+      "white_fraction": 0.7869,
       "avg_rgb": [
-        230,
-        240,
+        229,
+        239,
         242
       ]
     },
@@ -3655,7 +3655,7 @@
       "code": "COD19",
       "group": "COD",
       "collected": true,
-      "white_fraction": 0.0164,
+      "white_fraction": 0.0167,
       "avg_rgb": [
         100,
         210,
@@ -3666,7 +3666,7 @@
       "code": "COD20",
       "group": "COD",
       "collected": false,
-      "white_fraction": 0.8386,
+      "white_fraction": 0.8345,
       "avg_rgb": [
         237,
         242,
@@ -3677,11 +3677,11 @@
       "code": "COL1",
       "group": "COL",
       "collected": true,
-      "white_fraction": 0.0,
+      "white_fraction": 0.0015,
       "avg_rgb": [
         104,
         214,
-        244
+        243
       ]
     },
     {
@@ -3699,7 +3699,7 @@
       "code": "COL3",
       "group": "COL",
       "collected": true,
-      "white_fraction": 0.0164,
+      "white_fraction": 0.0109,
       "avg_rgb": [
         81,
         208,
@@ -3710,7 +3710,7 @@
       "code": "COL4",
       "group": "COL",
       "collected": false,
-      "white_fraction": 0.9156,
+      "white_fraction": 0.9137,
       "avg_rgb": [
         245,
         245,
@@ -3732,7 +3732,7 @@
       "code": "COL6",
       "group": "COL",
       "collected": true,
-      "white_fraction": 0.0188,
+      "white_fraction": 0.0176,
       "avg_rgb": [
         101,
         212,
@@ -3754,7 +3754,7 @@
       "code": "COL8",
       "group": "COL",
       "collected": true,
-      "white_fraction": 0.0105,
+      "white_fraction": 0.0043,
       "avg_rgb": [
         48,
         193,
@@ -3820,9 +3820,9 @@
       "code": "COL14",
       "group": "COL",
       "collected": true,
-      "white_fraction": 0.0165,
+      "white_fraction": 0.0191,
       "avg_rgb": [
-        98,
+        99,
         213,
         244
       ]
@@ -3842,9 +3842,9 @@
       "code": "COL16",
       "group": "COL",
       "collected": false,
-      "white_fraction": 0.8971,
+      "white_fraction": 0.8968,
       "avg_rgb": [
-        244,
+        243,
         245,
         245
       ]
@@ -3864,7 +3864,7 @@
       "code": "COL18",
       "group": "COL",
       "collected": true,
-      "white_fraction": 0.0114,
+      "white_fraction": 0.0127,
       "avg_rgb": [
         104,
         212,
@@ -3875,7 +3875,7 @@
       "code": "COL19",
       "group": "COL",
       "collected": true,
-      "white_fraction": 0.0,
+      "white_fraction": 0.0023,
       "avg_rgb": [
         105,
         213,
@@ -3886,7 +3886,7 @@
       "code": "COL20",
       "group": "COL",
       "collected": true,
-      "white_fraction": 0.0049,
+      "white_fraction": 0.0039,
       "avg_rgb": [
         89,
         210,
@@ -3918,12 +3918,12 @@
     {
       "code": "CPV3",
       "group": "CPV",
-      "collected": true,
-      "white_fraction": 0.0277,
+      "collected": false,
+      "white_fraction": 0.8911,
       "avg_rgb": [
-        82,
-        206,
-        240
+        244,
+        244,
+        244
       ]
     },
     {
@@ -3941,10 +3941,10 @@
       "code": "CPV5",
       "group": "CPV",
       "collected": true,
-      "white_fraction": 0.0004,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        85,
-        205,
+        79,
+        203,
         240
       ]
     },
@@ -3965,7 +3965,7 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        87,
+        88,
         208,
         241
       ]
@@ -3987,7 +3987,7 @@
       "collected": false,
       "white_fraction": 0.8304,
       "avg_rgb": [
-        238,
+        239,
         241,
         242
       ]
@@ -4007,9 +4007,9 @@
       "code": "CPV11",
       "group": "CPV",
       "collected": false,
-      "white_fraction": 0.8244,
+      "white_fraction": 0.8293,
       "avg_rgb": [
-        239,
+        240,
         244,
         245
       ]
@@ -4018,7 +4018,7 @@
       "code": "CPV12",
       "group": "CPV",
       "collected": true,
-      "white_fraction": 0.0951,
+      "white_fraction": 0.0895,
       "avg_rgb": [
         133,
         217,
@@ -4029,9 +4029,9 @@
       "code": "CPV13",
       "group": "CPV",
       "collected": false,
-      "white_fraction": 0.7564,
+      "white_fraction": 0.754,
       "avg_rgb": [
-        227,
+        226,
         240,
         244
       ]
@@ -4040,7 +4040,7 @@
       "code": "CPV14",
       "group": "CPV",
       "collected": true,
-      "white_fraction": 0.0079,
+      "white_fraction": 0.0082,
       "avg_rgb": [
         80,
         207,
@@ -4051,9 +4051,9 @@
       "code": "CPV15",
       "group": "CPV",
       "collected": false,
-      "white_fraction": 0.7823,
+      "white_fraction": 0.786,
       "avg_rgb": [
-        232,
+        233,
         240,
         242
       ]
@@ -4062,9 +4062,9 @@
       "code": "CPV16",
       "group": "CPV",
       "collected": false,
-      "white_fraction": 0.7531,
+      "white_fraction": 0.7521,
       "avg_rgb": [
-        229,
+        230,
         240,
         243
       ]
@@ -4072,21 +4072,21 @@
     {
       "code": "CPV17",
       "group": "CPV",
-      "collected": false,
-      "white_fraction": 0.7826,
+      "collected": true,
+      "white_fraction": 0.0033,
       "avg_rgb": [
-        232,
-        241,
-        244
+        77,
+        205,
+        241
       ]
     },
     {
       "code": "CPV18",
       "group": "CPV",
       "collected": false,
-      "white_fraction": 0.8071,
+      "white_fraction": 0.8107,
       "avg_rgb": [
-        234,
+        235,
         240,
         242
       ]
@@ -4095,7 +4095,7 @@
       "code": "CPV19",
       "group": "CPV",
       "collected": false,
-      "white_fraction": 0.8889,
+      "white_fraction": 0.8892,
       "avg_rgb": [
         242,
         242,
@@ -4105,33 +4105,33 @@
     {
       "code": "CPV20",
       "group": "CPV",
-      "collected": false,
-      "white_fraction": 0.8915,
+      "collected": true,
+      "white_fraction": 0.004,
       "avg_rgb": [
-        243,
-        243,
-        243
+        59,
+        201,
+        240
       ]
     },
     {
       "code": "CRO1",
       "group": "CRO",
       "collected": false,
-      "white_fraction": 0.8884,
+      "white_fraction": 0.8862,
       "avg_rgb": [
-        245,
-        245,
-        245
+        244,
+        244,
+        244
       ]
     },
     {
       "code": "CRO2",
       "group": "CRO",
       "collected": false,
-      "white_fraction": 0.7191,
+      "white_fraction": 0.7149,
       "avg_rgb": [
-        220,
-        238,
+        219,
+        237,
         242
       ]
     },
@@ -4139,20 +4139,20 @@
       "code": "CRO3",
       "group": "CRO",
       "collected": true,
-      "white_fraction": 0.0535,
+      "white_fraction": 0.0528,
       "avg_rgb": [
-        111,
+        110,
         213,
-        241
+        240
       ]
     },
     {
       "code": "CRO4",
       "group": "CRO",
       "collected": false,
-      "white_fraction": 0.8311,
+      "white_fraction": 0.836,
       "avg_rgb": [
-        239,
+        240,
         242,
         243
       ]
@@ -4161,7 +4161,7 @@
       "code": "CRO5",
       "group": "CRO",
       "collected": false,
-      "white_fraction": 0.8592,
+      "white_fraction": 0.8573,
       "avg_rgb": [
         239,
         242,
@@ -4227,20 +4227,20 @@
       "code": "CRO11",
       "group": "CRO",
       "collected": true,
-      "white_fraction": 0.0016,
+      "white_fraction": 0.0013,
       "avg_rgb": [
-        84,
-        207,
-        240
+        83,
+        206,
+        239
       ]
     },
     {
       "code": "CRO12",
       "group": "CRO",
       "collected": false,
-      "white_fraction": 0.8333,
+      "white_fraction": 0.84,
       "avg_rgb": [
-        237,
+        238,
         242,
         244
       ]
@@ -4249,9 +4249,9 @@
       "code": "CRO13",
       "group": "CRO",
       "collected": false,
-      "white_fraction": 0.7972,
+      "white_fraction": 0.8039,
       "avg_rgb": [
-        234,
+        235,
         241,
         243
       ]
@@ -4282,7 +4282,7 @@
       "code": "CRO16",
       "group": "CRO",
       "collected": true,
-      "white_fraction": 0.0128,
+      "white_fraction": 0.0122,
       "avg_rgb": [
         102,
         210,
@@ -4326,9 +4326,9 @@
       "code": "CRO20",
       "group": "CRO",
       "collected": true,
-      "white_fraction": 0.0035,
+      "white_fraction": 0.0038,
       "avg_rgb": [
-        95,
+        93,
         208,
         240
       ]
@@ -4337,7 +4337,7 @@
       "code": "CUW1",
       "group": "CUW",
       "collected": true,
-      "white_fraction": 0.0427,
+      "white_fraction": 0.0472,
       "avg_rgb": [
         129,
         216,
@@ -4359,7 +4359,7 @@
       "code": "CUW3",
       "group": "CUW",
       "collected": false,
-      "white_fraction": 0.8507,
+      "white_fraction": 0.8527,
       "avg_rgb": [
         239,
         241,
@@ -4381,9 +4381,9 @@
       "code": "CUW5",
       "group": "CUW",
       "collected": true,
-      "white_fraction": 0.0926,
+      "white_fraction": 0.0929,
       "avg_rgb": [
-        133,
+        132,
         216,
         239
       ]
@@ -4403,20 +4403,20 @@
       "code": "CUW7",
       "group": "CUW",
       "collected": false,
-      "white_fraction": 0.8556,
+      "white_fraction": 0.8419,
       "avg_rgb": [
-        239,
+        238,
         241,
-        242
+        241
       ]
     },
     {
       "code": "CUW8",
       "group": "CUW",
       "collected": false,
-      "white_fraction": 0.8226,
+      "white_fraction": 0.8229,
       "avg_rgb": [
-        237,
+        238,
         241,
         242
       ]
@@ -4425,9 +4425,9 @@
       "code": "CUW9",
       "group": "CUW",
       "collected": false,
-      "white_fraction": 0.8482,
+      "white_fraction": 0.8493,
       "avg_rgb": [
-        239,
+        240,
         241,
         242
       ]
@@ -4447,10 +4447,10 @@
       "code": "CUW11",
       "group": "CUW",
       "collected": false,
-      "white_fraction": 0.875,
+      "white_fraction": 0.808,
       "avg_rgb": [
-        241,
-        241,
+        233,
+        239,
         241
       ]
     },
@@ -4458,10 +4458,10 @@
       "code": "CUW12",
       "group": "CUW",
       "collected": true,
-      "white_fraction": 0.0703,
+      "white_fraction": 0.0712,
       "avg_rgb": [
         102,
-        209,
+        210,
         239
       ]
     },
@@ -4469,7 +4469,7 @@
       "code": "CUW13",
       "group": "CUW",
       "collected": false,
-      "white_fraction": 0.8068,
+      "white_fraction": 0.8062,
       "avg_rgb": [
         232,
         239,
@@ -4480,7 +4480,7 @@
       "code": "CUW14",
       "group": "CUW",
       "collected": false,
-      "white_fraction": 0.8675,
+      "white_fraction": 0.8672,
       "avg_rgb": [
         240,
         240,
@@ -4578,23 +4578,23 @@
     {
       "code": "CZE3",
       "group": "CZE",
-      "collected": false,
-      "white_fraction": 0.9201,
+      "collected": true,
+      "white_fraction": 0.0071,
       "avg_rgb": [
-        246,
-        246,
-        246
+        106,
+        214,
+        244
       ]
     },
     {
       "code": "CZE4",
       "group": "CZE",
       "collected": true,
-      "white_fraction": 0.1669,
+      "white_fraction": 0.0058,
       "avg_rgb": [
-        138,
-        220,
-        243
+        95,
+        209,
+        242
       ]
     },
     {
@@ -4623,10 +4623,10 @@
       "code": "CZE7",
       "group": "CZE",
       "collected": true,
-      "white_fraction": 0.0,
+      "white_fraction": 0.0033,
       "avg_rgb": [
         95,
-        211,
+        210,
         243
       ]
     },
@@ -4634,40 +4634,40 @@
       "code": "CZE8",
       "group": "CZE",
       "collected": true,
-      "white_fraction": 0.0967,
+      "white_fraction": 0.091,
       "avg_rgb": [
-        129,
-        218,
+        118,
+        214,
         242
       ]
     },
     {
       "code": "CZE9",
       "group": "CZE",
-      "collected": false,
-      "white_fraction": 0.9168,
+      "collected": true,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        245,
-        246,
-        246
+        109,
+        214,
+        243
       ]
     },
     {
       "code": "CZE10",
       "group": "CZE",
       "collected": true,
-      "white_fraction": 0.0038,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        100,
-        211,
-        243
+        41,
+        192,
+        242
       ]
     },
     {
       "code": "CZE11",
       "group": "CZE",
       "collected": true,
-      "white_fraction": 0.0075,
+      "white_fraction": 0.0086,
       "avg_rgb": [
         108,
         215,
@@ -4710,19 +4710,19 @@
     {
       "code": "CZE15",
       "group": "CZE",
-      "collected": true,
-      "white_fraction": 0.0181,
+      "collected": false,
+      "white_fraction": 0.9037,
       "avg_rgb": [
-        107,
-        214,
-        243
+        245,
+        245,
+        246
       ]
     },
     {
       "code": "CZE16",
       "group": "CZE",
       "collected": false,
-      "white_fraction": 0.9101,
+      "white_fraction": 0.9094,
       "avg_rgb": [
         245,
         245,
@@ -4744,9 +4744,9 @@
       "code": "CZE18",
       "group": "CZE",
       "collected": false,
-      "white_fraction": 0.8922,
+      "white_fraction": 0.8915,
       "avg_rgb": [
-        246,
+        245,
         246,
         246
       ]
@@ -4766,7 +4766,7 @@
       "code": "CZE20",
       "group": "CZE",
       "collected": true,
-      "white_fraction": 0.1202,
+      "white_fraction": 0.1226,
       "avg_rgb": [
         135,
         219,
@@ -4779,7 +4779,7 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        90,
+        89,
         210,
         244
       ]
@@ -4799,7 +4799,7 @@
       "code": "ECU3",
       "group": "ECU",
       "collected": false,
-      "white_fraction": 0.9059,
+      "white_fraction": 0.9055,
       "avg_rgb": [
         246,
         246,
@@ -4810,9 +4810,9 @@
       "code": "ECU4",
       "group": "ECU",
       "collected": false,
-      "white_fraction": 0.912,
+      "white_fraction": 0.9135,
       "avg_rgb": [
-        245,
+        246,
         246,
         246
       ]
@@ -4831,22 +4831,22 @@
     {
       "code": "ECU6",
       "group": "ECU",
-      "collected": false,
-      "white_fraction": 0.8958,
+      "collected": true,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        245,
-        245,
-        245
+        70,
+        205,
+        242
       ]
     },
     {
       "code": "ECU7",
       "group": "ECU",
       "collected": false,
-      "white_fraction": 0.8647,
+      "white_fraction": 0.8635,
       "avg_rgb": [
-        241,
-        245,
+        240,
+        244,
         245
       ]
     },
@@ -4856,7 +4856,7 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        73,
+        72,
         204,
         241
       ]
@@ -4865,9 +4865,9 @@
       "code": "ECU9",
       "group": "ECU",
       "collected": true,
-      "white_fraction": 0.0636,
+      "white_fraction": 0.0534,
       "avg_rgb": [
-        88,
+        86,
         208,
         240
       ]
@@ -4887,9 +4887,9 @@
       "code": "ECU11",
       "group": "ECU",
       "collected": true,
-      "white_fraction": 0.0461,
+      "white_fraction": 0.0327,
       "avg_rgb": [
-        110,
+        109,
         215,
         243
       ]
@@ -4900,7 +4900,7 @@
       "collected": true,
       "white_fraction": 0.0618,
       "avg_rgb": [
-        82,
+        83,
         204,
         241
       ]
@@ -4920,9 +4920,9 @@
       "code": "ECU14",
       "group": "ECU",
       "collected": true,
-      "white_fraction": 0.0437,
+      "white_fraction": 0.0408,
       "avg_rgb": [
-        100,
+        99,
         212,
         242
       ]
@@ -4931,10 +4931,10 @@
       "code": "ECU15",
       "group": "ECU",
       "collected": false,
-      "white_fraction": 0.9117,
+      "white_fraction": 0.8474,
       "avg_rgb": [
-        245,
-        245,
+        238,
+        244,
         245
       ]
     },
@@ -4942,9 +4942,9 @@
       "code": "ECU16",
       "group": "ECU",
       "collected": true,
-      "white_fraction": 0.0042,
+      "white_fraction": 0.0039,
       "avg_rgb": [
-        85,
+        84,
         208,
         241
       ]
@@ -4952,22 +4952,22 @@
     {
       "code": "ECU17",
       "group": "ECU",
-      "collected": false,
-      "white_fraction": 0.9185,
+      "collected": true,
+      "white_fraction": 0.0395,
       "avg_rgb": [
-        245,
-        245,
-        245
+        95,
+        210,
+        242
       ]
     },
     {
       "code": "ECU18",
       "group": "ECU",
       "collected": false,
-      "white_fraction": 0.9075,
+      "white_fraction": 0.8893,
       "avg_rgb": [
-        245,
-        245,
+        243,
+        244,
         245
       ]
     },
@@ -4986,9 +4986,9 @@
       "code": "ECU20",
       "group": "ECU",
       "collected": true,
-      "white_fraction": 0.0177,
+      "white_fraction": 0.019,
       "avg_rgb": [
-        96,
+        97,
         210,
         241
       ]
@@ -4997,10 +4997,10 @@
       "code": "EGY1",
       "group": "EGY",
       "collected": false,
-      "white_fraction": 0.7264,
+      "white_fraction": 0.7236,
       "avg_rgb": [
-        221,
-        238,
+        220,
+        237,
         242
       ]
     },
@@ -5008,9 +5008,9 @@
       "code": "EGY2",
       "group": "EGY",
       "collected": true,
-      "white_fraction": 0.0759,
+      "white_fraction": 0.071,
       "avg_rgb": [
-        90,
+        89,
         208,
         240
       ]
@@ -5041,33 +5041,33 @@
       "code": "EGY5",
       "group": "EGY",
       "collected": false,
-      "white_fraction": 0.8787,
+      "white_fraction": 0.8211,
       "avg_rgb": [
-        242,
-        242,
-        242
+        235,
+        240,
+        241
       ]
     },
     {
       "code": "EGY6",
       "group": "EGY",
       "collected": true,
-      "white_fraction": 0.034,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        95,
-        208,
+        62,
+        196,
         239
       ]
     },
     {
       "code": "EGY7",
       "group": "EGY",
-      "collected": false,
-      "white_fraction": 0.8871,
+      "collected": true,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        242,
-        242,
-        242
+        81,
+        204,
+        240
       ]
     },
     {
@@ -5076,7 +5076,7 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        67,
+        66,
         202,
         239
       ]
@@ -5096,11 +5096,11 @@
       "code": "EGY10",
       "group": "EGY",
       "collected": true,
-      "white_fraction": 0.049,
+      "white_fraction": 0.0474,
       "avg_rgb": [
         88,
-        204,
-        239
+        205,
+        240
       ]
     },
     {
@@ -5109,20 +5109,20 @@
       "collected": false,
       "white_fraction": 0.8885,
       "avg_rgb": [
-        245,
-        245,
+        244,
+        244,
         245
       ]
     },
     {
       "code": "EGY12",
       "group": "EGY",
-      "collected": false,
-      "white_fraction": 0.8909,
+      "collected": true,
+      "white_fraction": 0.0098,
       "avg_rgb": [
-        243,
-        243,
-        243
+        107,
+        211,
+        240
       ]
     },
     {
@@ -5140,20 +5140,20 @@
       "code": "EGY14",
       "group": "EGY",
       "collected": false,
-      "white_fraction": 0.8869,
+      "white_fraction": 0.8379,
       "avg_rgb": [
-        244,
-        244,
-        244
+        238,
+        242,
+        243
       ]
     },
     {
       "code": "EGY15",
       "group": "EGY",
       "collected": true,
-      "white_fraction": 0.0649,
+      "white_fraction": 0.0639,
       "avg_rgb": [
-        110,
+        109,
         211,
         239
       ]
@@ -5173,10 +5173,10 @@
       "code": "EGY17",
       "group": "EGY",
       "collected": false,
-      "white_fraction": 0.8426,
+      "white_fraction": 0.8382,
       "avg_rgb": [
-        238,
-        242,
+        237,
+        241,
         243
       ]
     },
@@ -5195,9 +5195,9 @@
       "code": "EGY19",
       "group": "EGY",
       "collected": true,
-      "white_fraction": 0.0118,
+      "white_fraction": 0.0189,
       "avg_rgb": [
-        106,
+        107,
         210,
         239
       ]
@@ -5206,11 +5206,11 @@
       "code": "EGY20",
       "group": "EGY",
       "collected": true,
-      "white_fraction": 0.0,
+      "white_fraction": 0.0003,
       "avg_rgb": [
         85,
         204,
-        240
+        239
       ]
     },
     {
@@ -5232,7 +5232,7 @@
       "avg_rgb": [
         87,
         205,
-        237
+        236
       ]
     },
     {
@@ -5250,18 +5250,18 @@
       "code": "ENG4",
       "group": "ENG",
       "collected": true,
-      "white_fraction": 0.0,
+      "white_fraction": 0.0108,
       "avg_rgb": [
-        102,
-        208,
-        237
+        103,
+        209,
+        238
       ]
     },
     {
       "code": "ENG5",
       "group": "ENG",
       "collected": true,
-      "white_fraction": 0.0086,
+      "white_fraction": 0.0286,
       "avg_rgb": [
         104,
         207,
@@ -5271,21 +5271,21 @@
     {
       "code": "ENG6",
       "group": "ENG",
-      "collected": false,
-      "white_fraction": 0.8339,
+      "collected": true,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        238,
-        238,
-        238
+        99,
+        206,
+        236
       ]
     },
     {
       "code": "ENG7",
       "group": "ENG",
       "collected": false,
-      "white_fraction": 0.8465,
+      "white_fraction": 0.8497,
       "avg_rgb": [
-        239,
+        240,
         240,
         240
       ]
@@ -5327,9 +5327,9 @@
       "code": "ENG11",
       "group": "ENG",
       "collected": true,
-      "white_fraction": 0.0607,
+      "white_fraction": 0.0643,
       "avg_rgb": [
-        112,
+        113,
         211,
         238
       ]
@@ -5360,7 +5360,7 @@
       "code": "ENG14",
       "group": "ENG",
       "collected": false,
-      "white_fraction": 0.8519,
+      "white_fraction": 0.845,
       "avg_rgb": [
         239,
         240,
@@ -5382,9 +5382,9 @@
       "code": "ENG16",
       "group": "ENG",
       "collected": true,
-      "white_fraction": 0.001,
+      "white_fraction": 0.0027,
       "avg_rgb": [
-        100,
+        101,
         208,
         238
       ]
@@ -5415,7 +5415,7 @@
       "code": "ENG19",
       "group": "ENG",
       "collected": false,
-      "white_fraction": 0.8416,
+      "white_fraction": 0.8413,
       "avg_rgb": [
         241,
         241,
@@ -5429,7 +5429,7 @@
       "white_fraction": 0.0,
       "avg_rgb": [
         87,
-        203,
+        204,
         236
       ]
     },
@@ -5437,10 +5437,10 @@
       "code": "ESP1",
       "group": "ESP",
       "collected": false,
-      "white_fraction": 0.8605,
+      "white_fraction": 0.7979,
       "avg_rgb": [
-        241,
-        241,
+        234,
+        239,
         241
       ]
     },
@@ -5459,7 +5459,7 @@
       "code": "ESP3",
       "group": "ESP",
       "collected": false,
-      "white_fraction": 0.8307,
+      "white_fraction": 0.821,
       "avg_rgb": [
         237,
         239,
@@ -5483,8 +5483,8 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        43,
-        190,
+        42,
+        189,
         236
       ]
     },
@@ -5503,9 +5503,9 @@
       "code": "ESP7",
       "group": "ESP",
       "collected": false,
-      "white_fraction": 0.8034,
+      "white_fraction": 0.8085,
       "avg_rgb": [
-        233,
+        234,
         238,
         239
       ]
@@ -5558,7 +5558,7 @@
       "code": "ESP12",
       "group": "ESP",
       "collected": false,
-      "white_fraction": 0.8559,
+      "white_fraction": 0.857,
       "avg_rgb": [
         240,
         240,
@@ -5569,7 +5569,7 @@
       "code": "ESP13",
       "group": "ESP",
       "collected": true,
-      "white_fraction": 0.0014,
+      "white_fraction": 0.0011,
       "avg_rgb": [
         79,
         204,
@@ -5606,25 +5606,25 @@
       "avg_rgb": [
         105,
         209,
-        238
+        237
       ]
     },
     {
       "code": "ESP17",
       "group": "ESP",
       "collected": false,
-      "white_fraction": 0.8569,
+      "white_fraction": 0.8533,
       "avg_rgb": [
-        240,
-        240,
-        240
+        239,
+        239,
+        239
       ]
     },
     {
       "code": "ESP18",
       "group": "ESP",
       "collected": true,
-      "white_fraction": 0.0377,
+      "white_fraction": 0.0296,
       "avg_rgb": [
         108,
         210,
@@ -5648,8 +5648,8 @@
       "collected": true,
       "white_fraction": 0.0029,
       "avg_rgb": [
-        83,
-        204,
+        71,
+        199,
         237
       ]
     },
@@ -5657,7 +5657,7 @@
       "code": "FRA1",
       "group": "FRA",
       "collected": true,
-      "white_fraction": 0.0004,
+      "white_fraction": 0.0017,
       "avg_rgb": [
         101,
         208,
@@ -5668,22 +5668,22 @@
       "code": "FRA2",
       "group": "FRA",
       "collected": false,
-      "white_fraction": 0.8534,
+      "white_fraction": 0.8499,
       "avg_rgb": [
-        241,
-        241,
-        241
+        240,
+        240,
+        240
       ]
     },
     {
       "code": "FRA3",
       "group": "FRA",
       "collected": true,
-      "white_fraction": 0.0,
+      "white_fraction": 0.2646,
       "avg_rgb": [
-        89,
-        204,
-        236
+        142,
+        217,
+        237
       ]
     },
     {
@@ -5701,9 +5701,9 @@
       "code": "FRA5",
       "group": "FRA",
       "collected": true,
-      "white_fraction": 0.0,
+      "white_fraction": 0.004,
       "avg_rgb": [
-        101,
+        103,
         208,
         237
       ]
@@ -5723,9 +5723,9 @@
       "code": "FRA7",
       "group": "FRA",
       "collected": true,
-      "white_fraction": 0.0721,
+      "white_fraction": 0.0725,
       "avg_rgb": [
-        97,
+        98,
         207,
         236
       ]
@@ -5734,9 +5734,9 @@
       "code": "FRA8",
       "group": "FRA",
       "collected": false,
-      "white_fraction": 0.798,
+      "white_fraction": 0.7677,
       "avg_rgb": [
-        233,
+        229,
         238,
         240
       ]
@@ -5767,9 +5767,9 @@
       "code": "FRA11",
       "group": "FRA",
       "collected": false,
-      "white_fraction": 0.8592,
+      "white_fraction": 0.83,
       "avg_rgb": [
-        237,
+        236,
         239,
         240
       ]
@@ -5778,10 +5778,10 @@
       "code": "FRA12",
       "group": "FRA",
       "collected": false,
-      "white_fraction": 0.8577,
+      "white_fraction": 0.8031,
       "avg_rgb": [
-        237,
-        239,
+        233,
+        238,
         239
       ]
     },
@@ -5800,7 +5800,7 @@
       "code": "FRA14",
       "group": "FRA",
       "collected": true,
-      "white_fraction": 0.0173,
+      "white_fraction": 0.0177,
       "avg_rgb": [
         104,
         208,
@@ -5811,10 +5811,10 @@
       "code": "FRA15",
       "group": "FRA",
       "collected": false,
-      "white_fraction": 0.8531,
+      "white_fraction": 0.8214,
       "avg_rgb": [
-        239,
-        239,
+        235,
+        238,
         239
       ]
     },
@@ -5855,9 +5855,9 @@
       "code": "FRA19",
       "group": "FRA",
       "collected": true,
-      "white_fraction": 0.054,
+      "white_fraction": 0.0659,
       "avg_rgb": [
-        122,
+        123,
         212,
         237
       ]
@@ -5877,7 +5877,7 @@
       "code": "FWC1",
       "group": "FWC",
       "collected": true,
-      "white_fraction": 0.1391,
+      "white_fraction": 0.1378,
       "avg_rgb": [
         134,
         216,
@@ -5932,11 +5932,11 @@
       "code": "FWC6",
       "group": "FWC",
       "collected": true,
-      "white_fraction": 0.0459,
+      "white_fraction": 0.0233,
       "avg_rgb": [
-        123,
+        119,
         213,
-        238
+        239
       ]
     },
     {
@@ -5945,8 +5945,8 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        102,
-        210,
+        101,
+        209,
         239
       ]
     },
@@ -5997,33 +5997,33 @@
     {
       "code": "FWC12",
       "group": "FWC",
-      "collected": true,
-      "white_fraction": 0.0,
+      "collected": false,
+      "white_fraction": 0.8249,
       "avg_rgb": [
-        100,
-        210,
-        240
+        234,
+        241,
+        243
       ]
     },
     {
       "code": "FWC13",
       "group": "FWC",
-      "collected": true,
-      "white_fraction": 0.0035,
+      "collected": false,
+      "white_fraction": 0.8791,
       "avg_rgb": [
-        93,
-        206,
-        239
+        242,
+        242,
+        242
       ]
     },
     {
       "code": "FWC14",
       "group": "FWC",
       "collected": false,
-      "white_fraction": 0.88,
+      "white_fraction": 0.8621,
       "avg_rgb": [
-        241,
-        241,
+        240,
+        240,
         241
       ]
     },
@@ -6033,8 +6033,8 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        103,
-        210,
+        97,
+        208,
         239
       ]
     },
@@ -6053,9 +6053,9 @@
       "code": "FWC17",
       "group": "FWC",
       "collected": false,
-      "white_fraction": 0.7792,
+      "white_fraction": 0.7973,
       "avg_rgb": [
-        231,
+        232,
         239,
         241
       ]
@@ -6064,9 +6064,9 @@
       "code": "FWC18",
       "group": "FWC",
       "collected": false,
-      "white_fraction": 0.7989,
+      "white_fraction": 0.8002,
       "avg_rgb": [
-        234,
+        235,
         240,
         242
       ]
@@ -6075,7 +6075,7 @@
       "code": "FWC19",
       "group": "FWC",
       "collected": true,
-      "white_fraction": 0.0167,
+      "white_fraction": 0.0166,
       "avg_rgb": [
         101,
         208,
@@ -6086,11 +6086,11 @@
       "code": "GER1",
       "group": "GER",
       "collected": true,
-      "white_fraction": 0.0406,
+      "white_fraction": 0.0299,
       "avg_rgb": [
         126,
         214,
-        239
+        238
       ]
     },
     {
@@ -6107,12 +6107,12 @@
     {
       "code": "GER3",
       "group": "GER",
-      "collected": false,
-      "white_fraction": 0.8487,
+      "collected": true,
+      "white_fraction": 0.0806,
       "avg_rgb": [
-        239,
-        239,
-        239
+        102,
+        207,
+        235
       ]
     },
     {
@@ -6151,12 +6151,12 @@
     {
       "code": "GER7",
       "group": "GER",
-      "collected": false,
-      "white_fraction": 0.8467,
+      "collected": true,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        240,
-        240,
-        240
+        98,
+        207,
+        237
       ]
     },
     {
@@ -6185,9 +6185,9 @@
       "code": "GER10",
       "group": "GER",
       "collected": false,
-      "white_fraction": 0.8451,
+      "white_fraction": 0.8345,
       "avg_rgb": [
-        240,
+        239,
         240,
         240
       ]
@@ -6195,12 +6195,12 @@
     {
       "code": "GER11",
       "group": "GER",
-      "collected": false,
-      "white_fraction": 0.8574,
+      "collected": true,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        239,
-        239,
-        239
+        101,
+        207,
+        236
       ]
     },
     {
@@ -6229,7 +6229,7 @@
       "code": "GER14",
       "group": "GER",
       "collected": true,
-      "white_fraction": 0.0224,
+      "white_fraction": 0.0227,
       "avg_rgb": [
         120,
         211,
@@ -6262,7 +6262,7 @@
       "code": "GER17",
       "group": "GER",
       "collected": true,
-      "white_fraction": 0.0048,
+      "white_fraction": 0.0041,
       "avg_rgb": [
         70,
         198,
@@ -6273,9 +6273,9 @@
       "code": "GER18",
       "group": "GER",
       "collected": false,
-      "white_fraction": 0.7463,
+      "white_fraction": 0.7456,
       "avg_rgb": [
-        227,
+        226,
         235,
         237
       ]
@@ -6284,9 +6284,9 @@
       "code": "GER19",
       "group": "GER",
       "collected": false,
-      "white_fraction": 0.7574,
+      "white_fraction": 0.755,
       "avg_rgb": [
-        231,
+        230,
         237,
         239
       ]
@@ -6294,23 +6294,23 @@
     {
       "code": "GER20",
       "group": "GER",
-      "collected": false,
-      "white_fraction": 0.8459,
+      "collected": true,
+      "white_fraction": 0.0178,
       "avg_rgb": [
-        240,
-        240,
-        240
+        85,
+        203,
+        236
       ]
     },
     {
       "code": "GHA1",
       "group": "GHA",
-      "collected": false,
-      "white_fraction": 0.8544,
+      "collected": true,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        236,
-        236,
-        236
+        99,
+        205,
+        234
       ]
     },
     {
@@ -6328,7 +6328,7 @@
       "code": "GHA3",
       "group": "GHA",
       "collected": false,
-      "white_fraction": 0.856,
+      "white_fraction": 0.8571,
       "avg_rgb": [
         235,
         235,
@@ -6342,7 +6342,7 @@
       "white_fraction": 0.0,
       "avg_rgb": [
         79,
-        199,
+        200,
         232
       ]
     },
@@ -6350,9 +6350,9 @@
       "code": "GHA5",
       "group": "GHA",
       "collected": false,
-      "white_fraction": 0.8543,
+      "white_fraction": 0.8287,
       "avg_rgb": [
-        236,
+        234,
         236,
         236
       ]
@@ -6361,7 +6361,7 @@
       "code": "GHA6",
       "group": "GHA",
       "collected": true,
-      "white_fraction": 0.0148,
+      "white_fraction": 0.0145,
       "avg_rgb": [
         71,
         197,
@@ -6372,7 +6372,7 @@
       "code": "GHA7",
       "group": "GHA",
       "collected": false,
-      "white_fraction": 0.8608,
+      "white_fraction": 0.8604,
       "avg_rgb": [
         235,
         235,
@@ -6394,7 +6394,7 @@
       "code": "GHA9",
       "group": "GHA",
       "collected": false,
-      "white_fraction": 0.8476,
+      "white_fraction": 0.8502,
       "avg_rgb": [
         236,
         236,
@@ -6415,12 +6415,12 @@
     {
       "code": "GHA11",
       "group": "GHA",
-      "collected": false,
-      "white_fraction": 0.866,
+      "collected": true,
+      "white_fraction": 0.0205,
       "avg_rgb": [
-        234,
-        235,
-        235
+        84,
+        200,
+        232
       ]
     },
     {
@@ -6429,7 +6429,7 @@
       "collected": true,
       "white_fraction": 0.0053,
       "avg_rgb": [
-        84,
+        83,
         201,
         233
       ]
@@ -6438,9 +6438,9 @@
       "code": "GHA13",
       "group": "GHA",
       "collected": true,
-      "white_fraction": 0.0192,
+      "white_fraction": 0.0183,
       "avg_rgb": [
-        87,
+        86,
         202,
         233
       ]
@@ -6449,7 +6449,7 @@
       "code": "GHA14",
       "group": "GHA",
       "collected": false,
-      "white_fraction": 0.8441,
+      "white_fraction": 0.8462,
       "avg_rgb": [
         234,
         235,
@@ -6493,10 +6493,10 @@
       "code": "GHA18",
       "group": "GHA",
       "collected": true,
-      "white_fraction": 0.0037,
+      "white_fraction": 0.004,
       "avg_rgb": [
         100,
-        203,
+        204,
         232
       ]
     },
@@ -6506,7 +6506,7 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        100,
+        101,
         204,
         233
       ]
@@ -6514,12 +6514,12 @@
     {
       "code": "GHA20",
       "group": "GHA",
-      "collected": false,
-      "white_fraction": 0.834,
+      "collected": true,
+      "white_fraction": 0.0034,
       "avg_rgb": [
-        235,
-        236,
-        236
+        59,
+        196,
+        233
       ]
     },
     {
@@ -6537,9 +6537,9 @@
       "code": "HAI2",
       "group": "HAI",
       "collected": true,
-      "white_fraction": 0.0027,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        108,
+        109,
         206,
         233
       ]
@@ -6581,10 +6581,10 @@
       "code": "HAI6",
       "group": "HAI",
       "collected": true,
-      "white_fraction": 0.0848,
+      "white_fraction": 0.0105,
       "avg_rgb": [
-        127,
-        210,
+        112,
+        206,
         232
       ]
     },
@@ -6592,10 +6592,10 @@
       "code": "HAI7",
       "group": "HAI",
       "collected": true,
-      "white_fraction": 0.0207,
+      "white_fraction": 0.025,
       "avg_rgb": [
-        94,
-        203,
+        90,
+        202,
         234
       ]
     },
@@ -6603,7 +6603,7 @@
       "code": "HAI8",
       "group": "HAI",
       "collected": false,
-      "white_fraction": 0.803,
+      "white_fraction": 0.8061,
       "avg_rgb": [
         231,
         235,
@@ -6628,7 +6628,7 @@
       "white_fraction": 0.0007,
       "avg_rgb": [
         99,
-        204,
+        205,
         234
       ]
     },
@@ -6636,7 +6636,7 @@
       "code": "HAI11",
       "group": "HAI",
       "collected": false,
-      "white_fraction": 0.8563,
+      "white_fraction": 0.8527,
       "avg_rgb": [
         236,
         237,
@@ -6679,34 +6679,34 @@
     {
       "code": "HAI15",
       "group": "HAI",
-      "collected": true,
-      "white_fraction": 0.0,
+      "collected": false,
+      "white_fraction": 0.8653,
       "avg_rgb": [
-        101,
-        204,
-        233
+        235,
+        235,
+        235
       ]
     },
     {
       "code": "HAI16",
       "group": "HAI",
-      "collected": true,
-      "white_fraction": 0.0186,
+      "collected": false,
+      "white_fraction": 0.8618,
       "avg_rgb": [
-        108,
-        207,
-        235
+        238,
+        238,
+        238
       ]
     },
     {
       "code": "HAI17",
       "group": "HAI",
       "collected": false,
-      "white_fraction": 0.8418,
+      "white_fraction": 0.8626,
       "avg_rgb": [
-        236,
-        237,
-        237
+        238,
+        238,
+        238
       ]
     },
     {
@@ -6724,10 +6724,10 @@
       "code": "HAI19",
       "group": "HAI",
       "collected": false,
-      "white_fraction": 0.8314,
+      "white_fraction": 0.8243,
       "avg_rgb": [
-        235,
-        237,
+        234,
+        236,
         237
       ]
     },
@@ -6737,8 +6737,8 @@
       "collected": true,
       "white_fraction": 0.0823,
       "avg_rgb": [
-        129,
-        211,
+        130,
+        212,
         234
       ]
     },
@@ -6779,10 +6779,10 @@
       "code": "IRN4",
       "group": "IRN",
       "collected": false,
-      "white_fraction": 0.8505,
+      "white_fraction": 0.851,
       "avg_rgb": [
         235,
-        235,
+        236,
         236
       ]
     },
@@ -6803,7 +6803,7 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        98,
+        97,
         203,
         232
       ]
@@ -6812,11 +6812,11 @@
       "code": "IRN7",
       "group": "IRN",
       "collected": false,
-      "white_fraction": 0.863,
+      "white_fraction": 0.8139,
       "avg_rgb": [
-        237,
-        237,
-        237
+        232,
+        235,
+        236
       ]
     },
     {
@@ -6847,16 +6847,16 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        97,
-        205,
-        234
+        78,
+        198,
+        233
       ]
     },
     {
       "code": "IRN11",
       "group": "IRN",
       "collected": false,
-      "white_fraction": 0.8631,
+      "white_fraction": 0.8671,
       "avg_rgb": [
         238,
         238,
@@ -6889,9 +6889,9 @@
       "code": "IRN14",
       "group": "IRN",
       "collected": false,
-      "white_fraction": 0.79,
+      "white_fraction": 0.8022,
       "avg_rgb": [
-        229,
+        230,
         235,
         236
       ]
@@ -6900,7 +6900,7 @@
       "code": "IRN15",
       "group": "IRN",
       "collected": true,
-      "white_fraction": 0.0085,
+      "white_fraction": 0.0092,
       "avg_rgb": [
         99,
         204,
@@ -6911,7 +6911,7 @@
       "code": "IRN16",
       "group": "IRN",
       "collected": false,
-      "white_fraction": 0.8502,
+      "white_fraction": 0.8531,
       "avg_rgb": [
         235,
         236,
@@ -6957,7 +6957,7 @@
       "collected": true,
       "white_fraction": 0.0065,
       "avg_rgb": [
-        98,
+        97,
         205,
         235
       ]
@@ -6977,11 +6977,11 @@
       "code": "IRQ2",
       "group": "IRQ",
       "collected": false,
-      "white_fraction": 0.8614,
+      "white_fraction": 0.8227,
       "avg_rgb": [
+        232,
         235,
-        236,
-        236
+        235
       ]
     },
     {
@@ -6999,9 +6999,9 @@
       "code": "IRQ4",
       "group": "IRQ",
       "collected": false,
-      "white_fraction": 0.8541,
+      "white_fraction": 0.8357,
       "avg_rgb": [
-        234,
+        233,
         234,
         234
       ]
@@ -7021,7 +7021,7 @@
       "code": "IRQ6",
       "group": "IRQ",
       "collected": false,
-      "white_fraction": 0.7752,
+      "white_fraction": 0.773,
       "avg_rgb": [
         227,
         233,
@@ -7043,11 +7043,11 @@
       "code": "IRQ8",
       "group": "IRQ",
       "collected": false,
-      "white_fraction": 0.8535,
+      "white_fraction": 0.813,
       "avg_rgb": [
-        235,
-        235,
-        235
+        231,
+        233,
+        234
       ]
     },
     {
@@ -7087,7 +7087,7 @@
       "code": "IRQ12",
       "group": "IRQ",
       "collected": false,
-      "white_fraction": 0.8663,
+      "white_fraction": 0.8649,
       "avg_rgb": [
         237,
         237,
@@ -7111,19 +7111,19 @@
       "collected": true,
       "white_fraction": 0.0014,
       "avg_rgb": [
-        101,
-        204,
-        232
+        90,
+        200,
+        231
       ]
     },
     {
       "code": "IRQ15",
       "group": "IRQ",
       "collected": true,
-      "white_fraction": 0.1111,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        93,
-        200,
+        37,
+        182,
         233
       ]
     },
@@ -7131,7 +7131,7 @@
       "code": "IRQ16",
       "group": "IRQ",
       "collected": false,
-      "white_fraction": 0.8298,
+      "white_fraction": 0.8309,
       "avg_rgb": [
         234,
         236,
@@ -7155,7 +7155,7 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        99,
+        100,
         204,
         232
       ]
@@ -7164,7 +7164,7 @@
       "code": "IRQ19",
       "group": "IRQ",
       "collected": false,
-      "white_fraction": 0.8517,
+      "white_fraction": 0.8513,
       "avg_rgb": [
         236,
         236,
@@ -7186,7 +7186,7 @@
       "code": "JOR1",
       "group": "JOR",
       "collected": true,
-      "white_fraction": 0.0727,
+      "white_fraction": 0.0657,
       "avg_rgb": [
         111,
         214,
@@ -7197,7 +7197,7 @@
       "code": "JOR2",
       "group": "JOR",
       "collected": false,
-      "white_fraction": 0.9233,
+      "white_fraction": 0.9181,
       "avg_rgb": [
         246,
         246,
@@ -7230,7 +7230,7 @@
       "code": "JOR5",
       "group": "JOR",
       "collected": false,
-      "white_fraction": 0.8619,
+      "white_fraction": 0.8551,
       "avg_rgb": [
         240,
         243,
@@ -7263,11 +7263,11 @@
       "code": "JOR8",
       "group": "JOR",
       "collected": false,
-      "white_fraction": 0.9054,
+      "white_fraction": 0.8674,
       "avg_rgb": [
+        242,
         244,
-        245,
-        245
+        244
       ]
     },
     {
@@ -7296,7 +7296,7 @@
       "code": "JOR11",
       "group": "JOR",
       "collected": true,
-      "white_fraction": 0.0121,
+      "white_fraction": 0.015,
       "avg_rgb": [
         74,
         207,
@@ -7307,10 +7307,10 @@
       "code": "JOR12",
       "group": "JOR",
       "collected": false,
-      "white_fraction": 0.9225,
+      "white_fraction": 0.8935,
       "avg_rgb": [
-        247,
-        247,
+        245,
+        246,
         247
       ]
     },
@@ -7362,9 +7362,9 @@
       "code": "JOR17",
       "group": "JOR",
       "collected": true,
-      "white_fraction": 0.0004,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        106,
+        105,
         213,
         243
       ]
@@ -7373,11 +7373,11 @@
       "code": "JOR18",
       "group": "JOR",
       "collected": false,
-      "white_fraction": 0.8572,
+      "white_fraction": 0.8576,
       "avg_rgb": [
         242,
         245,
-        246
+        245
       ]
     },
     {
@@ -7386,7 +7386,7 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        95,
+        96,
         209,
         241
       ]
@@ -7408,9 +7408,9 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        101,
+        102,
         211,
-        242
+        241
       ]
     },
     {
@@ -7428,7 +7428,7 @@
       "code": "JPN3",
       "group": "JPN",
       "collected": true,
-      "white_fraction": 0.0004,
+      "white_fraction": 0.0,
       "avg_rgb": [
         90,
         209,
@@ -7442,7 +7442,7 @@
       "white_fraction": 0.0,
       "avg_rgb": [
         107,
-        211,
+        212,
         240
       ]
     },
@@ -7461,9 +7461,9 @@
       "code": "JPN6",
       "group": "JPN",
       "collected": false,
-      "white_fraction": 0.8021,
+      "white_fraction": 0.8016,
       "avg_rgb": [
-        233,
+        232,
         241,
         243
       ]
@@ -7471,12 +7471,12 @@
     {
       "code": "JPN7",
       "group": "JPN",
-      "collected": false,
-      "white_fraction": 0.8516,
+      "collected": true,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        237,
-        241,
-        242
+        86,
+        207,
+        240
       ]
     },
     {
@@ -7485,8 +7485,8 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        76,
-        205,
+        74,
+        204,
         240
       ]
     },
@@ -7505,7 +7505,7 @@
       "code": "JPN10",
       "group": "JPN",
       "collected": false,
-      "white_fraction": 0.8299,
+      "white_fraction": 0.8292,
       "avg_rgb": [
         235,
         241,
@@ -7516,7 +7516,7 @@
       "code": "JPN11",
       "group": "JPN",
       "collected": true,
-      "white_fraction": 0.0391,
+      "white_fraction": 0.0376,
       "avg_rgb": [
         111,
         214,
@@ -7537,19 +7537,19 @@
     {
       "code": "JPN13",
       "group": "JPN",
-      "collected": false,
-      "white_fraction": 0.8872,
+      "collected": true,
+      "white_fraction": 0.0768,
       "avg_rgb": [
-        244,
-        244,
-        244
+        132,
+        218,
+        241
       ]
     },
     {
       "code": "JPN14",
       "group": "JPN",
       "collected": false,
-      "white_fraction": 0.875,
+      "white_fraction": 0.8743,
       "avg_rgb": [
         243,
         244,
@@ -7560,9 +7560,9 @@
       "code": "JPN15",
       "group": "JPN",
       "collected": false,
-      "white_fraction": 0.8344,
+      "white_fraction": 0.8069,
       "avg_rgb": [
-        235,
+        234,
         241,
         243
       ]
@@ -7571,7 +7571,7 @@
       "code": "JPN16",
       "group": "JPN",
       "collected": true,
-      "white_fraction": 0.014,
+      "white_fraction": 0.019,
       "avg_rgb": [
         106,
         211,
@@ -7615,10 +7615,10 @@
       "code": "JPN20",
       "group": "JPN",
       "collected": true,
-      "white_fraction": 0.0287,
+      "white_fraction": 0.004,
       "avg_rgb": [
-        110,
-        213,
+        104,
+        211,
         242
       ]
     },
@@ -7659,7 +7659,7 @@
       "code": "KOR4",
       "group": "KOR",
       "collected": false,
-      "white_fraction": 0.8597,
+      "white_fraction": 0.862,
       "avg_rgb": [
         236,
         236,
@@ -7670,7 +7670,7 @@
       "code": "KOR5",
       "group": "KOR",
       "collected": true,
-      "white_fraction": 0.1196,
+      "white_fraction": 0.1161,
       "avg_rgb": [
         120,
         207,
@@ -7683,29 +7683,29 @@
       "collected": false,
       "white_fraction": 0.8557,
       "avg_rgb": [
-        235,
-        235,
-        235
+        236,
+        236,
+        236
       ]
     },
     {
       "code": "KOR7",
       "group": "KOR",
       "collected": false,
-      "white_fraction": 0.7823,
+      "white_fraction": 0.7819,
       "avg_rgb": [
         227,
         234,
-        236
+        235
       ]
     },
     {
       "code": "KOR8",
       "group": "KOR",
       "collected": false,
-      "white_fraction": 0.8581,
+      "white_fraction": 0.8473,
       "avg_rgb": [
-        236,
+        235,
         236,
         236
       ]
@@ -7714,31 +7714,31 @@
       "code": "KOR9",
       "group": "KOR",
       "collected": false,
-      "white_fraction": 0.8545,
+      "white_fraction": 0.7055,
       "avg_rgb": [
-        235,
-        235,
+        219,
+        231,
         235
       ]
     },
     {
       "code": "KOR10",
       "group": "KOR",
-      "collected": false,
-      "white_fraction": 0.8608,
+      "collected": true,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        236,
-        236,
-        236
+        41,
+        186,
+        232
       ]
     },
     {
       "code": "KOR11",
       "group": "KOR",
       "collected": false,
-      "white_fraction": 0.8656,
+      "white_fraction": 0.8541,
       "avg_rgb": [
-        237,
+        236,
         237,
         237
       ]
@@ -7769,22 +7769,22 @@
       "code": "KOR14",
       "group": "KOR",
       "collected": true,
-      "white_fraction": 0.0784,
+      "white_fraction": 0.0346,
       "avg_rgb": [
-        126,
-        211,
+        123,
+        210,
         234
       ]
     },
     {
       "code": "KOR15",
       "group": "KOR",
-      "collected": false,
-      "white_fraction": 0.8609,
+      "collected": true,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        236,
-        236,
-        236
+        83,
+        199,
+        233
       ]
     },
     {
@@ -7793,8 +7793,8 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        96,
-        204,
+        76,
+        198,
         233
       ]
     },
@@ -7813,7 +7813,7 @@
       "code": "KOR18",
       "group": "KOR",
       "collected": true,
-      "white_fraction": 0.0016,
+      "white_fraction": 0.0019,
       "avg_rgb": [
         99,
         203,
@@ -7824,10 +7824,10 @@
       "code": "KOR19",
       "group": "KOR",
       "collected": true,
-      "white_fraction": 0.0191,
+      "white_fraction": 0.0208,
       "avg_rgb": [
-        92,
-        200,
+        93,
+        199,
         232
       ]
     },
@@ -7868,10 +7868,10 @@
       "code": "KSA3",
       "group": "KSA",
       "collected": false,
-      "white_fraction": 0.824,
+      "white_fraction": 0.8587,
       "avg_rgb": [
-        232,
-        235,
+        236,
+        236,
         236
       ]
     },
@@ -7879,10 +7879,10 @@
       "code": "KSA4",
       "group": "KSA",
       "collected": false,
-      "white_fraction": 0.8116,
+      "white_fraction": 0.8446,
       "avg_rgb": [
-        232,
-        235,
+        234,
+        236,
         236
       ]
     },
@@ -7890,11 +7890,11 @@
       "code": "KSA5",
       "group": "KSA",
       "collected": true,
-      "white_fraction": 0.0383,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        87,
-        201,
-        233
+        70,
+        197,
+        232
       ]
     },
     {
@@ -7923,7 +7923,7 @@
       "code": "KSA8",
       "group": "KSA",
       "collected": false,
-      "white_fraction": 0.7954,
+      "white_fraction": 0.8017,
       "avg_rgb": [
         230,
         234,
@@ -7944,19 +7944,19 @@
     {
       "code": "KSA10",
       "group": "KSA",
-      "collected": false,
-      "white_fraction": 0.8593,
+      "collected": true,
+      "white_fraction": 0.0286,
       "avg_rgb": [
-        236,
-        236,
-        236
+        73,
+        196,
+        233
       ]
     },
     {
       "code": "KSA11",
       "group": "KSA",
       "collected": true,
-      "white_fraction": 0.0014,
+      "white_fraction": 0.0017,
       "avg_rgb": [
         86,
         202,
@@ -7992,7 +7992,7 @@
       "white_fraction": 0.0,
       "avg_rgb": [
         77,
-        197,
+        196,
         232
       ]
     },
@@ -8011,9 +8011,9 @@
       "code": "KSA16",
       "group": "KSA",
       "collected": true,
-      "white_fraction": 0.0065,
+      "white_fraction": 0.0031,
       "avg_rgb": [
-        91,
+        90,
         202,
         233
       ]
@@ -8022,10 +8022,10 @@
       "code": "KSA17",
       "group": "KSA",
       "collected": true,
-      "white_fraction": 0.0048,
+      "white_fraction": 0.0027,
       "avg_rgb": [
-        85,
-        201,
+        79,
+        199,
         233
       ]
     },
@@ -8057,8 +8057,8 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        102,
-        206,
+        90,
+        202,
         234
       ]
     },
@@ -8077,7 +8077,7 @@
       "code": "MAR2",
       "group": "MAR",
       "collected": false,
-      "white_fraction": 0.8914,
+      "white_fraction": 0.8922,
       "avg_rgb": [
         244,
         244,
@@ -8088,9 +8088,9 @@
       "code": "MAR3",
       "group": "MAR",
       "collected": true,
-      "white_fraction": 0.0085,
+      "white_fraction": 0.0108,
       "avg_rgb": [
-        126,
+        127,
         216,
         241
       ]
@@ -8099,18 +8099,18 @@
       "code": "MAR4",
       "group": "MAR",
       "collected": true,
-      "white_fraction": 0.0382,
+      "white_fraction": 0.0374,
       "avg_rgb": [
         129,
         215,
-        238
+        239
       ]
     },
     {
       "code": "MAR5",
       "group": "MAR",
       "collected": true,
-      "white_fraction": 0.148,
+      "white_fraction": 0.1257,
       "avg_rgb": [
         138,
         217,
@@ -8121,7 +8121,7 @@
       "code": "MAR6",
       "group": "MAR",
       "collected": true,
-      "white_fraction": 0.1516,
+      "white_fraction": 0.142,
       "avg_rgb": [
         142,
         219,
@@ -8143,9 +8143,9 @@
       "code": "MAR8",
       "group": "MAR",
       "collected": true,
-      "white_fraction": 0.0062,
+      "white_fraction": 0.007,
       "avg_rgb": [
-        101,
+        102,
         209,
         240
       ]
@@ -8154,9 +8154,9 @@
       "code": "MAR9",
       "group": "MAR",
       "collected": true,
-      "white_fraction": 0.0928,
+      "white_fraction": 0.0975,
       "avg_rgb": [
-        116,
+        117,
         213,
         240
       ]
@@ -8165,7 +8165,7 @@
       "code": "MAR10",
       "group": "MAR",
       "collected": false,
-      "white_fraction": 0.8222,
+      "white_fraction": 0.8454,
       "avg_rgb": [
         239,
         242,
@@ -8176,10 +8176,10 @@
       "code": "MAR11",
       "group": "MAR",
       "collected": true,
-      "white_fraction": 0.0114,
+      "white_fraction": 0.0546,
       "avg_rgb": [
-        106,
-        213,
+        114,
+        214,
         241
       ]
     },
@@ -8187,11 +8187,11 @@
       "code": "MAR12",
       "group": "MAR",
       "collected": false,
-      "white_fraction": 0.8426,
+      "white_fraction": 0.8926,
       "avg_rgb": [
-        238,
-        243,
-        244
+        245,
+        245,
+        245
       ]
     },
     {
@@ -8220,10 +8220,10 @@
       "code": "MAR15",
       "group": "MAR",
       "collected": false,
-      "white_fraction": 0.793,
+      "white_fraction": 0.8838,
       "avg_rgb": [
-        236,
-        241,
+        243,
+        243,
         243
       ]
     },
@@ -8231,10 +8231,10 @@
       "code": "MAR16",
       "group": "MAR",
       "collected": false,
-      "white_fraction": 0.8252,
+      "white_fraction": 0.8817,
       "avg_rgb": [
-        238,
-        241,
+        242,
+        242,
         242
       ]
     },
@@ -8242,9 +8242,9 @@
       "code": "MAR17",
       "group": "MAR",
       "collected": false,
-      "white_fraction": 0.8895,
+      "white_fraction": 0.8685,
       "avg_rgb": [
-        242,
+        240,
         242,
         242
       ]
@@ -8264,7 +8264,7 @@
       "code": "MAR19",
       "group": "MAR",
       "collected": true,
-      "white_fraction": 0.0042,
+      "white_fraction": 0.002,
       "avg_rgb": [
         88,
         205,
@@ -8286,10 +8286,10 @@
       "code": "MEX1",
       "group": "MEX",
       "collected": false,
-      "white_fraction": 0.8528,
+      "white_fraction": 0.7952,
       "avg_rgb": [
-        242,
-        242,
+        235,
+        240,
         242
       ]
     },
@@ -8351,19 +8351,30 @@
     {
       "code": "MEX7",
       "group": "MEX",
-      "collected": false,
-      "white_fraction": 0.8029,
+      "collected": true,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        234,
-        239,
-        240
+        98,
+        208,
+        238
       ]
     },
     {
       "code": "MEX8",
       "group": "MEX",
       "collected": true,
-      "white_fraction": 0.0004,
+      "white_fraction": 0.0,
+      "avg_rgb": [
+        86,
+        203,
+        237
+      ]
+    },
+    {
+      "code": "MEX9",
+      "group": "MEX",
+      "collected": true,
+      "white_fraction": 0.0137,
       "avg_rgb": [
         103,
         208,
@@ -8371,24 +8382,13 @@
       ]
     },
     {
-      "code": "MEX9",
-      "group": "MEX",
-      "collected": false,
-      "white_fraction": 0.8483,
-      "avg_rgb": [
-        239,
-        239,
-        239
-      ]
-    },
-    {
       "code": "MEX10",
       "group": "MEX",
-      "collected": false,
-      "white_fraction": 0.85,
+      "collected": true,
+      "white_fraction": 0.6321,
       "avg_rgb": [
-        240,
-        240,
+        213,
+        234,
         240
       ]
     },
@@ -8406,55 +8406,55 @@
     {
       "code": "MEX12",
       "group": "MEX",
-      "collected": false,
-      "white_fraction": 0.862,
+      "collected": true,
+      "white_fraction": 0.0765,
       "avg_rgb": [
-        240,
-        240,
-        240
+        130,
+        214,
+        238
       ]
     },
     {
       "code": "MEX13",
       "group": "MEX",
       "collected": false,
-      "white_fraction": 0.8219,
+      "white_fraction": 0.8506,
       "avg_rgb": [
-        237,
-        239,
+        240,
+        240,
         240
       ]
     },
     {
       "code": "MEX14",
       "group": "MEX",
-      "collected": false,
-      "white_fraction": 0.847,
+      "collected": true,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        240,
-        241,
-        241
+        101,
+        209,
+        238
       ]
     },
     {
       "code": "MEX15",
       "group": "MEX",
-      "collected": false,
-      "white_fraction": 0.8529,
+      "collected": true,
+      "white_fraction": 0.0027,
       "avg_rgb": [
-        239,
-        239,
-        239
+        96,
+        206,
+        236
       ]
     },
     {
       "code": "MEX16",
       "group": "MEX",
       "collected": true,
-      "white_fraction": 0.0274,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        126,
-        213,
+        98,
+        205,
         236
       ]
     },
@@ -8475,7 +8475,7 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        96,
+        95,
         205,
         238
       ]
@@ -8498,7 +8498,7 @@
       "white_fraction": 0.0,
       "avg_rgb": [
         85,
-        203,
+        202,
         238
       ]
     },
@@ -8508,7 +8508,7 @@
       "collected": false,
       "white_fraction": 0.8297,
       "avg_rgb": [
-        238,
+        239,
         242,
         243
       ]
@@ -8528,10 +8528,10 @@
       "code": "NED3",
       "group": "NED",
       "collected": true,
-      "white_fraction": 0.0088,
+      "white_fraction": 0.008,
       "avg_rgb": [
         94,
-        205,
+        206,
         236
       ]
     },
@@ -8543,14 +8543,14 @@
       "avg_rgb": [
         82,
         204,
-        239
+        238
       ]
     },
     {
       "code": "NED5",
       "group": "NED",
       "collected": true,
-      "white_fraction": 0.0242,
+      "white_fraction": 0.0238,
       "avg_rgb": [
         75,
         199,
@@ -8563,8 +8563,8 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        62,
-        193,
+        59,
+        192,
         235
       ]
     },
@@ -8574,8 +8574,8 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        71,
-        201,
+        63,
+        198,
         236
       ]
     },
@@ -8605,9 +8605,9 @@
       "code": "NED10",
       "group": "NED",
       "collected": true,
-      "white_fraction": 0.0707,
+      "white_fraction": 0.0774,
       "avg_rgb": [
-        113,
+        114,
         212,
         238
       ]
@@ -8616,9 +8616,9 @@
       "code": "NED11",
       "group": "NED",
       "collected": false,
-      "white_fraction": 0.852,
+      "white_fraction": 0.8564,
       "avg_rgb": [
-        239,
+        240,
         240,
         241
       ]
@@ -8627,9 +8627,9 @@
       "code": "NED12",
       "group": "NED",
       "collected": false,
-      "white_fraction": 0.7814,
+      "white_fraction": 0.7787,
       "avg_rgb": [
-        231,
+        230,
         238,
         240
       ]
@@ -8652,7 +8652,7 @@
       "white_fraction": 0.0,
       "avg_rgb": [
         87,
-        202,
+        203,
         236
       ]
     },
@@ -8660,9 +8660,9 @@
       "code": "NED15",
       "group": "NED",
       "collected": true,
-      "white_fraction": 0.0667,
+      "white_fraction": 0.0681,
       "avg_rgb": [
-        95,
+        96,
         206,
         236
       ]
@@ -8682,11 +8682,11 @@
       "code": "NED17",
       "group": "NED",
       "collected": true,
-      "white_fraction": 0.133,
+      "white_fraction": 0.1363,
       "avg_rgb": [
         140,
-        217,
-        238
+        216,
+        237
       ]
     },
     {
@@ -8704,10 +8704,10 @@
       "code": "NED19",
       "group": "NED",
       "collected": true,
-      "white_fraction": 0.1083,
+      "white_fraction": 0.1055,
       "avg_rgb": [
         132,
-        216,
+        215,
         239
       ]
     },
@@ -8715,7 +8715,7 @@
       "code": "NED20",
       "group": "NED",
       "collected": false,
-      "white_fraction": 0.8423,
+      "white_fraction": 0.8434,
       "avg_rgb": [
         240,
         241,
@@ -8725,12 +8725,12 @@
     {
       "code": "NOR1",
       "group": "NOR",
-      "collected": false,
-      "white_fraction": 0.9178,
+      "collected": true,
+      "white_fraction": 0.0724,
       "avg_rgb": [
-        245,
-        245,
-        245
+        113,
+        214,
+        242
       ]
     },
     {
@@ -8748,9 +8748,9 @@
       "code": "NOR3",
       "group": "NOR",
       "collected": false,
-      "white_fraction": 0.8723,
+      "white_fraction": 0.8727,
       "avg_rgb": [
-        242,
+        243,
         244,
         244
       ]
@@ -8758,21 +8758,21 @@
     {
       "code": "NOR4",
       "group": "NOR",
-      "collected": false,
-      "white_fraction": 0.9145,
+      "collected": true,
+      "white_fraction": 0.0224,
       "avg_rgb": [
-        245,
-        245,
-        245
+        92,
+        210,
+        242
       ]
     },
     {
       "code": "NOR5",
       "group": "NOR",
       "collected": false,
-      "white_fraction": 0.7939,
+      "white_fraction": 0.7916,
       "avg_rgb": [
-        233,
+        232,
         241,
         243
       ]
@@ -8792,7 +8792,7 @@
       "code": "NOR7",
       "group": "NOR",
       "collected": false,
-      "white_fraction": 0.8987,
+      "white_fraction": 0.9078,
       "avg_rgb": [
         245,
         245,
@@ -8802,21 +8802,21 @@
     {
       "code": "NOR8",
       "group": "NOR",
-      "collected": false,
-      "white_fraction": 0.8994,
+      "collected": true,
+      "white_fraction": 0.0274,
       "avg_rgb": [
-        244,
-        244,
-        244
+        105,
+        212,
+        241
       ]
     },
     {
       "code": "NOR9",
       "group": "NOR",
       "collected": false,
-      "white_fraction": 0.8681,
+      "white_fraction": 0.8677,
       "avg_rgb": [
-        242,
+        241,
         243,
         243
       ]
@@ -8827,7 +8827,7 @@
       "collected": true,
       "white_fraction": 0.0121,
       "avg_rgb": [
-        109,
+        110,
         214,
         242
       ]
@@ -8869,7 +8869,7 @@
       "code": "NOR14",
       "group": "NOR",
       "collected": false,
-      "white_fraction": 0.8804,
+      "white_fraction": 0.8788,
       "avg_rgb": [
         243,
         245,
@@ -8880,7 +8880,7 @@
       "code": "NOR15",
       "group": "NOR",
       "collected": true,
-      "white_fraction": 0.0351,
+      "white_fraction": 0.0339,
       "avg_rgb": [
         94,
         209,
@@ -8891,7 +8891,7 @@
       "code": "NOR16",
       "group": "NOR",
       "collected": true,
-      "white_fraction": 0.0167,
+      "white_fraction": 0.0163,
       "avg_rgb": [
         92,
         210,
@@ -8913,9 +8913,9 @@
       "code": "NOR18",
       "group": "NOR",
       "collected": false,
-      "white_fraction": 0.854,
+      "white_fraction": 0.8527,
       "avg_rgb": [
-        238,
+        237,
         242,
         243
       ]
@@ -8927,7 +8927,7 @@
       "white_fraction": 0.0096,
       "avg_rgb": [
         90,
-        209,
+        210,
         242
       ]
     },
@@ -8945,12 +8945,12 @@
     {
       "code": "NZL1",
       "group": "NZL",
-      "collected": false,
-      "white_fraction": 0.9351,
+      "collected": true,
+      "white_fraction": 0.0455,
       "avg_rgb": [
-        248,
-        248,
-        248
+        105,
+        214,
+        245
       ]
     },
     {
@@ -8990,10 +8990,10 @@
       "code": "NZL5",
       "group": "NZL",
       "collected": true,
-      "white_fraction": 0.0042,
+      "white_fraction": 0.0046,
       "avg_rgb": [
-        98,
-        210,
+        99,
+        211,
         242
       ]
     },
@@ -9014,7 +9014,7 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        103,
+        104,
         215,
         245
       ]
@@ -9036,19 +9036,19 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        104,
-        213,
-        243
+        89,
+        208,
+        242
       ]
     },
     {
       "code": "NZL10",
       "group": "NZL",
       "collected": false,
-      "white_fraction": 0.9227,
+      "white_fraction": 0.8481,
       "avg_rgb": [
-        247,
-        247,
+        240,
+        246,
         247
       ]
     },
@@ -9058,8 +9058,8 @@
       "collected": true,
       "white_fraction": 0.0039,
       "avg_rgb": [
-        106,
-        214,
+        96,
+        211,
         244
       ]
     },
@@ -9067,9 +9067,9 @@
       "code": "NZL12",
       "group": "NZL",
       "collected": true,
-      "white_fraction": 0.0309,
+      "white_fraction": 0.0323,
       "avg_rgb": [
-        113,
+        114,
         215,
         243
       ]
@@ -9100,7 +9100,7 @@
       "code": "NZL15",
       "group": "NZL",
       "collected": false,
-      "white_fraction": 0.9268,
+      "white_fraction": 0.9247,
       "avg_rgb": [
         247,
         247,
@@ -9111,9 +9111,9 @@
       "code": "NZL16",
       "group": "NZL",
       "collected": true,
-      "white_fraction": 0.0514,
+      "white_fraction": 0.0507,
       "avg_rgb": [
-        99,
+        100,
         213,
         244
       ]
@@ -9122,7 +9122,7 @@
       "code": "NZL17",
       "group": "NZL",
       "collected": true,
-      "white_fraction": 0.0683,
+      "white_fraction": 0.0707,
       "avg_rgb": [
         102,
         212,
@@ -9133,9 +9133,9 @@
       "code": "NZL18",
       "group": "NZL",
       "collected": true,
-      "white_fraction": 0.1148,
+      "white_fraction": 0.1169,
       "avg_rgb": [
-        97,
+        98,
         208,
         241
       ]
@@ -9144,9 +9144,9 @@
       "code": "NZL19",
       "group": "NZL",
       "collected": true,
-      "white_fraction": 0.0651,
+      "white_fraction": 0.0633,
       "avg_rgb": [
-        92,
+        91,
         210,
         245
       ]
@@ -9158,7 +9158,7 @@
       "white_fraction": 0.0,
       "avg_rgb": [
         84,
-        207,
+        206,
         243
       ]
     },
@@ -9188,9 +9188,9 @@
       "code": "PAN3",
       "group": "PAN",
       "collected": true,
-      "white_fraction": 0.0394,
+      "white_fraction": 0.0402,
       "avg_rgb": [
-        69,
+        70,
         206,
         243
       ]
@@ -9209,19 +9209,19 @@
     {
       "code": "PAN5",
       "group": "PAN",
-      "collected": false,
-      "white_fraction": 0.7548,
+      "collected": true,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        228,
-        242,
-        246
+        63,
+        202,
+        243
       ]
     },
     {
       "code": "PAN6",
       "group": "PAN",
       "collected": false,
-      "white_fraction": 0.8995,
+      "white_fraction": 0.8987,
       "avg_rgb": [
         244,
         245,
@@ -9254,7 +9254,7 @@
       "code": "PAN9",
       "group": "PAN",
       "collected": true,
-      "white_fraction": 0.0,
+      "white_fraction": 0.0032,
       "avg_rgb": [
         103,
         213,
@@ -9278,8 +9278,8 @@
       "collected": true,
       "white_fraction": 0.003,
       "avg_rgb": [
-        106,
-        214,
+        104,
+        213,
         243
       ]
     },
@@ -9309,10 +9309,10 @@
       "code": "PAN14",
       "group": "PAN",
       "collected": true,
-      "white_fraction": 0.0145,
+      "white_fraction": 0.0125,
       "avg_rgb": [
         103,
-        212,
+        213,
         242
       ]
     },
@@ -9331,7 +9331,7 @@
       "code": "PAN16",
       "group": "PAN",
       "collected": true,
-      "white_fraction": 0.0003,
+      "white_fraction": 0.0007,
       "avg_rgb": [
         90,
         209,
@@ -9364,7 +9364,7 @@
       "code": "PAN19",
       "group": "PAN",
       "collected": false,
-      "white_fraction": 0.9029,
+      "white_fraction": 0.9022,
       "avg_rgb": [
         245,
         245,
@@ -9377,8 +9377,8 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        106,
-        214,
+        99,
+        212,
         244
       ]
     },
@@ -9397,7 +9397,7 @@
       "code": "PAR2",
       "group": "PAR",
       "collected": true,
-      "white_fraction": 0.0168,
+      "white_fraction": 0.0164,
       "avg_rgb": [
         119,
         215,
@@ -9440,12 +9440,12 @@
     {
       "code": "PAR6",
       "group": "PAR",
-      "collected": false,
-      "white_fraction": 0.7244,
+      "collected": true,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        224,
-        239,
-        243
+        87,
+        207,
+        240
       ]
     },
     {
@@ -9465,7 +9465,7 @@
       "collected": true,
       "white_fraction": 0.0017,
       "avg_rgb": [
-        78,
+        79,
         205,
         239
       ]
@@ -9484,12 +9484,12 @@
     {
       "code": "PAR10",
       "group": "PAR",
-      "collected": false,
-      "white_fraction": 0.829,
+      "collected": true,
+      "white_fraction": 0.0024,
       "avg_rgb": [
-        234,
-        241,
-        242
+        101,
+        210,
+        240
       ]
     },
     {
@@ -9507,10 +9507,10 @@
       "code": "PAR12",
       "group": "PAR",
       "collected": false,
-      "white_fraction": 0.8936,
+      "white_fraction": 0.8558,
       "avg_rgb": [
-        245,
-        245,
+        241,
+        244,
         245
       ]
     },
@@ -9518,9 +9518,9 @@
       "code": "PAR13",
       "group": "PAR",
       "collected": false,
-      "white_fraction": 0.8873,
+      "white_fraction": 0.8893,
       "avg_rgb": [
-        241,
+        242,
         242,
         242
       ]
@@ -9528,23 +9528,23 @@
     {
       "code": "PAR14",
       "group": "PAR",
-      "collected": false,
-      "white_fraction": 0.89,
+      "collected": true,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        244,
-        244,
-        244
+        107,
+        212,
+        241
       ]
     },
     {
       "code": "PAR15",
       "group": "PAR",
-      "collected": true,
-      "white_fraction": 0.0117,
+      "collected": false,
+      "white_fraction": 0.8873,
       "avg_rgb": [
-        98,
-        208,
-        239
+        243,
+        243,
+        243
       ]
     },
     {
@@ -9572,19 +9572,19 @@
     {
       "code": "PAR18",
       "group": "PAR",
-      "collected": false,
-      "white_fraction": 0.8829,
+      "collected": true,
+      "white_fraction": 0.0322,
       "avg_rgb": [
-        242,
-        242,
-        242
+        105,
+        210,
+        239
       ]
     },
     {
       "code": "PAR19",
       "group": "PAR",
       "collected": false,
-      "white_fraction": 0.8795,
+      "white_fraction": 0.876,
       "avg_rgb": [
         241,
         242,
@@ -9594,21 +9594,21 @@
     {
       "code": "PAR20",
       "group": "PAR",
-      "collected": false,
-      "white_fraction": 0.887,
+      "collected": true,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        243,
-        243,
-        243
+        104,
+        210,
+        240
       ]
     },
     {
       "code": "POR1",
       "group": "POR",
       "collected": true,
-      "white_fraction": 0.0756,
+      "white_fraction": 0.0809,
       "avg_rgb": [
-        113,
+        114,
         210,
         238
       ]
@@ -9617,7 +9617,7 @@
       "code": "POR2",
       "group": "POR",
       "collected": false,
-      "white_fraction": 0.8584,
+      "white_fraction": 0.8588,
       "avg_rgb": [
         241,
         241,
@@ -9626,39 +9626,6 @@
     },
     {
       "code": "POR3",
-      "group": "POR",
-      "collected": false,
-      "white_fraction": 0.8529,
-      "avg_rgb": [
-        241,
-        241,
-        241
-      ]
-    },
-    {
-      "code": "POR4",
-      "group": "POR",
-      "collected": true,
-      "white_fraction": 0.0,
-      "avg_rgb": [
-        101,
-        208,
-        237
-      ]
-    },
-    {
-      "code": "POR5",
-      "group": "POR",
-      "collected": false,
-      "white_fraction": 0.8507,
-      "avg_rgb": [
-        239,
-        239,
-        239
-      ]
-    },
-    {
-      "code": "POR6",
       "group": "POR",
       "collected": true,
       "white_fraction": 0.0,
@@ -9669,25 +9636,58 @@
       ]
     },
     {
+      "code": "POR4",
+      "group": "POR",
+      "collected": true,
+      "white_fraction": 0.0,
+      "avg_rgb": [
+        40,
+        187,
+        236
+      ]
+    },
+    {
+      "code": "POR5",
+      "group": "POR",
+      "collected": true,
+      "white_fraction": 0.002,
+      "avg_rgb": [
+        40,
+        188,
+        236
+      ]
+    },
+    {
+      "code": "POR6",
+      "group": "POR",
+      "collected": true,
+      "white_fraction": 0.0,
+      "avg_rgb": [
+        67,
+        201,
+        237
+      ]
+    },
+    {
       "code": "POR7",
       "group": "POR",
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        96,
-        207,
+        92,
+        206,
         238
       ]
     },
     {
       "code": "POR8",
       "group": "POR",
-      "collected": false,
-      "white_fraction": 0.8481,
+      "collected": true,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        239,
-        239,
-        239
+        71,
+        200,
+        236
       ]
     },
     {
@@ -9705,7 +9705,7 @@
       "code": "POR10",
       "group": "POR",
       "collected": true,
-      "white_fraction": 0.0017,
+      "white_fraction": 0.0,
       "avg_rgb": [
         71,
         200,
@@ -9718,7 +9718,7 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        100,
+        98,
         209,
         239
       ]
@@ -9726,12 +9726,12 @@
     {
       "code": "POR12",
       "group": "POR",
-      "collected": false,
-      "white_fraction": 0.8595,
+      "collected": true,
+      "white_fraction": 0.0065,
       "avg_rgb": [
-        242,
-        242,
-        242
+        78,
+        205,
+        239
       ]
     },
     {
@@ -9773,7 +9773,7 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        103,
+        102,
         208,
         237
       ]
@@ -9781,12 +9781,12 @@
     {
       "code": "POR17",
       "group": "POR",
-      "collected": false,
-      "white_fraction": 0.8556,
+      "collected": true,
+      "white_fraction": 0.0131,
       "avg_rgb": [
-        241,
-        241,
-        241
+        77,
+        203,
+        238
       ]
     },
     {
@@ -9836,22 +9836,22 @@
     {
       "code": "QAT2",
       "group": "QAT",
-      "collected": false,
-      "white_fraction": 0.8613,
+      "collected": true,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        237,
-        237,
-        237
+        101,
+        206,
+        235
       ]
     },
     {
       "code": "QAT3",
       "group": "QAT",
       "collected": true,
-      "white_fraction": 0.0008,
+      "white_fraction": 0.0004,
       "avg_rgb": [
-        104,
-        205,
+        100,
+        204,
         232
       ]
     },
@@ -9870,10 +9870,10 @@
       "code": "QAT5",
       "group": "QAT",
       "collected": true,
-      "white_fraction": 0.0812,
+      "white_fraction": 0.0541,
       "avg_rgb": [
         107,
-        206,
+        205,
         232
       ]
     },
@@ -9892,7 +9892,7 @@
       "code": "QAT7",
       "group": "QAT",
       "collected": true,
-      "white_fraction": 0.0356,
+      "white_fraction": 0.034,
       "avg_rgb": [
         113,
         208,
@@ -9927,7 +9927,7 @@
       "collected": false,
       "white_fraction": 0.8056,
       "avg_rgb": [
-        231,
+        232,
         236,
         237
       ]
@@ -9991,11 +9991,11 @@
       "code": "QAT16",
       "group": "QAT",
       "collected": false,
-      "white_fraction": 0.8615,
+      "white_fraction": 0.7939,
       "avg_rgb": [
-        238,
-        238,
-        238
+        230,
+        235,
+        237
       ]
     },
     {
@@ -10024,7 +10024,7 @@
       "code": "QAT19",
       "group": "QAT",
       "collected": true,
-      "white_fraction": 0.0223,
+      "white_fraction": 0.023,
       "avg_rgb": [
         105,
         206,
@@ -10034,23 +10034,23 @@
     {
       "code": "QAT20",
       "group": "QAT",
-      "collected": false,
-      "white_fraction": 0.859,
+      "collected": true,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        237,
-        237,
-        237
+        101,
+        206,
+        235
       ]
     },
     {
       "code": "RSA1",
       "group": "RSA",
-      "collected": false,
-      "white_fraction": 0.8858,
+      "collected": true,
+      "white_fraction": 0.0233,
       "avg_rgb": [
-        243,
-        243,
-        243
+        104,
+        211,
+        240
       ]
     },
     {
@@ -10112,7 +10112,7 @@
       "code": "RSA7",
       "group": "RSA",
       "collected": true,
-      "white_fraction": 0.0149,
+      "white_fraction": 0.0154,
       "avg_rgb": [
         111,
         213,
@@ -10134,44 +10134,44 @@
       "code": "RSA9",
       "group": "RSA",
       "collected": false,
-      "white_fraction": 0.8758,
+      "white_fraction": 0.8405,
       "avg_rgb": [
-        243,
-        243,
-        243
+        240,
+        242,
+        242
       ]
     },
     {
       "code": "RSA10",
       "group": "RSA",
-      "collected": false,
-      "white_fraction": 0.8797,
+      "collected": true,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        244,
-        244,
-        244
+        31,
+        188,
+        240
       ]
     },
     {
       "code": "RSA11",
       "group": "RSA",
       "collected": true,
-      "white_fraction": 0.1268,
+      "white_fraction": 0.0923,
       "avg_rgb": [
-        139,
-        218,
+        122,
+        214,
         240
       ]
     },
     {
       "code": "RSA12",
       "group": "RSA",
-      "collected": false,
-      "white_fraction": 0.8874,
+      "collected": true,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        244,
-        244,
-        244
+        100,
+        211,
+        241
       ]
     },
     {
@@ -10188,23 +10188,23 @@
     {
       "code": "RSA14",
       "group": "RSA",
-      "collected": true,
-      "white_fraction": 0.0573,
+      "collected": false,
+      "white_fraction": 0.8759,
       "avg_rgb": [
-        130,
-        215,
-        238
+        240,
+        241,
+        241
       ]
     },
     {
       "code": "RSA15",
       "group": "RSA",
-      "collected": false,
-      "white_fraction": 0.878,
+      "collected": true,
+      "white_fraction": 0.6278,
       "avg_rgb": [
-        243,
-        243,
-        243
+        214,
+        235,
+        241
       ]
     },
     {
@@ -10213,8 +10213,8 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        89,
-        205,
+        72,
+        200,
         239
       ]
     },
@@ -10233,7 +10233,7 @@
       "code": "RSA18",
       "group": "RSA",
       "collected": true,
-      "white_fraction": 0.0372,
+      "white_fraction": 0.0149,
       "avg_rgb": [
         122,
         215,
@@ -10244,10 +10244,10 @@
       "code": "RSA19",
       "group": "RSA",
       "collected": true,
-      "white_fraction": 0.0215,
+      "white_fraction": 0.0219,
       "avg_rgb": [
-        110,
-        213,
+        109,
+        212,
         241
       ]
     },
@@ -10266,9 +10266,9 @@
       "code": "SCO1",
       "group": "SCO",
       "collected": true,
-      "white_fraction": 0.0222,
+      "white_fraction": 0.0271,
       "avg_rgb": [
-        106,
+        107,
         213,
         242
       ]
@@ -10280,7 +10280,7 @@
       "white_fraction": 0.0175,
       "avg_rgb": [
         108,
-        213,
+        214,
         243
       ]
     },
@@ -10288,7 +10288,7 @@
       "code": "SCO3",
       "group": "SCO",
       "collected": false,
-      "white_fraction": 0.8909,
+      "white_fraction": 0.8845,
       "avg_rgb": [
         243,
         245,
@@ -10309,33 +10309,33 @@
     {
       "code": "SCO5",
       "group": "SCO",
-      "collected": false,
-      "white_fraction": 0.9123,
+      "collected": true,
+      "white_fraction": 0.0482,
       "avg_rgb": [
-        245,
-        245,
-        245
+        110,
+        214,
+        242
       ]
     },
     {
       "code": "SCO6",
       "group": "SCO",
-      "collected": false,
-      "white_fraction": 0.9125,
+      "collected": true,
+      "white_fraction": 0.0046,
       "avg_rgb": [
-        245,
-        245,
-        245
+        102,
+        212,
+        242
       ]
     },
     {
       "code": "SCO7",
       "group": "SCO",
       "collected": true,
-      "white_fraction": 0.0,
+      "white_fraction": 0.0011,
       "avg_rgb": [
-        101,
-        212,
+        91,
+        208,
         242
       ]
     },
@@ -10343,7 +10343,7 @@
       "code": "SCO8",
       "group": "SCO",
       "collected": true,
-      "white_fraction": 0.0183,
+      "white_fraction": 0.0187,
       "avg_rgb": [
         109,
         213,
@@ -10376,7 +10376,7 @@
       "code": "SCO11",
       "group": "SCO",
       "collected": false,
-      "white_fraction": 0.9173,
+      "white_fraction": 0.917,
       "avg_rgb": [
         247,
         247,
@@ -10398,10 +10398,10 @@
       "code": "SCO13",
       "group": "SCO",
       "collected": false,
-      "white_fraction": 0.8949,
+      "white_fraction": 0.9122,
       "avg_rgb": [
-        243,
-        244,
+        245,
+        245,
         245
       ]
     },
@@ -10420,33 +10420,33 @@
       "code": "SCO15",
       "group": "SCO",
       "collected": false,
-      "white_fraction": 0.8754,
+      "white_fraction": 0.9104,
       "avg_rgb": [
-        242,
-        244,
+        245,
+        245,
         245
       ]
     },
     {
       "code": "SCO16",
       "group": "SCO",
-      "collected": false,
-      "white_fraction": 0.9116,
+      "collected": true,
+      "white_fraction": 0.0065,
       "avg_rgb": [
-        244,
-        244,
-        244
+        103,
+        212,
+        242
       ]
     },
     {
       "code": "SCO17",
       "group": "SCO",
-      "collected": true,
-      "white_fraction": 0.0016,
+      "collected": false,
+      "white_fraction": 0.9178,
       "avg_rgb": [
-        104,
-        212,
-        242
+        245,
+        245,
+        245
       ]
     },
     {
@@ -10463,8 +10463,19 @@
     {
       "code": "SCO19",
       "group": "SCO",
+      "collected": true,
+      "white_fraction": 0.0132,
+      "avg_rgb": [
+        105,
+        212,
+        241
+      ]
+    },
+    {
+      "code": "SCO20",
+      "group": "SCO",
       "collected": false,
-      "white_fraction": 0.91,
+      "white_fraction": 0.9079,
       "avg_rgb": [
         244,
         244,
@@ -10472,23 +10483,12 @@
       ]
     },
     {
-      "code": "SCO20",
-      "group": "SCO",
-      "collected": false,
-      "white_fraction": 0.9117,
-      "avg_rgb": [
-        244,
-        245,
-        245
-      ]
-    },
-    {
       "code": "SEN1",
       "group": "SEN",
       "collected": false,
-      "white_fraction": 0.8523,
+      "white_fraction": 0.8491,
       "avg_rgb": [
-        240,
+        239,
         242,
         243
       ]
@@ -10497,10 +10497,10 @@
       "code": "SEN2",
       "group": "SEN",
       "collected": true,
-      "white_fraction": 0.1006,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        117,
-        213,
+        55,
+        194,
         239
       ]
     },
@@ -10508,9 +10508,9 @@
       "code": "SEN3",
       "group": "SEN",
       "collected": false,
-      "white_fraction": 0.8471,
+      "white_fraction": 0.8431,
       "avg_rgb": [
-        237,
+        236,
         240,
         241
       ]
@@ -10530,7 +10530,7 @@
       "code": "SEN5",
       "group": "SEN",
       "collected": true,
-      "white_fraction": 0.0143,
+      "white_fraction": 0.0122,
       "avg_rgb": [
         103,
         210,
@@ -10541,7 +10541,7 @@
       "code": "SEN6",
       "group": "SEN",
       "collected": true,
-      "white_fraction": 0.0551,
+      "white_fraction": 0.0546,
       "avg_rgb": [
         110,
         211,
@@ -10552,7 +10552,7 @@
       "code": "SEN7",
       "group": "SEN",
       "collected": false,
-      "white_fraction": 0.8796,
+      "white_fraction": 0.8706,
       "avg_rgb": [
         242,
         243,
@@ -10574,10 +10574,10 @@
       "code": "SEN9",
       "group": "SEN",
       "collected": true,
-      "white_fraction": 0.0318,
+      "white_fraction": 0.0237,
       "avg_rgb": [
         103,
-        209,
+        208,
         238
       ]
     },
@@ -10585,18 +10585,18 @@
       "code": "SEN10",
       "group": "SEN",
       "collected": true,
-      "white_fraction": 0.074,
+      "white_fraction": 0.0726,
       "avg_rgb": [
         105,
         211,
-        239
+        240
       ]
     },
     {
       "code": "SEN11",
       "group": "SEN",
       "collected": false,
-      "white_fraction": 0.8737,
+      "white_fraction": 0.8741,
       "avg_rgb": [
         242,
         243,
@@ -10606,12 +10606,12 @@
     {
       "code": "SEN12",
       "group": "SEN",
-      "collected": false,
-      "white_fraction": 0.8857,
+      "collected": true,
+      "white_fraction": 0.0236,
       "avg_rgb": [
-        243,
-        243,
-        243
+        96,
+        209,
+        239
       ]
     },
     {
@@ -10629,32 +10629,32 @@
       "code": "SEN14",
       "group": "SEN",
       "collected": false,
-      "white_fraction": 0.8069,
+      "white_fraction": 0.7915,
       "avg_rgb": [
-        234,
-        240,
-        242
+        232,
+        239,
+        241
       ]
     },
     {
       "code": "SEN15",
       "group": "SEN",
-      "collected": false,
-      "white_fraction": 0.845,
+      "collected": true,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        239,
-        241,
-        242
+        84,
+        205,
+        239
       ]
     },
     {
       "code": "SEN16",
       "group": "SEN",
       "collected": false,
-      "white_fraction": 0.8788,
+      "white_fraction": 0.8507,
       "avg_rgb": [
         240,
-        242,
+        241,
         242
       ]
     },
@@ -10673,7 +10673,7 @@
       "code": "SEN18",
       "group": "SEN",
       "collected": false,
-      "white_fraction": 0.8464,
+      "white_fraction": 0.8654,
       "avg_rgb": [
         241,
         242,
@@ -10684,9 +10684,9 @@
       "code": "SEN19",
       "group": "SEN",
       "collected": true,
-      "white_fraction": 0.0216,
+      "white_fraction": 0.0206,
       "avg_rgb": [
-        82,
+        81,
         203,
         239
       ]
@@ -10717,20 +10717,20 @@
       "code": "SUI2",
       "group": "SUI",
       "collected": false,
-      "white_fraction": 0.8613,
+      "white_fraction": 0.832,
       "avg_rgb": [
+        239,
         244,
-        245,
-        246
+        245
       ]
     },
     {
       "code": "SUI3",
       "group": "SUI",
       "collected": false,
-      "white_fraction": 0.7908,
+      "white_fraction": 0.783,
       "avg_rgb": [
-        233,
+        232,
         243,
         246
       ]
@@ -10739,10 +10739,10 @@
       "code": "SUI4",
       "group": "SUI",
       "collected": true,
-      "white_fraction": 0.0829,
+      "white_fraction": 0.1105,
       "avg_rgb": [
-        114,
-        213,
+        115,
+        214,
         240
       ]
     },
@@ -10772,7 +10772,7 @@
       "code": "SUI7",
       "group": "SUI",
       "collected": true,
-      "white_fraction": 0.0103,
+      "white_fraction": 0.0108,
       "avg_rgb": [
         106,
         212,
@@ -10807,7 +10807,7 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        105,
+        104,
         213,
         243
       ]
@@ -10826,12 +10826,12 @@
     {
       "code": "SUI12",
       "group": "SUI",
-      "collected": true,
-      "white_fraction": 0.0253,
+      "collected": false,
+      "white_fraction": 0.92,
       "avg_rgb": [
-        105,
-        214,
-        244
+        247,
+        247,
+        247
       ]
     },
     {
@@ -10870,19 +10870,19 @@
     {
       "code": "SUI16",
       "group": "SUI",
-      "collected": false,
-      "white_fraction": 0.9108,
+      "collected": true,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        243,
-        243,
-        243
+        105,
+        211,
+        241
       ]
     },
     {
       "code": "SUI17",
       "group": "SUI",
       "collected": false,
-      "white_fraction": 0.8405,
+      "white_fraction": 0.8409,
       "avg_rgb": [
         237,
         242,
@@ -10915,10 +10915,10 @@
       "code": "SUI20",
       "group": "SUI",
       "collected": false,
-      "white_fraction": 0.9121,
+      "white_fraction": 0.8562,
       "avg_rgb": [
-        245,
-        245,
+        241,
+        244,
         245
       ]
     },
@@ -10928,8 +10928,8 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        95,
-        202,
+        87,
+        200,
         232
       ]
     },
@@ -10937,7 +10937,7 @@
       "code": "SWE2",
       "group": "SWE",
       "collected": false,
-      "white_fraction": 0.802,
+      "white_fraction": 0.8009,
       "avg_rgb": [
         230,
         234,
@@ -10961,7 +10961,7 @@
       "collected": false,
       "white_fraction": 0.7687,
       "avg_rgb": [
-        226,
+        225,
         231,
         233
       ]
@@ -10994,8 +10994,8 @@
       "collected": true,
       "white_fraction": 0.0011,
       "avg_rgb": [
-        101,
-        204,
+        97,
+        203,
         232
       ]
     },
@@ -11003,7 +11003,7 @@
       "code": "SWE8",
       "group": "SWE",
       "collected": false,
-      "white_fraction": 0.843,
+      "white_fraction": 0.8355,
       "avg_rgb": [
         234,
         234,
@@ -11036,21 +11036,21 @@
       "code": "SWE11",
       "group": "SWE",
       "collected": false,
-      "white_fraction": 0.8389,
+      "white_fraction": 0.8386,
       "avg_rgb": [
         234,
         234,
-        235
+        234
       ]
     },
     {
       "code": "SWE12",
       "group": "SWE",
       "collected": true,
-      "white_fraction": 0.0969,
+      "white_fraction": 0.111,
       "avg_rgb": [
-        118,
-        208,
+        119,
+        209,
         233
       ]
     },
@@ -11069,7 +11069,7 @@
       "code": "SWE14",
       "group": "SWE",
       "collected": false,
-      "white_fraction": 0.7816,
+      "white_fraction": 0.8003,
       "avg_rgb": [
         229,
         233,
@@ -11112,12 +11112,12 @@
     {
       "code": "SWE18",
       "group": "SWE",
-      "collected": false,
-      "white_fraction": 0.8372,
+      "collected": true,
+      "white_fraction": 0.0141,
       "avg_rgb": [
-        234,
-        235,
-        235
+        101,
+        204,
+        232
       ]
     },
     {
@@ -11134,23 +11134,23 @@
     {
       "code": "SWE20",
       "group": "SWE",
-      "collected": false,
-      "white_fraction": 0.7887,
+      "collected": true,
+      "white_fraction": 0.0349,
       "avg_rgb": [
-        228,
-        233,
-        234
+        77,
+        198,
+        232
       ]
     },
     {
       "code": "TUN1",
       "group": "TUN",
-      "collected": false,
-      "white_fraction": 0.9131,
+      "collected": true,
+      "white_fraction": 0.0031,
       "avg_rgb": [
-        244,
-        244,
-        244
+        85,
+        208,
+        241
       ]
     },
     {
@@ -11168,7 +11168,7 @@
       "code": "TUN3",
       "group": "TUN",
       "collected": false,
-      "white_fraction": 0.8493,
+      "white_fraction": 0.8473,
       "avg_rgb": [
         242,
         246,
@@ -11201,9 +11201,9 @@
       "code": "TUN6",
       "group": "TUN",
       "collected": true,
-      "white_fraction": 0.008,
+      "white_fraction": 0.0096,
       "avg_rgb": [
-        109,
+        110,
         215,
         244
       ]
@@ -11234,9 +11234,9 @@
       "code": "TUN9",
       "group": "TUN",
       "collected": true,
-      "white_fraction": 0.0514,
+      "white_fraction": 0.0594,
       "avg_rgb": [
-        113,
+        114,
         216,
         244
       ]
@@ -11267,9 +11267,9 @@
       "code": "TUN12",
       "group": "TUN",
       "collected": true,
-      "white_fraction": 0.1328,
+      "white_fraction": 0.1305,
       "avg_rgb": [
-        104,
+        103,
         214,
         244
       ]
@@ -11289,18 +11289,18 @@
       "code": "TUN14",
       "group": "TUN",
       "collected": true,
-      "white_fraction": 0.0772,
+      "white_fraction": 0.0625,
       "avg_rgb": [
-        115,
+        114,
         214,
-        241
+        242
       ]
     },
     {
       "code": "TUN15",
       "group": "TUN",
       "collected": false,
-      "white_fraction": 0.8805,
+      "white_fraction": 0.8832,
       "avg_rgb": [
         244,
         246,
@@ -11333,10 +11333,10 @@
       "code": "TUN18",
       "group": "TUN",
       "collected": true,
-      "white_fraction": 0.1026,
+      "white_fraction": 0.0807,
       "avg_rgb": [
-        116,
-        216,
+        115,
+        215,
         243
       ]
     },
@@ -11344,9 +11344,9 @@
       "code": "TUN19",
       "group": "TUN",
       "collected": true,
-      "white_fraction": 0.081,
+      "white_fraction": 0.054,
       "avg_rgb": [
-        113,
+        112,
         213,
         241
       ]
@@ -11355,10 +11355,10 @@
       "code": "TUN20",
       "group": "TUN",
       "collected": true,
-      "white_fraction": 0.067,
+      "white_fraction": 0.0507,
       "avg_rgb": [
-        114,
-        215,
+        107,
+        213,
         243
       ]
     },
@@ -11464,12 +11464,12 @@
     {
       "code": "TUR10",
       "group": "TUR",
-      "collected": false,
-      "white_fraction": 0.9105,
+      "collected": true,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        246,
-        246,
-        246
+        105,
+        214,
+        244
       ]
     },
     {
@@ -11509,7 +11509,7 @@
       "code": "TUR14",
       "group": "TUR",
       "collected": true,
-      "white_fraction": 0.0364,
+      "white_fraction": 0.0377,
       "avg_rgb": [
         96,
         209,
@@ -11520,18 +11520,18 @@
       "code": "TUR15",
       "group": "TUR",
       "collected": true,
-      "white_fraction": 0.0543,
+      "white_fraction": 0.1127,
       "avg_rgb": [
-        99,
-        210,
-        242
+        109,
+        212,
+        241
       ]
     },
     {
       "code": "TUR16",
       "group": "TUR",
       "collected": false,
-      "white_fraction": 0.8944,
+      "white_fraction": 0.9006,
       "avg_rgb": [
         245,
         245,
@@ -11541,22 +11541,22 @@
     {
       "code": "TUR17",
       "group": "TUR",
-      "collected": false,
-      "white_fraction": 0.9034,
+      "collected": true,
+      "white_fraction": 0.0077,
       "avg_rgb": [
-        243,
-        243,
-        243
+        80,
+        205,
+        240
       ]
     },
     {
       "code": "TUR18",
       "group": "TUR",
       "collected": true,
-      "white_fraction": 0.0099,
+      "white_fraction": 0.0024,
       "avg_rgb": [
-        108,
-        213,
+        95,
+        209,
         242
       ]
     },
@@ -11564,10 +11564,10 @@
       "code": "TUR19",
       "group": "TUR",
       "collected": true,
-      "white_fraction": 0.066,
+      "white_fraction": 0.0657,
       "avg_rgb": [
         119,
-        215,
+        216,
         243
       ]
     },
@@ -11608,9 +11608,9 @@
       "code": "URU3",
       "group": "URU",
       "collected": false,
-      "white_fraction": 0.8988,
+      "white_fraction": 0.9107,
       "avg_rgb": [
-        242,
+        243,
         243,
         243
       ]
@@ -11619,10 +11619,10 @@
       "code": "URU4",
       "group": "URU",
       "collected": true,
-      "white_fraction": 0.1055,
+      "white_fraction": 0.2307,
       "avg_rgb": [
-        117,
-        214,
+        140,
+        219,
         241
       ]
     },
@@ -11630,9 +11630,9 @@
       "code": "URU5",
       "group": "URU",
       "collected": false,
-      "white_fraction": 0.9063,
+      "white_fraction": 0.8908,
       "avg_rgb": [
-        244,
+        243,
         244,
         244
       ]
@@ -11641,11 +11641,11 @@
       "code": "URU6",
       "group": "URU",
       "collected": false,
-      "white_fraction": 0.8426,
+      "white_fraction": 0.8402,
       "avg_rgb": [
         238,
         242,
-        244
+        243
       ]
     },
     {
@@ -11654,7 +11654,7 @@
       "collected": false,
       "white_fraction": 0.8563,
       "avg_rgb": [
-        241,
+        240,
         243,
         244
       ]
@@ -11674,9 +11674,9 @@
       "code": "URU9",
       "group": "URU",
       "collected": true,
-      "white_fraction": 0.012,
+      "white_fraction": 0.0144,
       "avg_rgb": [
-        100,
+        101,
         210,
         241
       ]
@@ -11685,11 +11685,11 @@
       "code": "URU10",
       "group": "URU",
       "collected": false,
-      "white_fraction": 0.9111,
+      "white_fraction": 0.7035,
       "avg_rgb": [
-        245,
-        245,
-        245
+        219,
+        239,
+        244
       ]
     },
     {
@@ -11698,8 +11698,8 @@
       "collected": true,
       "white_fraction": 0.0099,
       "avg_rgb": [
-        105,
-        214,
+        104,
+        213,
         244
       ]
     },
@@ -11707,9 +11707,9 @@
       "code": "URU12",
       "group": "URU",
       "collected": true,
-      "white_fraction": 0.0197,
+      "white_fraction": 0.0201,
       "avg_rgb": [
-        114,
+        115,
         215,
         243
       ]
@@ -11762,7 +11762,7 @@
       "code": "URU17",
       "group": "URU",
       "collected": false,
-      "white_fraction": 0.8679,
+      "white_fraction": 0.8717,
       "avg_rgb": [
         243,
         246,
@@ -11772,19 +11772,19 @@
     {
       "code": "URU18",
       "group": "URU",
-      "collected": false,
-      "white_fraction": 0.8244,
+      "collected": true,
+      "white_fraction": 0.0032,
       "avg_rgb": [
-        237,
-        243,
-        244
+        92,
+        208,
+        242
       ]
     },
     {
       "code": "URU19",
       "group": "URU",
       "collected": false,
-      "white_fraction": 0.8527,
+      "white_fraction": 0.8491,
       "avg_rgb": [
         239,
         243,
@@ -11795,7 +11795,7 @@
       "code": "URU20",
       "group": "URU",
       "collected": false,
-      "white_fraction": 0.8583,
+      "white_fraction": 0.858,
       "avg_rgb": [
         240,
         243,
@@ -11839,9 +11839,9 @@
       "code": "USA4",
       "group": "USA",
       "collected": false,
-      "white_fraction": 0.7983,
+      "white_fraction": 0.7999,
       "avg_rgb": [
-        233,
+        234,
         238,
         239
       ]
@@ -11852,7 +11852,7 @@
       "collected": false,
       "white_fraction": 0.8492,
       "avg_rgb": [
-        240,
+        239,
         240,
         240
       ]
@@ -11861,10 +11861,10 @@
       "code": "USA6",
       "group": "USA",
       "collected": true,
-      "white_fraction": 0.0183,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        108,
-        209,
+        104,
+        208,
         236
       ]
     },
@@ -11905,7 +11905,7 @@
       "code": "USA10",
       "group": "USA",
       "collected": true,
-      "white_fraction": 0.0046,
+      "white_fraction": 0.0042,
       "avg_rgb": [
         102,
         208,
@@ -11937,12 +11937,12 @@
     {
       "code": "USA13",
       "group": "USA",
-      "collected": true,
-      "white_fraction": 0.0122,
+      "collected": false,
+      "white_fraction": 0.8515,
       "avg_rgb": [
-        104,
-        209,
-        237
+        240,
+        240,
+        240
       ]
     },
     {
@@ -11959,12 +11959,12 @@
     {
       "code": "USA15",
       "group": "USA",
-      "collected": true,
-      "white_fraction": 0.169,
+      "collected": false,
+      "white_fraction": 0.8489,
       "avg_rgb": [
-        145,
-        217,
-        237
+        240,
+        240,
+        240
       ]
     },
     {
@@ -11982,7 +11982,7 @@
       "code": "USA17",
       "group": "USA",
       "collected": false,
-      "white_fraction": 0.8535,
+      "white_fraction": 0.8549,
       "avg_rgb": [
         240,
         240,
@@ -12006,9 +12006,9 @@
       "collected": true,
       "white_fraction": 0.0046,
       "avg_rgb": [
-        97,
+        96,
         206,
-        236
+        237
       ]
     },
     {
@@ -12017,18 +12017,18 @@
       "collected": false,
       "white_fraction": 0.8497,
       "avg_rgb": [
-        241,
-        241,
-        241
+        240,
+        240,
+        240
       ]
     },
     {
       "code": "UZB1",
       "group": "UZB",
       "collected": false,
-      "white_fraction": 0.817,
+      "white_fraction": 0.7994,
       "avg_rgb": [
-        230,
+        229,
         234,
         235
       ]
@@ -12037,7 +12037,7 @@
       "code": "UZB2",
       "group": "UZB",
       "collected": false,
-      "white_fraction": 0.7676,
+      "white_fraction": 0.7639,
       "avg_rgb": [
         226,
         235,
@@ -12048,10 +12048,10 @@
       "code": "UZB3",
       "group": "UZB",
       "collected": false,
-      "white_fraction": 0.8116,
+      "white_fraction": 0.8165,
       "avg_rgb": [
-        233,
-        236,
+        234,
+        237,
         237
       ]
     },
@@ -12062,7 +12062,7 @@
       "white_fraction": 0.0,
       "avg_rgb": [
         61,
-        196,
+        197,
         233
       ]
     },
@@ -12083,8 +12083,8 @@
       "collected": false,
       "white_fraction": 0.8587,
       "avg_rgb": [
-        237,
-        237,
+        236,
+        236,
         237
       ]
     },
@@ -12092,18 +12092,18 @@
       "code": "UZB7",
       "group": "UZB",
       "collected": true,
-      "white_fraction": 0.0607,
+      "white_fraction": 0.0,
       "avg_rgb": [
-        110,
-        208,
-        234
+        96,
+        205,
+        235
       ]
     },
     {
       "code": "UZB8",
       "group": "UZB",
       "collected": false,
-      "white_fraction": 0.8457,
+      "white_fraction": 0.8465,
       "avg_rgb": [
         235,
         236,
@@ -12125,7 +12125,7 @@
       "code": "UZB10",
       "group": "UZB",
       "collected": false,
-      "white_fraction": 0.8624,
+      "white_fraction": 0.8519,
       "avg_rgb": [
         234,
         235,
@@ -12191,11 +12191,11 @@
       "code": "UZB16",
       "group": "UZB",
       "collected": true,
-      "white_fraction": 0.0007,
+      "white_fraction": 0.0013,
       "avg_rgb": [
         99,
         204,
-        232
+        233
       ]
     },
     {
@@ -12213,7 +12213,7 @@
       "code": "UZB18",
       "group": "UZB",
       "collected": false,
-      "white_fraction": 0.8186,
+      "white_fraction": 0.828,
       "avg_rgb": [
         234,
         237,
@@ -12226,7 +12226,7 @@
       "collected": true,
       "white_fraction": 0.0,
       "avg_rgb": [
-        97,
+        96,
         204,
         234
       ]
@@ -12235,10 +12235,10 @@
       "code": "UZB20",
       "group": "UZB",
       "collected": true,
-      "white_fraction": 0.0284,
+      "white_fraction": 0.0294,
       "avg_rgb": [
         107,
-        205,
+        206,
         233
       ]
     }
