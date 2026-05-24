@@ -237,6 +237,37 @@ h3 { font-size: 1.1rem; }
   letter-spacing: .05em;
   margin-right: .25rem;
 }
+.search-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .75rem;
+  margin-bottom: 1rem;
+}
+.search-label {
+  font-size: .78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+.search-input {
+  flex: 1 1 280px;
+  min-width: 180px;
+  max-width: 420px;
+  padding: .8rem 1rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  font-size: .95rem;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+.search-input:focus {
+  outline: none;
+  border-color: var(--blue-mid);
+  box-shadow: 0 0 0 4px rgba(0, 63, 158, .12);
+}
 .group-pill {
   font-family: 'Oswald', sans-serif;
   font-size: .8rem;

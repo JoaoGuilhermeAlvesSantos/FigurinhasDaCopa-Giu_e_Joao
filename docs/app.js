@@ -27,6 +27,7 @@
   /* ── state ───────────────────────────────────────────────────── */
   let activeGroup = "ALL";
   let sortKey     = "group";   // "group" | "pct_asc" | "pct_desc" | "alpha"
+  let searchQuery = "";
 
   /* ── HERO ────────────────────────────────────────────────────── */
   function renderHero(meta) {
@@ -43,6 +44,14 @@
   function formatDate(iso) {
     const [y, m, d] = iso.split("-");
     return `${d}/${m}/${y}`;
+  }
+
+  function normalizeText(text) {
+    return text
+      .toString()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase();
   }
 
   /* ── STAT CARDS ──────────────────────────────────────────────── */
@@ -119,6 +128,68 @@
     });
   }
 
+  function matchesSearchQuery(team, query) {
+    const normalizedQuery = normalizeText(query);
+    const normalizedQueryNoSpace = normalizedQuery.replace(/\s+/g, "");
+    const name = normalizeText(team.name);
+    const code = normalizeText(team.code);
+
+    if (name.includes(normalizedQuery) || code.includes(normalizedQuery) || code.includes(normalizedQueryNoSpace)) {
+      return true;
+    }
+
+    if (normalizedQueryNoSpace && team.missing.some(m => normalizeText(m).replace(/\s+/g, "") === normalizedQueryNoSpace)) {
+      return true;
+    }
+
+    const nameWords = name.split(/\s+/);
+    if (nameWords.some(word => fuzzyMatch(word, normalizedQuery))) {
+      return true;
+    }
+
+    return fuzzyMatch(name, normalizedQuery);
+  }
+
+  function fuzzyMatch(source, query) {
+    if (query.length < 3) {
+      return source.includes(query);
+    }
+
+    const distance = levenshtein(source, query);
+    return distance <= 2;
+  }
+
+  function levenshtein(a, b) {
+    const matrix = [];
+    for (let i = 0; i <= b.length; i += 1) {
+      matrix[i] = [i];
+    }
+    for (let j = 0; j <= a.length; j += 1) {
+      matrix[0][j] = j;
+    }
+    for (let i = 1; i <= b.length; i += 1) {
+      for (let j = 1; j <= a.length; j += 1) {
+        const cost = a[j - 1] === b[i - 1] ? 0 : 1;
+        matrix[i][j] = Math.min(
+          matrix[i - 1][j] + 1,
+          matrix[i][j - 1] + 1,
+          matrix[i - 1][j - 1] + cost,
+        );
+      }
+    }
+    return matrix[b.length][a.length];
+  }
+
+  function initSearchInput() {
+    const input = $("#team-search");
+    if (!input) return;
+
+    input.addEventListener("input", () => {
+      searchQuery = input.value;
+      renderTeams(ALBUM_DATA.teams);
+    });
+  }
+
   /* ── TEAM CARDS ──────────────────────────────────────────────── */
   function getSortedFiltered(teams) {
     let list = teams.filter(t => activeGroup === "ALL" || t.group === activeGroup);
@@ -126,6 +197,11 @@
     // Never show special sections (–) in the main grid unless filter = "–"
     if (activeGroup !== "–") {
       list = list.filter(t => t.group !== "–");
+    }
+
+    if (searchQuery.trim()) {
+      const query = searchQuery.trim();
+      list = list.filter(t => matchesSearchQuery(t, query));
     }
 
     const groupOrder = (g) => "ABCDEFGHIJKL–".indexOf(g);
@@ -249,6 +325,7 @@
     renderHighlights(teams);
     renderFilterBar();
     initSortBtns();
+    initSearchInput();
     renderTeams(teams);
     renderSpecial(special);
     renderFooter(meta);
