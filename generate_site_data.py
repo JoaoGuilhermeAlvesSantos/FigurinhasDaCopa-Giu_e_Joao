@@ -127,9 +127,7 @@ def build_team_stats(results: dict) -> list[dict]:
             "missing":   sorted(missing_codes, key=sort_key),
         })
 
-    # Sort: by group (A-L, then –), then alphabetically within group
-    group_order = {g: i for i, g in enumerate(list("ABCDEFGHIJKL") + ["–"])}
-    teams.sort(key=lambda t: (group_order.get(t["group"], 99), t["name"]))
+    # Preserve the order defined in TEAMS so the site follows the expected sequence.
     return teams
 
 
@@ -184,6 +182,7 @@ def generate(results_path: str = "results.json", out_path: str = "docs/data.js")
             "percent":   percent,
             "completeTeams": complete_teams,
             "updated": date.today().isoformat(),
+            "packsBought": 90,
         },
         "teams":    teams,
         "groups":   groups,

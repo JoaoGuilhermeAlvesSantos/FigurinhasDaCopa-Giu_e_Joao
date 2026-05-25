@@ -208,7 +208,7 @@
 
     switch (sortKey) {
       case "group":
-        list.sort((a, b) => groupOrder(a.group) - groupOrder(b.group) || a.name.localeCompare(b.name, "pt"));
+        list.sort((a, b) => groupOrder(a.group) - groupOrder(b.group));
         break;
       case "pct_asc":
         list.sort((a, b) => a.percent - b.percent || a.name.localeCompare(b.name, "pt"));

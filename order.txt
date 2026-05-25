@@ -1,0 +1,50 @@
+Fifa World Cup - FWC
+México - MEX
+África do Sul - RSA
+Coreia do Sul - KOR
+Rep. Tcheca - CZE
+Canadá - CAN
+Bósnia - BIH
+Catar - QAT
+Suíça - SUI
+Brasil - BRA
+Marrocos - MAR
+Haiti - HAI
+Escócia - SCO
+Estados Unidos - USA
+Paraguai - PAR
+Austrália - AUS
+Turquia - TUR
+Alemanha - GER
+Curaçao - CUW
+Costa do Marfim - CIV
+Equador - ECU
+Holanda - NED
+Japão - JPN
+Suécia - SWE
+Tunísia - TUN
+Bélgica - BEL
+Egito - EGY
+Irã  - IRN
+Nova Zelândia - NZL
+Espanha - ESP
+Cabo Verde - CPV
+Arábia Saudita - KSA
+Uruguai - URU
+França - FRA
+Senegal - SEN
+Iraque - IRQ
+Noruega - NOR
+Argentina - ARG
+Argélia - ALG
+Áustria - AUT
+Jordânia - JOR
+Portugal - POR
+Congo - COD
+Uzbequistão - UZB
+Colômbia - COL
+Inglaterra - ENG
+Croácia  - CRO
+Gana - GHA
+Panamá - PAN
+Coca-Cola - CC
