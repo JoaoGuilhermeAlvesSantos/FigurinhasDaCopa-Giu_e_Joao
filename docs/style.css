@@ -504,8 +504,22 @@ footer a:hover { text-decoration: underline; }
   padding: .2rem .75rem;
 }
 .hero-missing-link {
-  font-size: .8rem;
-  padding: .45rem .85rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .82rem;
+  font-weight: 700;
+  padding: .6rem 1rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,.18);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,.32);
+  transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+}
+.hero-missing-link:hover {
+  background: rgba(255,255,255,.28);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(0,0,0,.08);
 }
 @media (max-width: 640px) {
   .updated-row {

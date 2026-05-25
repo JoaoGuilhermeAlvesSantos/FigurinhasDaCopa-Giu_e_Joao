@@ -30,8 +30,8 @@
             const normalized = normalizeCode(code);
             const found = !!status[normalized];
             return `
-              <button class="sticker-item${found ? " found" : ""}" data-code="${normalized}" type="button">
-                <span class="marker-btn">${found ? "V" : "X"}</span>
+              <button class="sticker-item${found ? " found" : ""}" data-code="${normalized}" type="button" aria-pressed="${found}">
+                <span class="marker-btn">${found ? "✅" : "❌"}</span>
                 <span class="sticker-code">${code}</span>
               </button>`;
           }).join("")
@@ -56,7 +56,11 @@
       item.addEventListener("click", () => {
         const code = item.dataset.code;
         const current = !!status[code];
-        status[code] = !current;
+        if (current) {
+          delete status[code];
+        } else {
+          status[code] = true;
+        }
         saveStatus(status);
         renderList();
       });
@@ -76,7 +80,7 @@
         const found = !!status[normalized];
         if (filter === "found" && !found) return null;
         if (filter === "missing" && found) return null;
-        return `${found ? "V" : "X"} ${code}`;
+        return `${found ? "✅" : "❌"} ${code}`;
       }).filter(Boolean);
       if (rows.length === 0) {
         return null;

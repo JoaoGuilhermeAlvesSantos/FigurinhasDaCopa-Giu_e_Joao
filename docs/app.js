@@ -64,8 +64,8 @@
       $("#stat-packs").textContent = meta.packsBought !== null ? meta.packsBought : "—";
     }
     if (typeof meta.packsBought !== "undefined" && $("#stat-efficiency")) {
-      const packs = meta.packsBought;
-      const efficiency = packs && packs > 0
+      const packs = Number(meta.packsBought);
+      const efficiency = Number.isFinite(packs) && packs > 0
         ? (meta.collected / (packs * 7)) * 100
         : null;
       $("#stat-efficiency").textContent = efficiency !== null ? efficiency.toFixed(1) + "%" : "—";
