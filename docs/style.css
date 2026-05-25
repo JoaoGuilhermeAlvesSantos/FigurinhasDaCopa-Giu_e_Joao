@@ -488,6 +488,13 @@ footer a:hover { text-decoration: underline; }
 .mt-md { margin-top: 1rem; }
 
 /* Updated badge */
+.updated-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .75rem;
+  margin-top: .75rem;
+}
 .updated-tag {
   display: inline-block;
   font-size: .72rem;
@@ -495,5 +502,18 @@ footer a:hover { text-decoration: underline; }
   color: rgba(255,255,255,.8);
   border-radius: 100px;
   padding: .2rem .75rem;
-  margin-top: .75rem;
+}
+.hero-missing-link {
+  font-size: .8rem;
+  padding: .45rem .85rem;
+}
+@media (max-width: 640px) {
+  .updated-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero-missing-link {
+    width: 100%;
+    justify-content: center;
+  }
 }

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lista simples de figurinhas faltantes em ordem para trocas." />
+  <title>Lista de Faltantes · Figurinhas da Prof Giu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="missing.css" />
+</head>
+<body>
+  <main class="container missing-page">
+    <header class="missing-hero">
+      <div>
+        <p class="hero-eyebrow">📋 Lista de Faltantes</p>
+        <h1 style="margin:.5rem 0 0;font-size:clamp(1.8rem,5vw,2.4rem);">Ordem de Figurinhas para Troca</h1>
+        <p style="margin-top:.75rem; color:var(--text-muted); max-width:760px; line-height:1.6;">
+          Esta página mostra todos os times na ordem do álbum, com as figurinhas faltantes.
+          Use o botão de copiar para levar a lista consigo. Clique em cada item para marcar como encontrado.
+        </p>
+      </div>
+    </header>
+
+    <div class="page-actions">
+      <button id="back-button" class="action-btn secondary">← Voltar</button>
+      <button id="copy-list" class="action-btn">Copiar lista</button>
+      <button id="copy-found" class="action-btn">Copiar apenas encontradas</button>
+      <button id="copy-missing" class="action-btn">Copiar apenas faltantes</button>
+      <button id="reset-markers" class="action-btn secondary">Resetar marcações</button>
+      <span id="copy-status" class="copy-status"></span>
+    </div>
+
+    <div class="missing-list" id="missing-list"></div>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="missing.js"></script>
+</body>
+</html>

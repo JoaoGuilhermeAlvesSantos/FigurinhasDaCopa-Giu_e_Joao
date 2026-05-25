@@ -1,0 +1,188 @@
+:root {
+  --missing-bg: #f6f7fb;
+  --missing-card: #ffffff;
+  --missing-border: #dde4ee;
+  --missing-shadow: 0 2px 16px rgba(2, 22, 76, .08);
+}
+
+.missing-page {
+  padding: 1.5rem 1rem 2.5rem;
+  background: var(--missing-bg);
+  min-height: 100vh;
+}
+
+.missing-hero {
+  padding: 1.75rem 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.missing-hero .hero-eyebrow {
+  color: var(--blue-dark);
+  margin-bottom: .5rem;
+}
+
+.missing-hero h1 {
+  margin: 0;
+  font-size: clamp(1.8rem, 5vw, 2.4rem);
+  line-height: 1.1;
+}
+
+.missing-hero p {
+  margin-top: .85rem;
+  color: var(--text-muted);
+  max-width: 720px;
+  line-height: 1.7;
+}
+
+.page-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 10rem;
+  padding: .85rem 1rem;
+  border-radius: var(--radius);
+  border: 1.5px solid var(--border);
+  background: var(--missing-card);
+  color: var(--text);
+  font-weight: 700;
+  transition: all var(--transition);
+}
+
+.action-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--missing-shadow);
+}
+
+.action-btn.secondary {
+  background: var(--blue-light);
+  border-color: var(--blue-mid);
+  color: var(--blue-dark);
+}
+
+.copy-status {
+  color: var(--text-muted);
+  font-size: .95rem;
+  flex: 1 1 100%;
+  margin-top: .5rem;
+}
+
+.missing-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.team-section {
+  background: var(--missing-card);
+  border: 1px solid var(--missing-border);
+  border-radius: var(--radius);
+  padding: 1rem 1rem 1.1rem;
+  box-shadow: var(--missing-shadow);
+}
+
+.team-heading {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  margin-bottom: 1rem;
+}
+
+.team-heading .team-flag {
+  font-size: 1.9rem;
+}
+
+.team-name {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.team-code {
+  color: var(--text-muted);
+  font-size: .88rem;
+  margin-left: .5rem;
+}
+
+.team-subtitle {
+  color: var(--text-muted);
+  font-size: .9rem;
+  margin-top: .25rem;
+}
+
+.sticker-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .55rem;
+}
+
+.sticker-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .55rem;
+  min-width: 10rem;
+  padding: .6rem .85rem;
+  border-radius: 999px;
+  border: 1px solid var(--missing-border);
+  background: #f8f9fb;
+  cursor: pointer;
+  transition: background var(--transition), border-color var(--transition), transform var(--transition);
+}
+
+.sticker-item.found {
+  background: var(--green-light);
+  border-color: #c8e6d1;
+}
+
+.sticker-item:hover {
+  border-color: var(--blue-mid);
+  transform: translateY(-1px);
+}
+
+.marker-btn {
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  border: 1px solid var(--missing-border);
+  background: var(--missing-card);
+  color: var(--text);
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.no-missing {
+  color: var(--green);
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  .missing-page {
+    padding: 1rem .85rem 1.75rem;
+  }
+  .page-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .action-btn,
+  .copy-status {
+    width: 100%;
+  }
+  .team-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .sticker-item {
+    min-width: 0;
+    flex: 1 1 calc(50% - .55rem);
+  }
+}

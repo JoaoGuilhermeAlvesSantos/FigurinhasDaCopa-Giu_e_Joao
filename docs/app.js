@@ -63,6 +63,13 @@
     if (typeof meta.packsBought !== "undefined" && $("#stat-packs")) {
       $("#stat-packs").textContent = meta.packsBought !== null ? meta.packsBought : "—";
     }
+    if (typeof meta.packsBought !== "undefined" && $("#stat-efficiency")) {
+      const packs = meta.packsBought;
+      const efficiency = packs && packs > 0
+        ? (meta.collected / (packs * 7)) * 100
+        : null;
+      $("#stat-efficiency").textContent = efficiency !== null ? efficiency.toFixed(1) + "%" : "—";
+    }
   }
 
   /* ── HIGHLIGHTS ──────────────────────────────────────────────── */
