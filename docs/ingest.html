@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Página de ingestão de figurinhas para atualizar data.js com os códigos encontrados." />
+  <title>Ingestão de Figurinhas · Figurinhas da Prof Giu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container ingest-page" id="ingest-page">
+    <header class="hero">
+      <div>
+        <p class="hero-eyebrow">🔐 Ingestão de Figurinhas</p>
+        <h1 style="margin:.5rem 0 0;font-size:clamp(1.8rem,5vw,2.4rem);">Atualizar data.js com as figurinhas encontradas</h1>
+        <p style="margin-top:.75rem; color:var(--text-muted); max-width:760px; line-height:1.6;">
+          Cole a lista de figurinhas no formato de blocos com <code># Time (SIGLA)</code> e linhas como <code>✅ BRA5</code>.
+          A página irá gerar o novo conteúdo de <code>data.js</code> com a lista atualizada.
+        </p>
+      </div>
+    </header>
+
+    <div class="page-actions ingest-actions">
+      <button id="ingest-process" class="action-btn">Processar input</button>
+      <button id="ingest-save-js" class="action-btn">Salvar data.js</button>
+      <button id="ingest-copy-js" class="action-btn secondary">Copiar data.js</button>
+      <button id="ingest-download-js" class="action-btn">Baixar data.js</button>
+      <button id="ingest-reset" class="action-btn secondary">Limpar</button>
+      <span id="ingest-status" class="copy-status"></span>
+    </div>
+
+    <section class="ingest-panel">
+      <label for="ingest-input" class="search-label">Lista de ingestão</label>
+      <textarea id="ingest-input" class="search-input output-textarea" placeholder="# Coreia do Sul (KOR)\n✅ KOR20\n# Brasil (BRA)\n✅ BRA5\n..." aria-label="Entrada de figurinhas"></textarea>
+    </section>
+
+    <section class="ingest-panel">
+      <h2>Saída atualizada de data.js</h2>
+      <div id="ingest-summary" class="status-pill">Ainda não processado.</div>
+      <textarea id="ingest-output" class="search-input output-textarea" readonly placeholder="O conteúdo atualizado de data.js aparecerá aqui depois de processar."></textarea>
+    </section>
+
+    <section class="ingest-panel">
+      <h2>Instruções</h2>
+      <p>Use esta página para transformar uma lista de figurinhas encontradas em um novo arquivo <code>data.js</code>.</p>
+      <ul>
+        <li>Cole dados como <code>✅ KOR20</code>, <code>✅ CAN16</code>, <code>✅ CUW9</code>.</li>
+        <li>O parser ignora cabeçalhos com <code>#</code> e linhas vazias.</li>
+        <li>Clique em <strong>Processar input</strong> para gerar o conteúdo.</li>
+        <li>Clique em <strong>Salvar data.js</strong> para gravar o arquivo diretamente, se o navegador permitir.</li>
+        <li>Clique em <strong>Baixar data.js</strong> como fallback se a gravação direta não estiver disponível.</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="ingest.js"></script>
+</body>
+</html>
