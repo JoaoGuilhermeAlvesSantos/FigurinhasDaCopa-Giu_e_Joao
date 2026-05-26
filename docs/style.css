@@ -590,7 +590,11 @@ footer a:hover { text-decoration: underline; }
   background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
-.hero .container { position: relative; z-index: 1; }
+.hero .container {
+  position: relative;
+  z-index: 1;
+  padding-inline: 40px;
+}
 
 .hero-eyebrow {
   font-family: 'Oswald', sans-serif;
@@ -606,64 +610,67 @@ footer a:hover { text-decoration: underline; }
 
 .hero p { color: rgba(255,255,255,.9); }
 
+.ingest-page {
+  padding: 2.5rem 0 3rem;
+  background: var(--bg);
+  min-height: 100vh;
+}
+
+.ingest-page .container {
+  max-width: 1080px;
+}
+
 .ingest-panel {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 1rem;
-  padding: 1.5rem;
+  padding: 1.75rem;
   box-shadow: var(--shadow);
-  margin-top: 1rem;
+  margin-top: 1.25rem;
+}
+
+.ingest-panel h2 {
+  margin-bottom: 0.85rem;
+  color: var(--blue-dark);
+}
+
+.ingest-panel .search-label {
+  display: block;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--text-muted);
+  margin-bottom: .75rem;
+}
+
+.ingest-panel .search-input {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+}
+
+.output-textarea {
+  min-height: 260px;
+  width: 100%;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, Liberation Mono, monospace;
+  white-space: pre-wrap;
+  resize: vertical;
 }
 
 .ingest-actions {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 0.75rem;
   margin: 1.5rem 0 1rem;
 }
 
-.output-textarea {
-  min-height: 220px;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, Liberation Mono, monospace;
-  white-space: pre-wrap;
-  resize: vertical;
-}
-
-.output-textarea {
-  min-height: 220px;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, Liberation Mono, monospace;
-  white-space: pre-wrap;
-  resize: vertical;
-}
-
-.password-overlay {
-  position: fixed;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  background: rgba(15, 23, 42, 0.72);
-  padding: 1.5rem;
-  z-index: 9999;
-}
-
-.password-modal {
-  width: min(560px, 100%);
-  background: var(--surface);
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: var(--shadow);
-  border: 1px solid var(--border);
-}
-
-.password-modal h2 {
-  margin-bottom: 0.5rem;
-}
-
-.password-modal .ingest-note {
-  margin-top: 0.75rem;
+.ingest-actions .copy-status {
+  margin-left: auto;
   color: var(--text-muted);
-  font-size: 0.95rem;
+  min-width: 12rem;
 }
+
 
 .status-message {
   color: var(--danger);

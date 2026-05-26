@@ -1,7 +1,6 @@
 (function () {
   "use strict";
 
-  const PASSWORD = "giucabeçinha";
   const $ = (selector, ctx = document) => ctx.querySelector(selector);
   const CODE_PATTERN = /\b([A-Z]{2,3}\d{1,2})\b/g;
 
@@ -192,28 +191,10 @@
   }
 
   function attachEvents() {
-    const passwordField = $("#ingest-password");
-    const passwordSubmit = $("#ingest-password-submit");
     const processButton = $("#ingest-process");
     const copyButton = $("#ingest-copy-js");
     const downloadButton = $("#ingest-download-js");
     const resetButton = $("#ingest-reset");
-
-    if (passwordSubmit) {
-      passwordSubmit.addEventListener("click", () => {
-        if (passwordField.value === PASSWORD) {
-          $("#password-overlay").classList.add("hidden");
-          $("#ingest-page").classList.remove("hidden");
-          passwordField.value = "";
-          showStatus("Acesso autorizado.");
-        } else {
-          const error = $("#password-error");
-          if (error) {
-            error.textContent = "Senha incorreta. Tente novamente.";
-          }
-        }
-      });
-    }
 
     if (processButton) {
       processButton.addEventListener("click", processInput);
