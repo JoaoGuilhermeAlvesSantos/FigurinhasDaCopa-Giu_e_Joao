@@ -176,8 +176,16 @@
       return;
     }
 
-    $("#dup-copy-marked").addEventListener("click", copyMarked);
-    $("#dup-reset-markers").addEventListener("click", resetMarkers);
+    const copyMarkedBtn = $("#dup-copy-marked");
+    if (copyMarkedBtn) {
+      copyMarkedBtn.addEventListener("click", copyMarked);
+    }
+
+    const resetMarkersBtn = $("#dup-reset-markers");
+    if (resetMarkersBtn) {
+      resetMarkersBtn.addEventListener("click", resetMarkers);
+    }
+
     const backButton = $("#dup-back-button");
     if (backButton) {
       backButton.addEventListener("click", () => {
