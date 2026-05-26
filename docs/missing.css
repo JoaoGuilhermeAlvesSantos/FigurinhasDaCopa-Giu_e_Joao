@@ -43,6 +43,91 @@
   margin-bottom: 1.25rem;
 }
 
+.missing-search-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.missing-search-row .search-label {
+  font-weight: 700;
+  min-width: 6rem;
+}
+
+.missing-search-row .search-input {
+  flex: 1 1 auto;
+  width: 100%;
+  max-width: none;
+  padding: .8rem 1rem;
+  border-radius: var(--radius);
+  border: 1.5px solid var(--border);
+  background: var(--missing-card);
+  color: var(--text);
+  font-size: .95rem;
+  line-height: 1.3;
+  box-sizing: border-box;
+}
+
+.missing-team-summary-right {
+  margin-left: auto;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+  min-width: 7rem;
+}
+
+.missing-team-summary {
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  cursor: pointer;
+}
+
+.missing-team-summary:hover .team-heading {
+  background: rgba(66, 153, 225, 0.06);
+}
+
+.team-heading {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  margin-bottom: 1rem;
+  padding: .45rem .55rem;
+  border-radius: var(--radius);
+  transition: background var(--transition);
+}
+
+.missing-page .missing-panel {
+  display: block;
+}
+
+.missing-page .missing-panel.collapsed {
+  display: none;
+}
+
+.missing-page .missing-panel.open {
+  display: block;
+}
+
+.missing-team-stats {
+  color: var(--text-muted);
+  font-size: .82rem;
+}
+
+.missing-toggle-icon {
+  font-size: .95rem;
+}
+
+.missing-panel.collapsed {
+  display: none;
+}
+
 .action-btn {
   display: inline-flex;
   align-items: center;
@@ -173,9 +258,24 @@
     flex-direction: column;
     align-items: stretch;
   }
+  .missing-search-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .missing-search-row .search-label {
+    width: 100%;
+    min-width: 0;
+  }
+  .missing-search-row .search-input {
+    width: 100%;
+  }
   .action-btn,
   .copy-status {
     width: 100%;
+  }
+  .action-btn {
+    width: 100%;
+    min-width: 0;
   }
   .team-heading {
     flex-direction: column;
@@ -183,6 +283,7 @@
   }
   .sticker-item {
     min-width: 0;
-    flex: 1 1 calc(50% - .55rem);
+    flex: 1 1 calc(25% - .55rem);
+    max-width: calc(25% - .55rem);
   }
 }

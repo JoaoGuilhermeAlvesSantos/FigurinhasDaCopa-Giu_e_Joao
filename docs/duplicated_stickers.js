@@ -41,13 +41,21 @@
     return normalizedName.includes(normalizedQuery) || normalizedCode.includes(normalizedQuery);
   }
 
+  function orderDuplicateTeams(teams) {
+    return [...teams].sort((a, b) => {
+      if (a.code === "FWC") return -1;
+      if (b.code === "FWC") return 1;
+      return 0;
+    });
+  }
+
   function renderList() {
     const status = loadStatus();
     const container = $("#duplicate-list");
     const query = duplicateSearchQuery.trim();
     const teams = query
-      ? ALBUM_DUPLICATE_DATA.teams.filter(team => matchesSearchQuery(team, query))
-      : ALBUM_DUPLICATE_DATA.teams;
+      ? orderDuplicateTeams(ALBUM_DUPLICATE_DATA.teams.filter(team => matchesSearchQuery(team, query)))
+      : orderDuplicateTeams(ALBUM_DUPLICATE_DATA.teams);
 
     if (query && teams.length === 0) {
       container.innerHTML = `<p style="color: var(--text-muted); padding: 2rem 0; text-align: center;">Nenhum time encontrado para "${query}".</p>`;
@@ -133,16 +141,8 @@
     }).filter(Boolean).join(String.fromCharCode(10) + String.fromCharCode(10));
   }
 
-  function copyList() {
-    copyText(buildCopyText(), "Lista copiada para a área de transferência.");
-  }
-
   function copyMarked() {
-    copyText(buildCopyText("marked"), "Lista de marcadas copiada.");
-  }
-
-  function copyUnmarked() {
-    copyText(buildCopyText("unmarked"), "Lista de não marcadas copiada.");
+    copyText(buildCopyText("marked"), "Lista de repetidas copiada.");
   }
 
   function copyText(text, message) {
@@ -176,9 +176,7 @@
       return;
     }
 
-    $("#dup-copy-list").addEventListener("click", copyList);
     $("#dup-copy-marked").addEventListener("click", copyMarked);
-    $("#dup-copy-unmarked").addEventListener("click", copyUnmarked);
     $("#dup-reset-markers").addEventListener("click", resetMarkers);
     const backButton = $("#dup-back-button");
     if (backButton) {

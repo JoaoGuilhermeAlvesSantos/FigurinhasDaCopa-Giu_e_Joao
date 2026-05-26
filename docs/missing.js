@@ -3,10 +3,13 @@
 
   const STORAGE_KEY = "missing-stickers-status";
   const $ = (sel, ctx = document) => ctx.querySelector(sel);
+  let missingSearchQuery = "";
+  const openMissingTeams = {};
 
   function loadStatus() {
     try {
-      return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}") || {};
+      const raw = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}") || {};
+      return normalizeStatusKeys(raw);
     } catch (err) {
       return {};
     }
@@ -17,14 +20,57 @@
   }
 
   function normalizeCode(code) {
-    return code.toString().trim().toUpperCase().replace(/\s+/g, "");
+    return code.toString().trim().toLowerCase().replace(/\s+/g, "");
+  }
+
+  function normalizeText(text) {
+    return text
+      .toString()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/\s+/g, "")
+      .toLowerCase();
+  }
+
+  function normalizeStatusKeys(status) {
+    return Object.keys(status).reduce((acc, key) => {
+      acc[normalizeCode(key)] = !!status[key];
+      return acc;
+    }, {});
+  }
+
+  function matchesSearchQuery(team, query) {
+    const normalizedQuery = normalizeText(query);
+    const normalizedName = normalizeText(team.name);
+    const normalizedCode = normalizeCode(team.code);
+    return normalizedName.includes(normalizedQuery) || normalizedCode.includes(normalizedQuery);
+  }
+
+  function orderMissingTeams(teams) {
+    return [...teams].sort((a, b) => {
+      if (a.code === "FWC") return -1;
+      if (b.code === "FWC") return 1;
+      return 0;
+    });
   }
 
   function renderList() {
     const status = loadStatus();
     const container = $("#missing-list");
-    container.innerHTML = ALBUM_DATA.teams.map(team => {
+    const query = missingSearchQuery.trim();
+    const teams = query
+      ? orderMissingTeams(ALBUM_DATA.teams.filter(team => matchesSearchQuery(team, query)))
+      : orderMissingTeams(ALBUM_DATA.teams);
+
+    if (query && teams.length === 0) {
+      container.innerHTML = `<p style="color: var(--text-muted); padding: 2rem 0; text-align: center;">Nenhum time encontrado para "${query}".</p>`;
+      return;
+    }
+
+    container.innerHTML = teams.map(team => {
       const missing = team.missing || [];
+      const foundCount = missing.reduce((acc, code) => acc + (!!status[normalizeCode(code)] ? 1 : 0), 0);
+      const isOpen = !!openMissingTeams[team.code];
       const items = missing.length > 0
         ? missing.map(code => {
             const normalized = normalizeCode(code);
@@ -39,18 +85,34 @@
 
       return `
         <section class="team-section" data-team="${team.code}">
-          <div class="team-heading">
-            <div class="team-flag">${team.flag}</div>
-            <div>
-              <div class="team-name">${team.name}<span class="team-code">${team.code}</span></div>
-              <div class="team-subtitle">${team.group === "–" ? "Especial" : `Grupo ${team.group}`}</div>
+          <button class="missing-team-summary" type="button" data-team="${team.code}" aria-expanded="${isOpen}">
+            <div class="team-heading">
+              <div class="team-flag">${team.flag}</div>
+              <div>
+                <div class="team-name">${team.name}<span class="team-code">${team.code}</span></div>
+                <div class="team-subtitle">${team.group === "–" ? "Especial" : `Grupo ${team.group}`}</div>
+              </div>
+              <div class="missing-team-summary-right">
+                <span class="missing-team-stats">${missing.length} faltam · ${foundCount} marcadas</span>
+                <span class="missing-toggle-icon">${isOpen ? "▲" : "▼"}</span>
+              </div>
             </div>
-          </div>
-          <div class="sticker-row">
-            ${items}
+          </button>
+          <div class="missing-panel${isOpen ? " open" : " collapsed"}">
+            <div class="sticker-row">
+              ${items}
+            </div>
           </div>
         </section>`;
     }).join("");
+
+    container.querySelectorAll(".missing-team-summary").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const code = btn.dataset.team;
+        openMissingTeams[code] = !openMissingTeams[code];
+        renderList();
+      });
+    });
 
     container.querySelectorAll(".sticker-item").forEach(item => {
       item.addEventListener("click", () => {
@@ -139,7 +201,18 @@
         }
       });
     }
+    initSearchInput();
     renderList();
+  }
+
+  function initSearchInput() {
+    const input = $("#missing-search");
+    if (!input) return;
+
+    input.addEventListener("input", () => {
+      missingSearchQuery = input.value;
+      renderList();
+    });
   }
 
   if (document.readyState === "loading") {
