@@ -70,7 +70,7 @@
     container.innerHTML = teams.map(team => {
       const missing = team.missing || [];
       const foundCount = missing.reduce((acc, code) => acc + (!!status[normalizeCode(code)] ? 1 : 0), 0);
-      const isOpen = !!openMissingTeams[team.code];
+      const isOpen = openMissingTeams[team.code] ?? true;
       const items = missing.length > 0
         ? missing.map(code => {
             const normalized = normalizeCode(code);
@@ -158,12 +158,7 @@
 
   function copyFound() {
     const text = buildCopyText("found");
-    copyText(text, "Lista de encontradas copiada.");
-  }
-
-  function copyMissing() {
-    const text = buildCopyText("missing");
-    copyText(text, "Lista de faltantes copiada.");
+    copyText(text, "Marcadas copiadas para a área de transferência.");
   }
 
   function copyText(text, message) {
@@ -187,10 +182,20 @@
       return;
     }
 
-    $("#copy-list").addEventListener("click", copyList);
-    $("#copy-found").addEventListener("click", copyFound);
-    $("#copy-missing").addEventListener("click", copyMissing);
-    $("#reset-markers").addEventListener("click", resetMarkers);
+    const copyListButton = $("#copy-list");
+    if (copyListButton) {
+      copyListButton.addEventListener("click", copyList);
+    }
+
+    const copyFoundButton = $("#copy-found");
+    if (copyFoundButton) {
+      copyFoundButton.addEventListener("click", copyFound);
+    }
+
+    const resetButton = $("#reset-markers");
+    if (resetButton) {
+      resetButton.addEventListener("click", resetMarkers);
+    }
     const backButton = $("#back-button");
     if (backButton) {
       backButton.addEventListener("click", () => {
