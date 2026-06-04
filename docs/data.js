@@ -9,7 +9,7 @@ const ALBUM_DATA = {
     "percent": 82.6,
     "completeTeams": 3,
     "updated": "2026-06-04",
-    "packsBought": 150
+    "packsBought": 160
   },
   "teams": [
     {
