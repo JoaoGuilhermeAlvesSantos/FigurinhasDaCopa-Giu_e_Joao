@@ -498,11 +498,10 @@ const ALBUM_DATA = {
       "group": "I",
       "isHost": false,
       "total": 20,
-      "collected": 17,
-      "percent": 85,
+      "collected": 18,
+      "percent": 90,
       "missing": [
         "FRA10",
-        "FRA13",
         "FRA18"
       ]
     },
@@ -736,12 +735,10 @@ const ALBUM_DATA = {
       "group": "–",
       "isHost": false,
       "total": 14,
-      "collected": 11,
-      "percent": 78.6,
+      "collected": 13,
+      "percent": 92.9,
       "missing": [
-        "CC8",
         "CC9",
-        "CC13"
       ]
     },
     {
