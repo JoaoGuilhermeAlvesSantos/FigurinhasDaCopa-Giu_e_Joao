@@ -4,10 +4,10 @@ const ALBUM_DATA = {
     "title": "🧡 Figurinhas da Prof Giu",
     "album": "Copa do Mundo 2026",
     "total": 994,
-    "collected": 857,
-    "missing": 137,
-    "percent": 86.2,
-    "completeTeams": 6,
+    "collected": 891,
+    "missing": 103,
+    "percent": 89.6,
+    "completeTeams": 10,
     "updated": "2026-06-05",
     "packsBought": 170
   },
@@ -19,11 +19,10 @@ const ALBUM_DATA = {
       "group": "A",
       "isHost": true,
       "total": 20,
-      "collected": 16,
-      "percent": 80,
+      "collected": 17,
+      "percent": 85,
       "missing": [
         "MEX2",
-        "MEX10",
         "MEX13",
         "MEX17"
       ]
@@ -62,11 +61,9 @@ const ALBUM_DATA = {
       "group": "A",
       "isHost": false,
       "total": 20,
-      "collected": 19,
-      "percent": 95,
-      "missing": [
-        "CZE17"
-      ]
+      "collected": 20,
+      "percent": 100,
+      "missing": []
     },
     {
       "code": "CAN",
@@ -75,12 +72,11 @@ const ALBUM_DATA = {
       "group": "B",
       "isHost": true,
       "total": 20,
-      "collected": 17,
-      "percent": 85,
+      "collected": 18,
+      "percent": 90,
       "missing": [
         "CAN12",
-        "CAN13",
-        "CAN14"
+        "CAN13"
       ]
     },
     {
@@ -119,13 +115,10 @@ const ALBUM_DATA = {
       "group": "B",
       "isHost": false,
       "total": 20,
-      "collected": 14,
-      "percent": 70,
+      "collected": 17,
+      "percent": 85,
       "missing": [
-        "SUI2",
-        "SUI5",
         "SUI11",
-        "SUI14",
         "SUI17",
         "SUI20"
       ]
@@ -137,10 +130,9 @@ const ALBUM_DATA = {
       "group": "C",
       "isHost": false,
       "total": 20,
-      "collected": 18,
-      "percent": 90,
+      "collected": 19,
+      "percent": 95,
       "missing": [
-        "BRA13",
         "BRA14"
       ]
     },
@@ -166,13 +158,11 @@ const ALBUM_DATA = {
       "group": "C",
       "isHost": false,
       "total": 20,
-      "collected": 16,
-      "percent": 80,
+      "collected": 18,
+      "percent": 90,
       "missing": [
         "HAI4",
-        "HAI8",
-        "HAI12",
-        "HAI19"
+        "HAI12"
       ]
     },
     {
@@ -182,12 +172,9 @@ const ALBUM_DATA = {
       "group": "C",
       "isHost": false,
       "total": 20,
-      "collected": 18,
-      "percent": 90,
-      "missing": [
-        "SCO13",
-        "SCO20"
-      ]
+      "collected": 20,
+      "percent": 100,
+      "missing": []
     },
     {
       "code": "USA",
@@ -196,12 +183,10 @@ const ALBUM_DATA = {
       "group": "D",
       "isHost": true,
       "total": 20,
-      "collected": 17,
-      "percent": 85,
+      "collected": 19,
+      "percent": 95,
       "missing": [
-        "USA4",
-        "USA12",
-        "USA16"
+        "USA12"
       ]
     },
     {
@@ -211,13 +196,11 @@ const ALBUM_DATA = {
       "group": "D",
       "isHost": false,
       "total": 20,
-      "collected": 16,
-      "percent": 80,
+      "collected": 18,
+      "percent": 90,
       "missing": [
         "PAR1",
-        "PAR3",
-        "PAR7",
-        "PAR17"
+        "PAR3"
       ]
     },
     {
@@ -227,10 +210,9 @@ const ALBUM_DATA = {
       "group": "D",
       "isHost": false,
       "total": 20,
-      "collected": 18,
-      "percent": 90,
+      "collected": 19,
+      "percent": 95,
       "missing": [
-        "AUS10",
         "AUS17"
       ]
     },
@@ -241,12 +223,10 @@ const ALBUM_DATA = {
       "group": "D",
       "isHost": false,
       "total": 20,
-      "collected": 15,
-      "percent": 75,
+      "collected": 17,
+      "percent": 85,
       "missing": [
-        "TUR3",
         "TUR5",
-        "TUR7",
         "TUR8",
         "TUR9"
       ]
@@ -272,13 +252,12 @@ const ALBUM_DATA = {
       "group": "E",
       "isHost": false,
       "total": 20,
-      "collected": 15,
-      "percent": 75,
+      "collected": 16,
+      "percent": 80,
       "missing": [
         "CUW7",
         "CUW11",
         "CUW13",
-        "CUW16",
         "CUW20"
       ]
     },
@@ -289,12 +268,11 @@ const ALBUM_DATA = {
       "group": "E",
       "isHost": false,
       "total": 20,
-      "collected": 17,
-      "percent": 85,
+      "collected": 18,
+      "percent": 90,
       "missing": [
         "CIV5",
-        "CIV13",
-        "CIV19"
+        "CIV13"
       ]
     },
     {
@@ -304,13 +282,12 @@ const ALBUM_DATA = {
       "group": "E",
       "isHost": false,
       "total": 20,
-      "collected": 16,
-      "percent": 80,
+      "collected": 17,
+      "percent": 85,
       "missing": [
         "ECU3",
         "ECU10",
-        "ECU13",
-        "ECU15"
+        "ECU13"
       ]
     },
     {
@@ -320,11 +297,10 @@ const ALBUM_DATA = {
       "group": "F",
       "isHost": false,
       "total": 20,
-      "collected": 18,
-      "percent": 90,
+      "collected": 19,
+      "percent": 95,
       "missing": [
-        "NED13",
-        "NED18"
+        "NED13"
       ]
     },
     {
@@ -334,14 +310,12 @@ const ALBUM_DATA = {
       "group": "F",
       "isHost": false,
       "total": 20,
-      "collected": 15,
-      "percent": 75,
+      "collected": 17,
+      "percent": 85,
       "missing": [
         "JPN12",
         "JPN13",
-        "JPN15",
-        "JPN17",
-        "JPN19"
+        "JPN17"
       ]
     },
     {
@@ -351,11 +325,10 @@ const ALBUM_DATA = {
       "group": "F",
       "isHost": false,
       "total": 20,
-      "collected": 17,
-      "percent": 85,
+      "collected": 18,
+      "percent": 90,
       "missing": [
         "SWE8",
-        "SWE14",
         "SWE19"
       ]
     },
@@ -366,12 +339,11 @@ const ALBUM_DATA = {
       "group": "F",
       "isHost": false,
       "total": 20,
-      "collected": 14,
-      "percent": 70,
+      "collected": 15,
+      "percent": 75,
       "missing": [
         "TUN2",
         "TUN4",
-        "TUN5",
         "TUN8",
         "TUN13",
         "TUN17"
@@ -409,13 +381,12 @@ const ALBUM_DATA = {
       "group": "G",
       "isHost": false,
       "total": 20,
-      "collected": 14,
-      "percent": 70,
+      "collected": 15,
+      "percent": 75,
       "missing": [
         "IRN1",
         "IRN3",
         "IRN9",
-        "IRN11",
         "IRN13",
         "IRN16"
       ]
@@ -480,14 +451,12 @@ const ALBUM_DATA = {
       "group": "H",
       "isHost": false,
       "total": 20,
-      "collected": 14,
-      "percent": 70,
+      "collected": 16,
+      "percent": 80,
       "missing": [
         "URU2",
         "URU7",
         "URU10",
-        "URU13",
-        "URU16",
         "URU19"
       ]
     },
@@ -537,11 +506,9 @@ const ALBUM_DATA = {
       "group": "I",
       "isHost": false,
       "total": 20,
-      "collected": 19,
-      "percent": 95,
-      "missing": [
-        "NOR11"
-      ]
+      "collected": 20,
+      "percent": 100,
+      "missing": []
     },
     {
       "code": "ARG",
@@ -550,14 +517,13 @@ const ALBUM_DATA = {
       "group": "J",
       "isHost": false,
       "total": 20,
-      "collected": 11,
-      "percent": 55,
+      "collected": 12,
+      "percent": 60,
       "missing": [
         "ARG1",
         "ARG2",
         "ARG6",
         "ARG10",
-        "ARG11",
         "ARG13",
         "ARG15",
         "ARG16",
@@ -571,11 +537,9 @@ const ALBUM_DATA = {
       "group": "J",
       "isHost": false,
       "total": 20,
-      "collected": 19,
-      "percent": 95,
-      "missing": [
-        "ALG6"
-      ]
+      "collected": 20,
+      "percent": 100,
+      "missing": []
     },
     {
       "code": "AUT",
@@ -620,12 +584,11 @@ const ALBUM_DATA = {
       "group": "K",
       "isHost": false,
       "total": 20,
-      "collected": 15,
-      "percent": 75,
+      "collected": 16,
+      "percent": 80,
       "missing": [
         "COD3",
         "COD8",
-        "COD9",
         "COD17",
         "COD18"
       ]
@@ -637,11 +600,10 @@ const ALBUM_DATA = {
       "group": "K",
       "isHost": false,
       "total": 20,
-      "collected": 16,
-      "percent": 80,
+      "collected": 17,
+      "percent": 85,
       "missing": [
         "UZB1",
-        "UZB5",
         "UZB6",
         "UZB10"
       ]
@@ -738,7 +700,7 @@ const ALBUM_DATA = {
       "collected": 13,
       "percent": 92.9,
       "missing": [
-        "CC9",
+        "CC9"
       ]
     },
     {
@@ -759,134 +721,134 @@ const ALBUM_DATA = {
     {
       "letter": "A",
       "total": 80,
-      "collected": 72,
+      "collected": 74,
       "teams": [
         "MEX",
         "RSA",
         "KOR",
         "CZE"
       ],
-      "percent": 90
+      "percent": 92.5
     },
     {
       "letter": "B",
       "total": 80,
-      "collected": 65,
+      "collected": 69,
       "teams": [
         "CAN",
         "BIH",
         "QAT",
         "SUI"
       ],
-      "percent": 81.3
+      "percent": 86.3
     },
     {
       "letter": "C",
       "total": 80,
-      "collected": 69,
+      "collected": 74,
       "teams": [
         "BRA",
         "MAR",
         "HAI",
         "SCO"
       ],
-      "percent": 86.3
+      "percent": 92.5
     },
     {
       "letter": "D",
       "total": 80,
-      "collected": 66,
+      "collected": 73,
       "teams": [
         "USA",
         "PAR",
         "AUS",
         "TUR"
       ],
-      "percent": 82.5
+      "percent": 91.3
     },
     {
       "letter": "E",
       "total": 80,
-      "collected": 66,
+      "collected": 69,
       "teams": [
         "GER",
         "CUW",
         "CIV",
         "ECU"
       ],
-      "percent": 82.5
+      "percent": 86.3
     },
     {
       "letter": "F",
       "total": 80,
-      "collected": 64,
+      "collected": 69,
       "teams": [
         "NED",
         "JPN",
         "SWE",
         "TUN"
       ],
-      "percent": 80
+      "percent": 86.3
     },
     {
       "letter": "G",
       "total": 80,
-      "collected": 70,
+      "collected": 71,
       "teams": [
         "BEL",
         "EGY",
         "IRN",
         "NZL"
       ],
-      "percent": 87.5
+      "percent": 88.8
     },
     {
       "letter": "H",
       "total": 80,
-      "collected": 70,
+      "collected": 72,
       "teams": [
         "ESP",
         "CPV",
         "KSA",
         "URU"
       ],
-      "percent": 87.5
+      "percent": 90
     },
     {
       "letter": "I",
       "total": 80,
-      "collected": 75,
+      "collected": 76,
       "teams": [
         "FRA",
         "SEN",
         "IRQ",
         "NOR"
       ],
-      "percent": 93.8
+      "percent": 95
     },
     {
       "letter": "J",
       "total": 80,
-      "collected": 68,
+      "collected": 70,
       "teams": [
         "ARG",
         "ALG",
         "AUT",
         "JOR"
       ],
-      "percent": 85
+      "percent": 87.5
     },
     {
       "letter": "K",
       "total": 80,
-      "collected": 69,
+      "collected": 71,
       "teams": [
         "POR",
         "COD",
         "UZB",
         "COL"
       ],
-      "percent": 86.3
+      "percent": 88.8
     },
     {
       "letter": "L",
