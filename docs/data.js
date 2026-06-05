@@ -4,9 +4,9 @@ const ALBUM_DATA = {
     "title": "🧡 Figurinhas da Prof Giu",
     "album": "Copa do Mundo 2026",
     "total": 994,
-    "collected": 854,
-    "missing": 140,
-    "percent": 85.9,
+    "collected": 857,
+    "missing": 137,
+    "percent": 86.2,
     "completeTeams": 6,
     "updated": "2026-06-05",
     "packsBought": 170
@@ -855,14 +855,14 @@ const ALBUM_DATA = {
     {
       "letter": "I",
       "total": 80,
-      "collected": 74,
+      "collected": 75,
       "teams": [
         "FRA",
         "SEN",
         "IRQ",
         "NOR"
       ],
-      "percent": 92.5
+      "percent": 93.8
     },
     {
       "letter": "J",
@@ -920,12 +920,10 @@ const ALBUM_DATA = {
       "group": "–",
       "isHost": false,
       "total": 14,
-      "collected": 11,
-      "percent": 78.6,
+      "collected": 13,
+      "percent": 92.9,
       "missing": [
-        "CC8",
-        "CC9",
-        "CC13"
+        "CC9"
       ]
     },
     {
