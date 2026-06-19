@@ -4,10 +4,10 @@ const ALBUM_DATA = {
     "title": "🧡 Figurinhas da Prof Giu",
     "album": "Copa do Mundo 2026",
     "total": 994,
-    "collected": 946,
-    "missing": 48,
-    "percent": 95.2,
-    "completeTeams": 20,
+    "collected": 957,
+    "missing": 37,
+    "percent": 96.3,
+    "completeTeams": 23,
     "updated": "2026-06-19",
     "packsBought": 185
   },
@@ -80,12 +80,10 @@ const ALBUM_DATA = {
       "group": "B",
       "isHost": false,
       "total": 20,
-      "collected": 17,
-      "percent": 85,
+      "collected": 19,
+      "percent": 95,
       "missing": [
-        "BIH3",
-        "BIH13",
-        "BIH20"
+        "BIH13"
       ]
     },
     {
@@ -133,11 +131,10 @@ const ALBUM_DATA = {
       "group": "C",
       "isHost": false,
       "total": 20,
-      "collected": 18,
-      "percent": 90,
+      "collected": 19,
+      "percent": 95,
       "missing": [
-        "MAR16",
-        "MAR20"
+        "MAR16"
       ]
     },
     {
@@ -147,10 +144,9 @@ const ALBUM_DATA = {
       "group": "C",
       "isHost": false,
       "total": 20,
-      "collected": 18,
-      "percent": 90,
+      "collected": 19,
+      "percent": 95,
       "missing": [
-        "HAI4",
         "HAI12"
       ]
     },
@@ -295,11 +291,9 @@ const ALBUM_DATA = {
       "group": "F",
       "isHost": false,
       "total": 20,
-      "collected": 19,
-      "percent": 95,
-      "missing": [
-        "SWE19"
-      ]
+      "collected": 20,
+      "percent": 100,
+      "missing": []
     },
     {
       "code": "TUN",
@@ -343,10 +337,9 @@ const ALBUM_DATA = {
       "group": "G",
       "isHost": false,
       "total": 20,
-      "collected": 18,
-      "percent": 90,
+      "collected": 19,
+      "percent": 95,
       "missing": [
-        "IRN1",
         "IRN3"
       ]
     },
@@ -443,11 +436,9 @@ const ALBUM_DATA = {
       "group": "I",
       "isHost": false,
       "total": 20,
-      "collected": 19,
-      "percent": 95,
-      "missing": [
-        "IRQ8"
-      ]
+      "collected": 20,
+      "percent": 100,
+      "missing": []
     },
     {
       "code": "NOR",
@@ -540,11 +531,10 @@ const ALBUM_DATA = {
       "group": "K",
       "isHost": false,
       "total": 20,
-      "collected": 17,
-      "percent": 85,
+      "collected": 18,
+      "percent": 90,
       "missing": [
         "UZB1",
-        "UZB6",
         "UZB10"
       ]
     },
@@ -568,11 +558,10 @@ const ALBUM_DATA = {
       "group": "L",
       "isHost": false,
       "total": 20,
-      "collected": 18,
-      "percent": 90,
+      "collected": 19,
+      "percent": 95,
       "missing": [
-        "ENG13",
-        "ENG15"
+        "ENG13"
       ]
     },
     {
@@ -596,12 +585,9 @@ const ALBUM_DATA = {
       "group": "L",
       "isHost": false,
       "total": 20,
-      "collected": 18,
-      "percent": 90,
-      "missing": [
-        "GHA5",
-        "GHA14"
-      ]
+      "collected": 20,
+      "percent": 100,
+      "missing": []
     },
     {
       "code": "PAN",
@@ -668,26 +654,26 @@ const ALBUM_DATA = {
     {
       "letter": "B",
       "total": 80,
-      "collected": 75,
+      "collected": 77,
       "teams": [
         "CAN",
         "BIH",
         "QAT",
         "SUI"
       ],
-      "percent": 93.8
+      "percent": 96.3
     },
     {
       "letter": "C",
       "total": 80,
-      "collected": 75,
+      "collected": 77,
       "teams": [
         "BRA",
         "MAR",
         "HAI",
         "SCO"
       ],
-      "percent": 93.8
+      "percent": 96.3
     },
     {
       "letter": "D",
@@ -716,26 +702,26 @@ const ALBUM_DATA = {
     {
       "letter": "F",
       "total": 80,
-      "collected": 78,
+      "collected": 79,
       "teams": [
         "NED",
         "JPN",
         "SWE",
         "TUN"
       ],
-      "percent": 97.5
+      "percent": 98.8
     },
     {
       "letter": "G",
       "total": 80,
-      "collected": 78,
+      "collected": 79,
       "teams": [
         "BEL",
         "EGY",
         "IRN",
         "NZL"
       ],
-      "percent": 97.5
+      "percent": 98.8
     },
     {
       "letter": "H",
@@ -752,14 +738,14 @@ const ALBUM_DATA = {
     {
       "letter": "I",
       "total": 80,
-      "collected": 78,
+      "collected": 79,
       "teams": [
         "FRA",
         "SEN",
         "IRQ",
         "NOR"
       ],
-      "percent": 97.5
+      "percent": 98.8
     },
     {
       "letter": "J",
@@ -776,26 +762,26 @@ const ALBUM_DATA = {
     {
       "letter": "K",
       "total": 80,
-      "collected": 73,
+      "collected": 74,
       "teams": [
         "POR",
         "COD",
         "UZB",
         "COL"
       ],
-      "percent": 91.3
+      "percent": 92.5
     },
     {
       "letter": "L",
       "total": 80,
-      "collected": 74,
+      "collected": 77,
       "teams": [
         "ENG",
         "CRO",
         "GHA",
         "PAN"
       ],
-      "percent": 92.5
+      "percent": 96.3
     }
   ],
   "special": [
